@@ -1,0 +1,47 @@
+.powercord-spotify{
+    position: relative;
+    bottom: 0px;
+    height:var(--neb-topbar-height);
+    margin-top: calc(var(--margin) + 20px);
+    .container-3baos1{
+        margin: 0 !important;
+        width: calc(var(--neb-sidebar-width) - 20px) !important;
+        z-index: 0;
+    }
+    .spotify-seek{
+        position: relative;
+        bottom:15px;
+        left:2px;
+        bottom:25px;
+        z-index: 1;
+        margin: 0 2px;
+        .spotify-seek-elements{
+            height:12px;
+            opacity: 1;
+        }
+    }
+    .spotify-seek-bar{
+        height:6px;
+        .spotify-seek-bar-progress{
+            border-radius: var(--neb-border-radius1);
+        }
+    }
+}
+.modal-yWgWj-{
+    background-color: var(--background-primary) !important;
+    border-radius: var(--neb-border-radius1);
+    box-shadow: none !important;
+    .footer-2gL1pp{
+        background-color: var(--background-secondary-alt);
+        border-radius: var(--neb-border-radius1);
+        margin: var(--margin);
+        box-shadow: none;
+        .lookFilled-1Gx00P.colorBrand-3pXr91{
+            background-color: var(--button-background-dark);
+            border-radius: var(--neb-border-radius1);
+            &:hover{
+                background-color: var(--button-hover-dark);
+            }
+        }
+    }
+}
