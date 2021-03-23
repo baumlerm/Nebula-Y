@@ -34,17 +34,17 @@
         background-color: rgb(204, 33, 30);
         transform:scale(1.2);
      }
-     .winButtonMinMax-PBQ2gm[aria-label="Maximize"]::after {
+     .winButtonMinMax-PBQ2gm:nth-child(3)::after {
         background-color: var(--neb-secondary-alt);
      }
-     .winButtonMinMax-PBQ2gm[aria-label="Maximize"]:hover::after {
+     .winButtonMinMax-PBQ2gm:nth-child(3):hover::after {
         background-color: rgb(233, 158, 18);
         transform:scale(1.2);
      }
-     .winButtonMinMax-PBQ2gm[aria-label="Minimize"]::after {
+     .winButtonMinMax-PBQ2gm:nth-child(4):after {
         background-color: var(--neb-secondary-alt);
      }
-     .winButtonMinMax-PBQ2gm[aria-label="Minimize"]:hover::after {
+     .winButtonMinMax-PBQ2gm:nth-child(4):hover::after {
         background-color: rgb(45, 197, 103);
         transform:scale(1.2);
      }
