@@ -1,0 +1,48 @@
+// Chat Bubbles
+.cozyMessage-3V1Y8y .contents-2mQqc9 > .markup-2BOw-j:not(:empty) {
+    background-color: var(--background-tertiary);
+    display: inline-block;
+    max-width: 650px;
+    width:fit-content;
+    margin: 0;
+    padding: 8px;
+    border-radius: var(--neb-border-radius1);
+}
+.message-2qnXI6{
+    border-radius: 0 var(--neb-border-radius1) var(--neb-border-radius1) 0;
+}
+
+
+// Code
+.markup-2BOw-j code{
+    border-radius: var(--neb-border-radius1);
+    width: fit-content;
+    white-space:pre-line;
+}
+
+// Replies
+.cozy-3raOZG .contents-2mQqc9{
+    .scrollableContainer-2NUZem{
+        background-color: var(--background-secondary-alt);
+        border-radius: var(--neb-border-radius2);
+    }
+}
+.replying-1x3H0T{
+    background-color: var(--background-mentioned);
+    &:before{
+        background-color: var(--neb-white);
+    }
+}
+.repliedMessage-VokQwo:before{
+    border-color: var(--neb-white);
+}
+
+// Mentions
+.mentioned-xhSam7{
+    &:before{
+        background-color: var(--neb-white);
+    }
+}
+.mentioned-xhSam7 .mention{
+    color:var(--neb-white);
+}

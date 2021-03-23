@@ -1,0 +1,23 @@
+.form-2fGMdU{
+    .scrollableContainer-2NUZem{
+        background-color: var(--background-secondary-alt);
+        border-radius: calc(var(--neb-border-radius2) + 5px);
+        transition: var(--long-transition);
+        border:var(--border-inactive);
+        &:hover{
+            border-color: rgb(255, 255, 255);
+        }
+        &:focus-within{
+            border: var(--border-active);
+        }
+        [aria-label="Send a gift"],
+        [aria-label="Open GIF picker"],
+        [aria-label="Open sticker picker"]{
+            display: none;
+        }
+    }
+    .wrapper-39oAo3{
+        background-color: var(--background-secondary-alt);
+        border-radius: var(--neb-border-radius2);
+    }
+}

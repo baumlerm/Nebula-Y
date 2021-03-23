@@ -1,0 +1,42 @@
+.container-1r6BKw{
+    height:var(--neb-topbar-height);
+    border-radius: var(--neb-border-radius2);
+    line-height: calc(var(--neb-topbar-height) - 5px);
+    width:77.5%;
+    .children-19S4PO{
+        .iconWrapper-2OrFZ1 svg{
+            color:var(--header-primary);
+        }
+        .title-29uC1r{
+            font-size: var(--medium-font-size);
+            text-transform: capitalize;
+        }
+    }
+    .toolbar-1t6TWx{
+        padding-right:0;
+        [aria-label="Start Video Call"],
+        [aria-label="Help"],
+        [aria-label="Add Friends to DM"]{
+            display: none;
+        }
+        [aria-label="Update Ready!"]{
+            order: 1;
+        }
+        .search-36MZv-{
+            position: relative;
+            right:7px;
+            order: -1;
+            &::before{
+                content: '';
+                position: absolute;
+                right:-12px;
+                background-color: rgba(255, 255, 255, 0.06);
+                height:24px;
+                width:.8px;
+            }
+            .searchBar-3dMhjb{
+                border-radius: var(--neb-border-radius1);
+            }
+        }
+    }
+}

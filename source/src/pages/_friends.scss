@@ -1,0 +1,34 @@
+.container-1D34oG{
+    background-color: transparent !important;
+    margin: 0 var(--margin) 0 var(--margin);
+    .tabBody-3YRQ8W{
+        &:before{
+            display: none;
+        }
+        .peopleColumn-29fq28{
+            border-radius: var(--neb-border-radius1);
+            background-color: var(--background-primary);
+            margin: var(--margin) var(--margin) 0;
+        }
+        .nowPlayingColumn-2sl4cE{
+            background-color: var(--background-primary);
+            border-radius: var(--neb-border-radius1);
+            margin-top: var(--margin);
+            .wrapper-3D2qGf{
+                border-radius: var(--neb-border-radius1);
+                margin-right: var(--margin);
+                max-width: 300px;
+                &:hover{
+                    background-color: var(--background-secondary-alt);
+                }
+                .body-1ld4H7{
+                    background-color: var(--background-secondary);
+                    border-radius: var(--neb-border-radius1);
+                }
+            }
+            ::-webkit-scrollbar{
+                display: none;
+            }
+        }
+    }
+}

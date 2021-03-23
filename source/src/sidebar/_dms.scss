@@ -1,0 +1,21 @@
+.privateChannels-1nO12o{
+    background-color: transparent;
+    .searchBar-6Kv8R2{
+        background-color: var(--background-primary);
+        border-radius: var(--neb-border-radius2);
+        height:var(--neb-topbar-height);
+        box-shadow: none;
+        .searchBarComponent-32dTOx{
+            border-radius: var(--neb-border-radius1);
+        }
+    }
+    .scroller-1JbKMe{
+        background-color: var(--background-primary);
+        border-radius: var(--neb-border-radius1);
+        margin-top: var(--margin);
+        .name-uJV0GL,
+        .linkButtonIcon-Mlm5d6{
+            color:var(--header-primary);
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.searchResultsWrap-3-pOjs{
+    background-color: var(--background-primary);
+    border-radius: var(--neb-border-radius1);
+    margin: 0 var(--margin);
+    .searchHeader-2XoQg7{
+        background-color: var(--background-secondary);
+        border-radius: var(--neb-border-radius1);
+        margin: var(--margin);
+    }
+    .scroller-3GIiMh{
+        background-color: var(--background-secondary);
+        border-radius: var(--neb-border-radius1);
+        margin: var(--margin);
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+}

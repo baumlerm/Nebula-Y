@@ -1,0 +1,32 @@
+.applicationStore-1pNvnv{
+    background-color: transparent;
+    margin: 0 0 var(--margin) var(--margin);
+    .scroller-9moviB{
+        border-radius: var(--neb-border-radius1);
+        margin: var(--margin) var(--margin) 0 0;
+    }
+}
+.perksModal-fSYqOq{
+    background-color: var(--background-primary) !important;
+    .ctaBar-2UsjF2{
+        background-color: var(--background-secondary-alt);
+        .lookFilled-1Gx00P.colorBrand-3pXr91{
+            background-color: var(--button-background-dark);
+            border-radius: var(--neb-border-radius1);
+            &:hover{
+                background-color: var(--button-hover-dark);
+            }
+        }
+        .lookFilled-1Gx00P.colorPrimary-3b3xI6{
+            background-color: var(--button-background-light);
+            border-radius: var(--neb-border-radius1);
+            &:hover{
+                background-color: var(--button-hover-light);
+            }
+        }
+    }
+    .perk-2WeBWW{
+        background-color: var(--background-secondary-alt);
+        border-radius: var(--neb-border-radius1);
+    }
+}

@@ -1,0 +1,54 @@
+.root-SR8cQa{
+    background-color: transparent;
+    border-radius: var(--neb-border-radius2);
+    .topSectionPlaying-1J5E4n,
+    .topSectionNormal-2-vo2m,
+    .topSectionStreaming-1Tpf5X,
+    .topSectionXbox-3fWLjS,
+    .topSectionSpotify-1lI0-P{
+        background-color: var(--background-primary);
+        border-radius: var(--neb-border-radius1);
+        .header-QKLPzZ{
+            background-color: var(--background-secondary-alt);
+            border-radius: var(--neb-border-radius2);
+            margin: var(--margin);
+            max-height: 80px;
+            .lookInverted-2D7oAl.colorBrand-3pXr91,
+            .lookFilled-1Gx00P.colorGreen-29iAKY,
+            .topSectionSpotify-1lI0-P,
+            .buttonInvertedPurple-WtBglX,
+            .lookInverted-2D7oAl.colorGreen-29iAKY{
+                background-color: var(--button-background-dark);
+                border-radius: var(--neb-border-radius1);
+                color:var(--neb-white);
+                &:hover{
+                    background-color: var(--button-hover-dark);
+                }
+            }
+        }
+        .headerFill-adLl4x{
+            background-color: transparent;
+        }
+        .tabBarContainer-1s1u-z{
+            background-color: var(--background-secondary-alt);
+            border-radius: var(--neb-border-radius1);
+            margin: var(--margin);
+            border:none;
+            .tabBar-2MuP6-{
+                justify-content: center;
+            }
+        }
+    }
+    .body-3ND3kc{
+        background-color: var(--background-primary);
+        border-radius: var(--neb-border-radius1);
+        margin-top: var(--margin);
+        .listRow-hutiT_{
+            border-radius: var(--neb-border-radius2);
+            .listAvatar-1NlAhb{
+                position: relative;
+                right:1px;
+            }
+        }
+    }
+}

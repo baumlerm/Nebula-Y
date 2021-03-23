@@ -1,0 +1,100 @@
+//╔═════════════════════╦╗
+//║     File Imports    ╠╣	
+//╚═════════════════════╩╝
+@import "./source/addons/import";
+@import "./source/src/import";
+
+//╔══════════════════════╦╗
+//║   Nebula Variables   ╠╣	
+//╚══════════════════════╩╝
+:root{
+
+// Main Variables
+
+--neb-primary:#25294a;
+--neb-secondary:#202442;
+--neb-secondary-alt:rgb(45, 50, 90);
+--neb-tertiary:#1b1f38;
+--neb-white:#e2e4f0;
+
+// Misc Color Variables
+
+--neb-hover-background:var(--neb-secondary-alt);
+--neb-modal-background:var(--neb-primary);
+--neb-modal-background-secondary:var(--neb-secondary);
+--input-background:var(--neb-secondary-alt);
+--input-background-hover:var(--neb-white);
+--input-border:solid 2px var(--neb-tertiary);
+--button-background-light:var(--neb-primary);
+--button-hover-light:var(--background-secondary);
+--button-background-dark:var(--neb-tertiary);
+--button-hover-dark:var(--neb-primary);
+
+
+// Misc Variables
+
+--modal-backdrop-blur: blur(5px); // Default 5px
+
+
+// Status
+--neb-status-online: rgb(53, 177, 125);
+--neb-status-idle: rgb(219, 171, 9);
+--neb-status-dnd: rgb(215, 58, 73);
+--neb-status-streaming: rgb(89, 54, 149);
+--neb-status-offline: rgb(117, 128, 142);
+
+
+// Element Dependant Variables
+
+--neb-border-radius0:0px; // Default 0px
+--neb-border-radius1: 18px; // Default 15px
+--neb-border-radius2: 25px; // Default 25px
+--neb-topbar-height: 40px; // Default 40px, Min 29px
+--neb-sidebar-width: 320px; // Do not change
+--margin:10px; // Default 20px
+--neb-version: "Nebula 3 Beta Release"; // Dont Change
+--medium-font-size:18px; // Default 18px
+--transition:100ms ease all;
+--long-transition:250ms ease all;
+--neb-track:transparent;
+--neb-thumb:var(--neb-tertiary);
+--border-inactive: solid 2px var(--background-tertiary);
+--border-active: solid 2px var(--neb-white);
+--border-tertiary: solid 10px var(--background-tertiary);
+
+
+// Addon Variables
+
+
+// -Indicators
+--unread-badge: transparent;
+--unread-bg: transparent;
+--selected-badge: rgba(112, 134, 215, 0);
+--selected-bg: var(--background-tertiary);
+--selected-bg-hover: var(--background-secondary-alt);
+--hovered-bg: var(--selected-bg-hover);
+--bg-rounding: 0 50px 50px 0;
+--border-info: 2px solid;
+
+
+}
+//╔═════════════════════╦╗
+//║  Discord Variables  ╠╣	
+//╚═════════════════════╩╝
+.theme-dark{
+--background-primary:var(--neb-primary);
+--background-secondary:var(--neb-secondary);
+--background-secondary-alt:var(--neb-secondary-alt);
+--background-tertiary:var(--neb-tertiary);
+--background-extra:var(--neb-white);
+--interactive-normal:var(--neb-white);
+--interactive-active:var(--neb-white);
+--background-modifier-hover:var(--neb-secondary-alt);
+--background-mentioned:#1b1f38;
+--background-mentioned-hover:var(--background-secondary);
+--indicator:var(--background-secondary-alt);
+}
+
+.theme-light{
+--indicator:rgba(141, 141, 141, 0.247);
+}

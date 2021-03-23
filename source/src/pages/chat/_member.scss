@@ -1,0 +1,18 @@
+.membersWrap-2h-GB4{
+    margin-left:var(--margin);
+    .members-1998pB{
+        background-color: var(--background-primary);
+        border-radius: var(--neb-border-radius1);
+        div{
+            background-color: transparent;
+            transition: var(--transition);
+            .layout-2DM8Md{
+                border-radius: var(--neb-border-radius1);
+                margin-top: 2px;
+            }
+        }
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+}

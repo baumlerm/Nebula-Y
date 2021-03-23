@@ -1,0 +1,12 @@
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: var(--neb-border-radius2);
+    background-color: var(--neb-track) !important;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: var(--neb-border-radius2);
+    background-color: var(--neb-thumb) !important;
+}
+::-webkit-scrollbar-track {
+    display: none;
+}

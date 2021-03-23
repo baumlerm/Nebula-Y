@@ -1,0 +1,13 @@
+.menu-3sdvDG{
+    background-color: var(--background-secondary-alt);
+    border-radius: var(--neb-border-radius1);
+    .colorDefault-2K3EoJ{
+        border-radius: var(--neb-border-radius1);
+    }
+    .colorDefault-2K3EoJ.focused-3afm-j{
+        background-color: var(--background-tertiary);
+        &:hover{
+            color:var(--header-primary);
+        }
+    }
+}

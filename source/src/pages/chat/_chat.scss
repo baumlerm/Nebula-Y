@@ -1,0 +1,36 @@
+.chat-3bRxxu{
+    background: transparent;
+    margin: 0 var(--margin) 0 var(--margin);
+    .content-yTz4x3{
+        margin-top: var(--margin);
+        &:before{
+            display: none;
+        }
+        .chatContent-a9vAAp{
+            border-radius: var(--neb-border-radius1);
+            background-color: var(--background-primary);
+            z-index: 100;
+            .messagesWrapper-1sRNjr,
+            .scroller-2LSbBU{
+                border-radius: var(--neb-border-radius1) var(--neb-border-radius1) 0 0;
+            }
+        }
+        .scroller-11cdZM{
+            background-color: var(--background-primary);
+            border-radius: var(--neb-border-radius1);
+        }
+    }
+    .action-yrVND8{
+        border-radius: var(--neb-border-radius1);
+    }
+    .wrapper-2qzCYF{
+        background-color: var(--background-primary);
+        border-radius:var(--neb-border-radius1) 21px var(--neb-border-radius1) var(--neb-border-radius1);
+    }
+}
+.colorable-1bkp8v.primaryDark-3mSFDl{
+    background-color: var(--background-tertiary);
+    &:hover{
+        background-color: var(--background-secondary-alt);
+    }
+}

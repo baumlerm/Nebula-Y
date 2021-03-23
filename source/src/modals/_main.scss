@@ -1,0 +1,29 @@
+.backdrop-1wrmKB, .backdropWithLayer-3_uhz4{
+    backdrop-filter: var(--modal-backdrop-blur);
+}
+.root-1gCeng{
+    background-color: var(--background-primary) !important;
+    border-radius: var(--neb-border-radius1);
+    .input-cIJ7To,
+    .select-2fjwPw{
+        border-radius: var(--neb-border-radius1);
+    }
+    .footer-2gL1pp{
+        background-color: var(--neb-secondary-alt);
+        border-radius: var(--neb-border-radius1);
+        box-shadow: none;
+        margin: var(--margin);
+        .lookFilled-1Gx00P.colorBrand-3pXr91,
+        .lookFilled-1Gx00P.colorRed-1TFJan{
+            background-color: var(--button-background-dark);
+            border-radius: var(--neb-border-radius1);
+            &:hover{
+                background-color: var(--button-hover-dark);
+            }
+        }
+    }
+    .message-2qRu38{
+        background-color: var(--background-secondary-alt);
+        border-radius: var(--neb-border-radius1);
+    }
+}

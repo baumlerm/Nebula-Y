@@ -1,0 +1,19 @@
+.layers-3iHuyZ > .layer-3QrUeG:nth-child(2){
+     .closeButton-1tv5uR{
+        position: absolute;
+        right:-330px;
+        top:-158px;
+        border-radius: 0;
+        width:200vh;
+        height:200vh;
+        z-index:-1002;
+        border-width: 5px;
+        transition: 150ms ease all;
+        &:hover{
+            background-color: rgba(255, 255, 255, 0.021) !important;
+        }
+        svg{
+            display: none;
+        }
+    }
+}

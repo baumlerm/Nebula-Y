@@ -1,0 +1,8 @@
+{
+    "name": "Nebula v3",
+    "version": "3.0 Beta Release",
+    "author": "Pavol#0001",
+    "license": "MIT",
+    "theme": "index.scss",
+    "description": "The dark blue redesign of discord."
+}

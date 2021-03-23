@@ -1,0 +1,47 @@
+.panels-j1Uci_{
+    background-color: transparent;
+    border-radius: var(--neb-border-radius1);
+    .container-3baos1{
+        background-color: var(--background-primary);
+        width:225px;
+        border-radius: var(--neb-border-radius2);
+        position: absolute;
+        margin-right: var(--margin);
+        right:0px;
+        height:var(--neb-topbar-height);
+        z-index: 210;
+        top:0px;
+        .button-14-BFJ{
+            border-radius: var(--neb-border-radius1);
+            &:hover{
+                background-color: var(--background-secondary-alt);
+            }
+        }
+    }
+    .wrapper-24pKcD{
+        background-color: var(--background-primary);
+        border-radius: var(--neb-border-radius1);
+        .container-1giJp5{
+            margin-top: var(--margin);
+        }
+        .lookFilled-1Gx00P.colorBrand-3pXr91{
+            background-color: var(--button-background-dark);
+            border-radius: var(--neb-border-radius1);
+            &:hover{
+                background-color: var(--background-secondary);
+            }
+        }
+    }
+    .activityPanel-28dQGo{
+        background-color: var(--background-primary);
+        border-radius: var(--neb-border-radius1);
+        margin-top: var(--margin);
+    }
+}
+.disabledPointerEvents-1ptgTB[style="position: absolute; left: 1410px; bottom: 843px;"],
+.disabledPointerEvents-1ptgTB[style="position: absolute; left: 1437px; bottom: 843px;"],
+.disabledPointerEvents-1ptgTB[style="position: absolute; left: 1451px; bottom: 843px;"],
+.disabledPointerEvents-1ptgTB[style="position: absolute; left: 1403px; bottom: 843px;"],
+.disabledPointerEvents-1ptgTB[style="position: absolute; left: 1429px; bottom: 843px;"]{
+    display:none;
+}

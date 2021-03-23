@@ -1,0 +1,35 @@
+.base-3dtUhz{
+    left: calc(var(--margin) + 70px);
+    margin-bottom: 10px;
+}
+.guilds-1SWlCJ{
+    left:calc(var(--margin) - 2px);
+    z-index: 210;
+    .scroller-2TZvBN {
+        background-color: var(--background-primary);
+        border-radius: var(--neb-border-radius1);
+        margin-bottom:var(--margin);
+        .tutorialContainer-1v44GL{
+            padding-top: 5px;
+            .pill-2uzAFe{
+                display: none;
+            }
+            .childWrapper-anI2G9{
+                background-color: var(--background-secondary-alt);
+            }
+        }
+        .circleIconButton-jET_ig{
+            background-color: var(--background-secondary);
+            color: var(--header-primary);
+        }
+    }
+    .unreadMentionsIndicatorBottom-BXS58x{
+        bottom: 7px;
+        .bar-30k2ka{
+            opacity: 1;
+        }
+    }
+    .bar-30k2ka{
+        opacity: 1;
+    }
+}
