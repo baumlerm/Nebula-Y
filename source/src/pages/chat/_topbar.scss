@@ -2,7 +2,7 @@
     height:var(--neb-topbar-height);
     border-radius: var(--neb-border-radius2);
     line-height: calc(var(--neb-topbar-height) - 5px);
-    width:77.5%;
+    width:calc(var(--neb-sidebar-width) * 2.67);
     .children-19S4PO{
         .iconWrapper-2OrFZ1 svg{
             color:var(--header-primary);

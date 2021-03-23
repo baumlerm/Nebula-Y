@@ -3,7 +3,7 @@
     border-radius: var(--neb-border-radius1);
     .container-3baos1{
         background-color: var(--background-primary);
-        width:225px;
+        width:calc(var(--neb-sidebar-width) - 95px);
         border-radius: var(--neb-border-radius2);
         position: absolute;
         margin-right: var(--margin);
