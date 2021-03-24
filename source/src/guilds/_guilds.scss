@@ -2,32 +2,64 @@
     left: calc(var(--margin) + 70px);
     margin-bottom: 10px;
 }
-.guilds-1SWlCJ{
-    left:calc(var(--margin) - 2px);
-    z-index: 210;
-    .scroller-2TZvBN {
-        background-color: var(--background-primary);
-        border-radius: var(--neb-border-radius1);
-        margin-bottom:var(--margin);
-        .tutorialContainer-1v44GL{
-            padding-top: 5px;
-            .pill-2uzAFe{
-                display: none;
-            }
-            .childWrapper-anI2G9{
-                background-color: var(--background-secondary-alt);
+.scroller-2TZvBN{contain:unset;}
+.wrapper-3NnKdC{
+    background-color: transparent;
+    margin: 0 var(--margin) var(--margin) var(--margin);
+    border-radius: var(--neb-border-radius1);
+    .scroller-1Bvpku{
+        background-color: transparent;
+        padding: 0 !important;
+        .guildSeparator-33mFX6{
+            border-radius: var(--neb-border-radius1);
+            width: 50px;
+        }
+        .tutorialContainer-30WoTp{
+            background-color: var(--background-primary);
+            border-radius: var(--neb-border-radius1) var(--neb-border-radius1) 0 0;
+            padding: 10px 0;
+            &:before{
+                content: '';
+                background-color: var(--background-primary);
+                position: absolute;
+                bottom: -60px;
+                height:65px;
+                width:72px;
             }
         }
-        .circleIconButton-jET_ig{
-            background-color: var(--background-secondary);
-            color: var(--header-primary);
+        .circleIconButton-1QV--U{
+            background-color: var(--background-secondary-alt);
+            color:var(--neb-white);
         }
     }
-    .unreadMentionsIndicatorBottom-BXS58x{
-        bottom: 7px;
-        .bar-30k2ka{
-            opacity: 1;
-        }
+}
+.tutorialContainer-2sGCg9,
+[style="opacity: 1; height: 56px; transform: scale(1);"]{
+    padding: 10px 0 5px 0;
+    margin-bottom: var(--margin);
+    border-radius: var(--neb-border-radius1);
+    background-color: var(--background-primary);
+    .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9{
+        background-color: var(--neb-tertiary);
+        color:var(--background-secondary-alt);
+    }
+    .pill-3N7f9r,
+    .pill-1Z5PKm{
+        display: none;
+    }
+}
+[aria-label="Servers"]{
+    border-radius: var(--neb-border-radius1);
+    background-color: var(--background-primary);
+    padding: 10px 0;
+    margin-bottom: var(--margin);
+}
+
+
+.unreadMentionsIndicatorBottom-BXS58x{
+    bottom: 7px;
+    .bar-30k2ka{
+        opacity: 1;
     }
     .bar-30k2ka{
         opacity: 1;
