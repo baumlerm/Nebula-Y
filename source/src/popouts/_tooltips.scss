@@ -1,8 +1,10 @@
 .tooltip-2QfLtc{
     box-shadow: none !important;
+    z-index: 1002;
 }
 .tooltipPrimary-1d1ph4{
-    background-color: var(--background-secondary-alt) !important;
+    z-index: 1002;
+    background-color: var(--background-secondary) !important;
     .tooltipPointer-3ZfirK{
         border-top-color: transparent !important;
     }
