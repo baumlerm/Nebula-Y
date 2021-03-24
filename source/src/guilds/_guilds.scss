@@ -20,6 +20,7 @@
             padding: 10px 0;
             &:before{
                 content: '';
+                border-radius: 0 0 var(--neb-border-radius1) var(--neb-border-radius1);
                 background-color: var(--background-primary);
                 position: absolute;
                 bottom: -60px;
