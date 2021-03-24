@@ -1,9 +1,13 @@
 .container-1r6BKw{
+    padding: 0;
     height:var(--neb-topbar-height);
     border-radius: var(--neb-border-radius2);
     line-height: calc(var(--neb-topbar-height) - 5px);
-    width:calc(var(--neb-sidebar-width) * 2.67);
+    background: transparent !important;
     .children-19S4PO{
+        background-color: var(--background-primary);
+        border-radius: var(--neb-border-radius1) 0 0 var(--neb-border-radius1);
+        padding: 9px;
         .iconWrapper-2OrFZ1 svg{
             color:var(--header-primary);
         }
@@ -13,7 +17,10 @@
         }
     }
     .toolbar-1t6TWx{
-        padding-right:0;
+        border-radius: 0 var(--neb-border-radius1) var(--neb-border-radius1) 0;
+        margin-right: 250px;
+        padding: 8px;
+        background-color: var(--background-primary);
         [aria-label="Start Video Call"],
         [aria-label="Add Friends to DM"]{
             display: none;
