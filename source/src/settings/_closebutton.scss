@@ -1,5 +1,5 @@
 .closeButton-1tv5uR{
-    transition: var(--transition);
+    transition: var(--long-transition);
     position: fixed;
     right:0px;
     top:0;
@@ -7,6 +7,9 @@
     border-color:transparent !important;
     height: 100%;
     width:100%;
+    &:hover{
+        background-color: rgba(255, 255, 255, 0.021) !important;
+    }
 }
 .keybind-KpFkfr{
     display: none;
