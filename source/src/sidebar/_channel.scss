@@ -30,13 +30,15 @@
             }
         }
         .channelNotice-1-XFjC{
-            background-color: var(--background-secondary-alt);
+            background-color: var(--background-primary);
             border-radius: var(--neb-border-radius1);
+            margin-top: var(--margin);
+            box-shadow: none;
             .lookFilled-1Gx00P.colorBrand-3pXr91{
                 background-color: var(--button-background-dark);
                 border-radius: var(--neb-border-radius1);
                 &:hover{
-                    background-color: var(--button-hover-dark);
+                    background-color: var(--button-hover-light);
                 }
             }
         }

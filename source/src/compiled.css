@@ -56,8 +56,10 @@
 }
 
 .form-2fGMdU .wrapper-39oAo3 {
-  background-color: var(--background-secondary-alt);
+  background-color: var(--background-primary);
   border-radius: var(--neb-border-radius2);
+  margin-top: var(--margin);
+  box-shadow: none;
 }
 
 .chat-3bRxxu {
@@ -822,15 +824,15 @@
 
 .tutorialContainer-2sGCg9,
 [style="opacity: 1; height: 56px; transform: scale(1);"] {
-  padding: 10px 0 5px 0;
+  padding: 7px 0 0.04px 0;
   margin-bottom: var(--margin);
-  border-radius: 60px;
+  border-radius: var(--neb-border-radius1);
   background-color: var(--background-primary);
 }
 .tutorialContainer-2sGCg9 .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9,
 [style="opacity: 1; height: 56px; transform: scale(1);"] .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9 {
-  background-color: var(--neb-tertiary);
-  color: var(--background-secondary-alt);
+  background-color: var(--neb-secondary-alt);
+  color: var(--neb-white);
 }
 .tutorialContainer-2sGCg9 .pill-3N7f9r,
 .tutorialContainer-2sGCg9 .pill-1Z5PKm,
@@ -1219,7 +1221,8 @@
 }
 
 .contentWrapper-SvZHNd .header-8ilj5e,
-.contentWrapper-SvZHNd .header-1TOWci {
+.contentWrapper-SvZHNd .header-1TOWci,
+.contentWrapper-SvZHNd .header-2k4I2o {
   background-color: var(--background-secondary-alt);
   border-radius: 0px 0px var(--neb-border-radius1) var(--neb-border-radius1);
   margin-bottom: 10px;
@@ -1227,17 +1230,20 @@
   box-shadow: none;
 }
 
-.contentWrapper-SvZHNd .bodyWrapper-3G0FZZ {
+.contentWrapper-SvZHNd .bodyWrapper-3G0FZZ,
+.contentWrapper-SvZHNd .wrapper-OxgYJ1 {
   background-color: var(--background-secondary-alt);
   border-radius: 0 var(--neb-border-radius1) 0 0;
   padding-top: 8px;
 }
 
-.contentWrapper-SvZHNd .bodyWrapper-3G0FZZ .wrapper-1-Fsb8 {
+.contentWrapper-SvZHNd .bodyWrapper-3G0FZZ .wrapper-1-Fsb8,
+.contentWrapper-SvZHNd .wrapper-OxgYJ1 .wrapper-1-Fsb8 {
   border-radius: var(--neb-border-radius1);
 }
 
-.contentWrapper-SvZHNd .bodyWrapper-3G0FZZ .wrapper-1-Fsb8::after {
+.contentWrapper-SvZHNd .bodyWrapper-3G0FZZ .wrapper-1-Fsb8::after,
+.contentWrapper-SvZHNd .wrapper-OxgYJ1 .wrapper-1-Fsb8::after {
   display: none;
 }
 
