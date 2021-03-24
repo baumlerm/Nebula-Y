@@ -1425,6 +1425,73 @@
   border-top-color: transparent !important;
 }
 
+.userPopout-3XzG_A {
+  border-radius: var(--neb-border-radius1);
+  background-color: var(--background-secondary-alt);
+  box-shadow: var(--elevation-high);
+  overflow: scroll;
+}
+
+.userPopout-3XzG_A .header-2BwW8b {
+  background-color: var(--background-secondary);
+  border-radius: var(--neb-border-radius1);
+  max-height: 145px;
+  padding-bottom: 10px;
+  margin: var(--margin);
+  box-shadow: var(--elevation-high);
+}
+
+.userPopout-3XzG_A .header-2BwW8b::-webkit-scrollbar,
+.userPopout-3XzG_A .header-2BwW8b .customStatus-1bh2V9 {
+  display: none;
+}
+
+.userPopout-3XzG_A .body-3iLsc4 {
+  background-color: transparent;
+  padding-bottom: 0;
+}
+
+.userPopout-3XzG_A .body-3iLsc4 .size12-3R0845:nth-child(3),
+.userPopout-3XzG_A .body-3iLsc4 .note-3HfJZ5 {
+  display: none;
+}
+
+.userPopout-3XzG_A .activity-11LB_k {
+  background-color: var(--background-secondary);
+  border-radius: var(--neb-border-radius1);
+  box-shadow: var(--elevation-high);
+  margin-top: 270px;
+  margin-bottom: var(--margin);
+}
+
+.userPopout-3XzG_A .footer-1fjuF6 {
+  border-radius: var(--neb-border-radius1);
+  background-color: var(--background-secondary);
+  box-shadow: var(--elevation-high);
+  margin: var(--margin);
+}
+
+.userPopout-3XzG_A .footer-1fjuF6 .inputWrapper-31_8H8 {
+  padding-top: 15px;
+}
+
+.userPopout-3XzG_A .footer-1fjuF6 .inputWrapper-31_8H8 .input-cIJ7To {
+  border-radius: calc(var(--neb-border-radius1) - 8px);
+  background-color: var(--background-secondary-alt);
+}
+
+.userPopout-3XzG_A .footer-1fjuF6 .inputWrapper-31_8H8 .input-cIJ7To:focus-within {
+  border-color: var(--neb-white);
+}
+
+.userPopout-3XzG_A .footer-1fjuF6 .protip-YaFfgO {
+  padding-top: 15px;
+}
+
+.userPopout-3XzG_A::-webkit-scrollbar {
+  display: none;
+}
+
 .closeButton-1tv5uR {
   transition: var(--transition);
   position: fixed;
@@ -1586,16 +1653,44 @@ div[aria-label=USER_SETTINGS] .info-1VyQPT:last-child > div:last-child::after {
 [href="https://support.discord.com"],
 [aria-label="Gør kanal stum themes"],
 [aria-label="Opret invitation"],
+[aria-label="Send a gift"],
+[aria-label="Open GIF picker"],
+[aria-label="Open sticker picker"],
+[aria-label="Åbn sticker-vælgeren"],
+[aria-label="Abrir selector de GIFs"],
+[aria-label="Stickerauswahl öffnen"],
+[aria-label="Enviar un regalo"],
 [aria-label="Send en gave"],
 [aria-label="Åbn GIF-vælger"],
 [aria-label="Ein Geschenk senden"],
 [aria-label="GIF-Auswahl öffnen"],
 [aria-label="Einladung erstellen"],
+[aria-label="Ouvrir l'onglet des GIF"],
 [aria-label="Kanal themes stummschalten"],
+[aria-label="Abrir selector de pegatinas"],
+[aria-label="Ouvrir le sélecteur d'autocollant"],
+[aria-label="Pošalji poklon"],
+[aria-label="Otvori GIF picker"],
+[aria-label="Envoyer un cadeau"],
 [aria-label="Start videoopkald"],
 [aria-label="Tilføj venner til DM"],
 [aria-label="Videoanruf starten"],
 [aria-label="Freunde zu Direktnachricht hinzufügen"],
+[aria-label="Åpne GIF-velger"],
+[aria-label="Apri selettore di GIF"],
+[aria-label="Siųsti dovaną"],
+[aria-label="Matricaválogató megnyitása"],
+[aria-label="Atidaryti lipdukų paieškos priemonę"],
+[aria-label="Åpne klistremerkevelger"],
+[aria-label="Stickerkiezer openen"],
+[aria-label="GIF-kiezer openen"],
+[aria-label="Verstuur een cadeau"],
+[aria-label="Ajándék küldése"],
+[aria-label="GIF válogató megnyitása"],
+[aria-label="Atidaryti GIF paieškos priemonę"],
+[aria-label="Invia un regalo"],
+[aria-label="Apri selettore di adesivi"],
+[aria-label="Otvori picker za naljepnice"],
 [aria-label="Iniciar videollamada"],
 [aria-label="Añadir amigos a MD"],
 [aria-label="Démarrer un appel vidéo"],
@@ -1636,15 +1731,65 @@ div[aria-label=USER_SETTINGS] .info-1VyQPT:last-child > div:last-child::after {
 [aria-label="Додати друзів до ПП"],
 [aria-label=เริ่มวิดีโอคอล],
 [aria-label=เพิ่มเพื่อนไปยังข้อความโดยตรง],
+[aria-label="Trimite un cadou"],
 [aria-label=开始视频通话],
 [aria-label=添加朋友到私信],
 [aria-label=ビデオ通話を開始],
+[aria-label="Lähetä lahja"],
 [aria-label=DMにフレンドを追加],
 [aria-label=開始視訊通話],
 [aria-label=加入好友到私訊],
 [aria-label="영상 통화 시작하기"],
 [aria-label="개인 메시지에 친구 추가하기"],
-.button-3AYNKb,
+[aria-label="Deschide selectorul de GIF"],
+[aria-label="Deschide selectorul de stickere"],
+[aria-label="Avaa GIF-valitsin"],
+[aria-label="Wyślij prezent"],
+[aria-label="Otwórz wybieranie GIF-ów"],
+[aria-label="Abrir o selecionador de GIFs"],
+[aria-label="Abrir selecionador de figurinhas"],
+[aria-label="Otwórz wybór naklejek"],
+[aria-label="Enviar um presente"],
+[aria-label="Avaa tarravalitsin"],
+[aria-label="Skicka en gåva"],
+[aria-label="Öppna GIF-väljare"],
+[aria-label="Öppna dekalväljare"],
+[aria-label="Tặng một món quà"],
+[aria-label="Mở trình chọn ảnh GIF"],
+[aria-label="Mở trình chọn sticker"],
+[aria-label="Bir hediye gönder"],
+[aria-label="GIF seçiciyi aç"],
+[aria-label="Çıkartma seçiciyi aç"],
+[aria-label="Otevřít okno s GIFy"],
+[aria-label="Otevřít výběr samolepek"],
+[aria-label="Στείλτε ένα δώρο"],
+[aria-label="Odeslat dárek"],
+[aria-label="Άνοιγμα επιλογέα GIF"],
+[aria-label="Άνοιγμα επιλογέα αυτοκόλλητων"],
+[aria-label="Изпрати подарък"],
+[aria-label="Отвори избиране на GIF"],
+[aria-label="Отвори избиране на стикери"],
+[aria-label="Отправить подарок"],
+[aria-label="Открыть меню GIF"],
+[aria-label="Открыть меню выбора стикеров"],
+[aria-label="Надіслати подарунок"],
+[aria-label="Відкрити програму вибору GIF"],
+[aria-label="Відкрити програму вибору стікерів"],
+[aria-label=ส่งของขวัญ],
+[aria-label="เปิดตัวเลือก GIF"],
+[aria-label=เปิดตัวเลือกสติกเกอร์],
+[aria-label="打开 GIF 选取器"],
+[aria-label=打开贴纸选取器],
+[aria-label=ギフトを贈る],
+[aria-label=发送礼物],
+[aria-label=GIFピッカーを開く],
+[aria-label=スタンプピッカーを開く],
+[aria-label=發送禮物],
+[aria-label="開啟 GIF 選取器"],
+[aria-label=開啟貼圖選取器],
+[aria-label="선물 보내기"],
+[aria-label="GIF 선택기 열기"],
+[aria-label="스티커 선택기 열기"],
 .actionIcon-PgcMM2 {
   display: none !important;
 }
