@@ -530,6 +530,20 @@
   display: none;
 }
 
+.sidebar-2K8pFh .container-3w7J-x .channelNotice-1-XFjC {
+  background-color: var(--background-secondary-alt);
+  border-radius: var(--neb-border-radius1);
+}
+
+.sidebar-2K8pFh .container-3w7J-x .channelNotice-1-XFjC .lookFilled-1Gx00P.colorBrand-3pXr91 {
+  background-color: var(--button-background-dark);
+  border-radius: var(--neb-border-radius1);
+}
+
+.sidebar-2K8pFh .container-3w7J-x .channelNotice-1-XFjC .lookFilled-1Gx00P.colorBrand-3pXr91:hover {
+  background-color: var(--button-hover-dark);
+}
+
 .sidebar-2K8pFh .container-3w7J-x .scroller-RmtA4e {
   background-color: var(--background-primary);
   border-radius: var(--neb-border-radius1);
