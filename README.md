@@ -41,10 +41,6 @@ git clone https://github.com/pavui/nebula
 
 ### Also, Nebula is only supported for Windows at this moment. Once im able to find people who will help develop Nebula for platforms such as Linux and OSX, I will do my best to push the update ASAP, Thank you. 
 
-## Incompatible Plugins
-### This is a list of plugins that have so far been know to be compatible with Nebula, meaning it will break the themes regula function.
-- OldTitleBar
-
 
 ## Credits
 ### Id like to give credits to these people who helped the development of Nebula 3

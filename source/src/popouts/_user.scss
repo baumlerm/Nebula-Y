@@ -53,3 +53,20 @@
         display: none;
     }
 }
+.wrapper-3t9DeA .svg-2V3M55 {
+    [mask*="status-online"] {
+        fill: var(--neb-status-online);
+    }
+
+    [mask="url(#svg-mask-status-idle)"] {
+        fill: var(--neb-status-idle);
+    }
+
+    [mask*="status-dnd"] {
+        fill: var(--neb-status-dnd);
+    }
+
+    [mask*="status-streaming"] {
+        fill: var(--neb-status-streaming);
+    }
+}

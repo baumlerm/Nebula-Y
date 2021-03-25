@@ -82,7 +82,7 @@
         right:34px;
         &::after{
             content: '';
-            background-color: rgb(240, 71, 71);
+            background-color: var(--mention);
             border-radius: var(--neb-border-radius1);
             height:6px;
             position: absolute;
@@ -98,16 +98,19 @@
         &:before{
             content: '';
             position: absolute;
-            width:28px;
-            background-color: rgb(240, 71, 71);
+            width:30px;
+            background-color: var(--mention);
             height:6px;
             border-radius: var(--neb-border-radius1);
             right:-35px;
+            top:6px;
         }
     }
 }
 
-
+.numberBadge-2s8kKX{
+    color:var(--header-primary);
+}
 .unreadBottom-1_LF_w{
     .bar-30k2ka{
         background-color: var(--background-secondary-alt);

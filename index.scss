@@ -1,19 +1,19 @@
-//╔═════════════════════╦╗
-//║     File Imports    ╠╣	
-//╚═════════════════════╩╝
+//╔═══════════════════╦═══════════════════════════╦╗
+//║ Imports           ║  File Imports Go Below    ╠╣	
+//╚═══════════════════╩═══════════════════════════╩╝
 @import "./source/addons/import";
 @import "./source/src/import";
 
-//╔══════════════════════╦╗
-//║   Nebula Variables   ╠╣	
-//╚══════════════════════╩╝
+//╔═══════════════════╦═══════════════════════════╦╗
+//║ Nebula Variables  ║  Nebulas Custom Variables ╠╣	
+//╚═══════════════════╩═══════════════════════════╩╝
 :root{
 
-// Main Variables
+// Main Dark Variables
 
 --neb-primary:#25294a;
 --neb-secondary:#202442;
---neb-secondary-alt:rgb(45, 50, 90);
+--neb-secondary-alt:#2d325a;
 --neb-tertiary:#1b1f38;
 --neb-white:#e2e4f0;
 
@@ -29,6 +29,7 @@
 --button-hover-light:var(--background-secondary);
 --button-background-dark:var(--neb-tertiary);
 --button-hover-dark:var(--neb-primary);
+--mention:rgb(240, 71, 71);
 
 
 // Misc Variables
@@ -72,15 +73,15 @@
 --selected-badge: rgba(112, 134, 215, 0);
 --selected-bg: var(--background-tertiary);
 --selected-bg-hover: var(--background-secondary-alt);
---hovered-bg: var(--selected-bg-hover);
+--hovered-bg: var(--neb-secondary-alt);
 --bg-rounding: 0 50px 50px 0;
 --border-info: 2px solid;
 
 
 }
-//╔═════════════════════╦╗
-//║  Discord Variables  ╠╣	
-//╚═════════════════════╩╝
+//╔═══════════════════╦═══════════════════════════╦╗
+//║ Discord Variables ║ Discords Own Variables    ╠╣	
+//╚═══════════════════╩═══════════════════════════╩╝
 .theme-dark{
 --background-primary:var(--neb-primary);
 --background-secondary:var(--neb-secondary);
@@ -92,9 +93,5 @@
 --background-modifier-hover:var(--neb-secondary-alt);
 --background-mentioned:#1b1f38;
 --background-mentioned-hover:var(--background-secondary);
---indicator:var(--background-secondary-alt);
-}
-
-.theme-light{
---indicator:rgba(141, 141, 141, 0.247);
+--indicator:var(--neb-secondary-alt);
 }
