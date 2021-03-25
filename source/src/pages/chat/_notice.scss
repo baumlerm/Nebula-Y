@@ -18,8 +18,8 @@
 }
 .colorStreamerMode-2SJAUN{
     position: fixed;
-    left:-171px;
-    bottom:50px;
+    left:148px;
+    top:68px;
     height: 0px;
     width:fit-content;
     color:transparent;
@@ -28,7 +28,7 @@
     }
     .button-2DhvE9{
         background-color: var(--neb-status-streaming);
-        border-radius: var(--neb-border-radius1);
+        border-radius: var(--neb-border-radius1) 0 var(--neb-border-radius1) 0;
         border: none;
         width:calc(var(--neb-sidebar-width) - 21px);
         &::after{
