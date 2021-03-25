@@ -24,11 +24,14 @@
         }
     }
     .activity-11LB_k{
-        background-color: var(--background-secondary);
+        background-color: var(--background-secondary-alt);
         border-radius: var(--neb-border-radius1);
         box-shadow: var(--elevation-high);
-        margin-top: 300px;
-        margin-bottom: var(--margin);
+        position: absolute;
+        width:197px;
+        height:120px;
+        left:-240px;
+        top:10px;
     }
     .footer-1fjuF6{
         border-radius: var(--neb-border-radius1);
