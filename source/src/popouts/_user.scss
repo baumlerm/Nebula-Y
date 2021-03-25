@@ -31,7 +31,8 @@
         box-shadow: var(--elevation-high);
         position: absolute;
         width:197px;
-        height:120px;
+        min-height: 125px;
+        height:fit-content;
         left:-240px;
         top:10px;
     }
@@ -82,7 +83,8 @@
         box-shadow: var(--elevation-high);
         position: absolute;
         width:197px;
-        height:120px;
+        min-height: 125px;
+        height:max-content;
         left:260px;
         top:10px;
     }
