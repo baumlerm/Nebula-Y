@@ -61,11 +61,15 @@
         .note-3HfJZ5{
             display: none;
         }
-        &:before{
-            content: 'ROLES';
-            color:rgb(185, 185, 185);
-            font-weight:900;
-            font-size: 12px;
+        .rolesList-22qj2L{
+            &::before{
+                content: 'ROLES';
+                position: absolute;
+                font-weight: 900;
+                font-size: 13px;
+                color:#cacaca;
+                top:-23px;
+            }
         }
     }
     .activity-11LB_k{
@@ -76,7 +80,7 @@
         width:197px;
         height:fit-content;
         left:-240px;
-        top:10px;
+        top:0;
     }
     .footer-1fjuF6{
         border-radius: var(--neb-border-radius1);
