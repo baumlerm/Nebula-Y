@@ -22,16 +22,17 @@
             }
             .headerText-2sdzFM{
                 position: relative;
-                left:40px;
+                left:45px;
                 top:14px;
-                width:60%;
-                text-align: left;
+                width:64%;
+                height:max-content;
+                text-align: center;
                 .headerNameWrapper-3res2c{
                     position: relative;
                     top: 0;
                     left:0px;
                     width: 100%;
-                    text-align: left;
+                    text-align: center;
                     z-index: 1;
                     .headerName-fajvi9{
                         text-transform: capitalize;
@@ -42,7 +43,7 @@
                 .directionRow-3v3tfG{
                     width: 100%;
                     .headerTag-2pZJzA{
-                        justify-content: right;
+                        justify-content: center;
                         width: 100%;
                     }
                 }
