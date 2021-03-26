@@ -37,7 +37,6 @@ git clone https://github.com/pavui/nebula
 ## Disclaimer
 ### Applying other plugins and themes may break themed elements in Nebula 3.
 
-### As of now, Nebula 3 Is only available in English, internation support will probably come soon.
 
 ### Also, Nebula is only supported for Windows at this moment. Once im able to find people who will help develop Nebula for platforms such as Linux and OSX, I will do my best to push the update ASAP, Thank you. 
 

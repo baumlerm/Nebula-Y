@@ -1,51 +1,68 @@
 .withFrame-haYltI{
-    background: var(--background-tertiary);
-    margin: 0;
-    height:24px;
-    .wordmarkWindows-1v0lYD svg{
-        width:0;
-    }
-    .winButton-iRh8-Z > svg {
-        display: none;
-     }
-     .winButton-iRh8-Z:hover {
-        background-color: var(--background-tertiary);
-     }
-     .winButton-iRh8-Z {
-        pointer-events: none;
-        margin-left: -3px;
-        top:0;
-     }
+   background: var(--background-tertiary);
+   margin: 0;
+   height:24px;
+   .winButton-iRh8-Z > svg {
+      display: none;
+   }
+   .winButton-iRh8-Z:hover {
+      background-color: var(--background-tertiary);
+   }
+   .winButton-iRh8-Z {
+      pointer-events: none;
+      margin-left: -3px;
+      top:0;
+   }
      
-     .winButton-iRh8-Z::after {
-        content: "";
-        padding: 7px;
-        border-radius: 50px;
-        pointer-events: fill;
-        transition-duration: 200ms;
-     }
-     .winButtonClose-1HsbF- {
-        margin-right: 3px;
-     }
-     .winButtonClose-1HsbF-::after {
-        background-color: var(--manager-buttons);
-     }
-     .winButtonClose-1HsbF-:hover::after {
-        background-color: rgb(204, 33, 30);
-        transform:scale(1.2);
-     }
-     .winButtonMinMax-PBQ2gm:nth-child(3)::after {
-        background-color: var(--manager-buttons);
-     }
-     .winButtonMinMax-PBQ2gm:nth-child(3):hover::after {
-        background-color: rgb(233, 158, 18);
-        transform:scale(1.2);
-     }
-     .winButtonMinMax-PBQ2gm:nth-child(4):after {
-        background-color: var(--manager-buttons);
-     }
-     .winButtonMinMax-PBQ2gm:nth-child(4):hover::after {
-        background-color: rgb(45, 197, 103);
-        transform:scale(1.2);
-     }
+   .winButton-iRh8-Z::after {
+      content: "";
+      padding: 7px;
+      border-radius: 50px;
+      pointer-events: fill;
+      transition-duration: 100ms;
+   }
+   .winButtonClose-1HsbF- {
+      margin-right: 3px;
+   }
+   .winButtonClose-1HsbF-::after {
+      background-color: var(--manager-buttons);
+   }
+   .winButtonClose-1HsbF-:hover::after {
+      background-color: rgb(204, 33, 30);
+      transform:scale(1.2);
+   }
+   .winButtonMinMax-PBQ2gm:nth-child(3)::after {
+      background-color: var(--manager-buttons);
+   }
+   .winButtonMinMax-PBQ2gm:nth-child(3):hover::after {
+      background-color: rgb(233, 158, 18);
+      transform:scale(1.2);
+   }
+   .winButtonMinMax-PBQ2gm:nth-child(4):after {
+      background-color: var(--manager-buttons);
+   }
+   .winButtonMinMax-PBQ2gm:nth-child(4):hover::after {
+      background-color: rgb(45, 197, 103);
+      transform:scale(1.2);
+   }
+}
+.wordmark-2iDDfm {
+   z-index: -1;
+   svg {
+      width: 0;
+   }
+   &::after {
+      content: "v3.5.6 Beta Release";
+      position: absolute;
+      background: linear-gradient(170deg, #ffffff, #002fff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      background-size: 200% 200%;
+      font-size: 17px;
+      font-weight: 600;
+      top: 3px;
+      left: 10px;
+      width: max-content;
+   }
 }

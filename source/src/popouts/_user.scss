@@ -22,25 +22,24 @@
             }
             .headerText-2sdzFM{
                 position: relative;
-                left:8px;
+                left:40px;
                 top:14px;
-                width:100%;
+                width:60%;
+                text-align: left;
                 .headerNameWrapper-3res2c{
-                    text-transform: capitalize;
                     position: relative;
                     top: 0;
-                    left:73px;
+                    left:0px;
                     width: 100%;
                     text-align: left;
                     z-index: 1;
                     .headerName-fajvi9{
+                        text-transform: capitalize;
                         font-size: 22px;
                         font-weight: 500;
                     }
                 }
                 .directionRow-3v3tfG{
-                    position: relative;
-                    left:74px;
                     width: 100%;
                     .headerTag-2pZJzA{
                         justify-content: right;
@@ -60,6 +59,12 @@
         .size12-3R0845:nth-child(3),
         .note-3HfJZ5{
             display: none;
+        }
+        &:before{
+            content: 'ROLES';
+            color:rgb(185, 185, 185);
+            font-weight:900;
+            font-size: 12px;
         }
     }
     .activity-11LB_k{
@@ -91,7 +96,8 @@
             padding-top: 15px;
         }
     }
-    &::-webkit-scrollbar{
+    &::-webkit-scrollbar,
+    .bodyTitle-Y0qMQz{
         display: none;
     }
 }

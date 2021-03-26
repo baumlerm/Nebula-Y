@@ -21,8 +21,7 @@
         margin-right: 250px;
         padding: 8px;
         background-color: var(--background-primary);
-        [aria-label="Start Video Call"],
-        [aria-label="Add Friends to DM"]{
+        [href="https://support.discord.com"]{
             display: none;
         }
         [aria-label="Update Ready!"]{
