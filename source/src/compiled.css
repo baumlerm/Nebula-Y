@@ -11,6 +11,29 @@
   --settings-guild-delete: #f04747;
 }
 
+:root {
+  --avatar-radius: 20% /* if you want your avatar more or less round it's here */ ;
+}
+
+/* Hide the activity icon in both user popouts */
+.avatarWrapperNormal-3wFMbf > .wrapper-3t9DeA > .mask-1l8v16 > .pointerEvents-2zdfdO, .header-QKLPzZ > .wrapper-3t9DeA > .mask-1l8v16 > .pointerEvents-2zdfdO {
+  display: none;
+}
+
+/* Hide the activity icon background in both user popouts */
+.avatarWrapperNormal-3wFMbf > .wrapper-3t9DeA > .mask-1l8v16 foreignObject, .header-QKLPzZ > .wrapper-3t9DeA > .mask-1l8v16 foreignObject {
+  -webkit-mask: none !important;
+          mask: none !important;
+  border-radius: var(--avatar-radius);
+}
+
+/* Fix the "View Profile" thing when u over your avatar */
+.avatarHint-1qgaV3 foreignObject {
+  -webkit-mask: none !important;
+          mask: none !important;
+  border-radius: var(--avatar-radius);
+}
+
 .newMessagesBar-265mhP {
   background-color: var(--background-tertiary);
   border-radius: var(--neb-border-radius1);
@@ -389,17 +412,33 @@
 
 .container-1D34oG .tabBody-3YRQ8W .nowPlayingColumn-2sl4cE .wrapper-3D2qGf {
   border-radius: var(--neb-border-radius1);
+  transition: 250ms ease all;
   margin-right: var(--margin);
-  max-width: 300px;
+  max-width: none;
 }
 
 .container-1D34oG .tabBody-3YRQ8W .nowPlayingColumn-2sl4cE .wrapper-3D2qGf:hover {
-  background-color: var(--background-secondary-alt);
+  background-color: var(--background-secondary);
 }
 
 .container-1D34oG .tabBody-3YRQ8W .nowPlayingColumn-2sl4cE .wrapper-3D2qGf .body-1ld4H7 {
-  background-color: var(--background-secondary);
+  background-color: transparent;
   border-radius: var(--neb-border-radius1);
+}
+
+.container-1D34oG .tabBody-3YRQ8W .nowPlayingColumn-2sl4cE .separator-XqIyoz {
+  display: none;
+}
+
+.container-1D34oG .tabBody-3YRQ8W .nowPlayingColumn-2sl4cE .section-2gLsgF {
+  background-color: var(--background-secondary-alt);
+  border-radius: var(--neb-border-radius1);
+  margin-bottom: 5px;
+  transition: 100ms ease;
+}
+
+.container-1D34oG .tabBody-3YRQ8W .nowPlayingColumn-2sl4cE .section-2gLsgF:hover {
+  background-color: var(--background-primary);
 }
 
 .container-1D34oG .tabBody-3YRQ8W .nowPlayingColumn-2sl4cE ::-webkit-scrollbar {
@@ -573,7 +612,6 @@
 .sidebar-2K8pFh .container-3w7J-x .scroller-RmtA4e .name-23GUGE,
 .sidebar-2K8pFh .container-3w7J-x .scroller-RmtA4e .iconContainer-1BBaeJ svg,
 .sidebar-2K8pFh .container-3w7J-x .scroller-RmtA4e .icon-2yIBmh {
-  text-transform: capitalize;
   color: var(--header-primary);
 }
 
@@ -637,6 +675,7 @@
 #app-mount .content-1x5b-n,
 #app-mount .channel-2QD9_O .layout-2DM8Md {
   background: none;
+  border-radius: var(--neb-border-radius1);
 }
 
 #app-mount .modeSelected-346R90,
@@ -703,6 +742,7 @@
 .wrapper-2jXpOf {
   transition: var(--long-transition);
   max-width: calc(var(--neb-sidebar-width) - 20px);
+  border-radius: var(--neb-border-radius1);
 }
 
 [aria-label="Create Invite"],
@@ -713,6 +753,7 @@
 .mentionsBadge-3tC7Mi .numberBadge-2s8kKX {
   justify-content: right;
   flex-direction: row-reverse;
+  border-radius: var(--neb-border-radius1);
   position: relative;
   left: -36px;
 }
@@ -947,7 +988,7 @@
 }
 
 .withFrame-haYltI .winButtonClose-1HsbF-::after {
-  background-color: var(--neb-secondary-alt);
+  background-color: var(--manager-buttons);
 }
 
 .withFrame-haYltI .winButtonClose-1HsbF-:hover::after {
@@ -956,7 +997,7 @@
 }
 
 .withFrame-haYltI .winButtonMinMax-PBQ2gm:nth-child(3)::after {
-  background-color: var(--neb-secondary-alt);
+  background-color: var(--manager-buttons);
 }
 
 .withFrame-haYltI .winButtonMinMax-PBQ2gm:nth-child(3):hover::after {
@@ -965,7 +1006,7 @@
 }
 
 .withFrame-haYltI .winButtonMinMax-PBQ2gm:nth-child(4):after {
-  background-color: var(--neb-secondary-alt);
+  background-color: var(--manager-buttons);
 }
 
 .withFrame-haYltI .winButtonMinMax-PBQ2gm:nth-child(4):hover::after {
@@ -1445,17 +1486,63 @@
   background-color: var(--background-secondary-alt);
   box-shadow: var(--elevation-high);
   overflow: scroll;
+  width: 270px;
 }
 
 .userPopout-3XzG_A .header-2BwW8b {
   background-color: var(--background-secondary);
   border-radius: var(--neb-border-radius1);
-  min-height: 145px;
-  height: 145px;
-  max-height: 145px;
+  min-height: none;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 90px;
   padding-bottom: 10px;
   margin: var(--margin);
   box-shadow: var(--elevation-high);
+}
+
+.userPopout-3XzG_A .header-2BwW8b .directionColumn-35P_nr {
+  text-align: right;
+}
+
+.userPopout-3XzG_A .header-2BwW8b .directionColumn-35P_nr .avatarWrapper-3H_478 {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.userPopout-3XzG_A .header-2BwW8b .directionColumn-35P_nr .headerText-2sdzFM {
+  position: relative;
+  left: 8px;
+  top: 14px;
+  width: 100%;
+}
+
+.userPopout-3XzG_A .header-2BwW8b .directionColumn-35P_nr .headerText-2sdzFM .headerNameWrapper-3res2c {
+  text-transform: capitalize;
+  position: relative;
+  top: 0;
+  left: 73px;
+  width: 100%;
+  text-align: left;
+  z-index: 1;
+}
+
+.userPopout-3XzG_A .header-2BwW8b .directionColumn-35P_nr .headerText-2sdzFM .headerNameWrapper-3res2c .headerName-fajvi9 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.userPopout-3XzG_A .header-2BwW8b .directionColumn-35P_nr .headerText-2sdzFM .directionRow-3v3tfG {
+  position: relative;
+  left: 74px;
+  width: 100%;
+}
+
+.userPopout-3XzG_A .header-2BwW8b .directionColumn-35P_nr .headerText-2sdzFM .directionRow-3v3tfG .headerTag-2pZJzA {
+  justify-content: right;
+  width: 100%;
 }
 
 .userPopout-3XzG_A .header-2BwW8b::-webkit-scrollbar,
@@ -1479,7 +1566,6 @@
   box-shadow: var(--elevation-high);
   position: absolute;
   width: 197px;
-  min-height: 125px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -1537,11 +1623,9 @@
   box-shadow: var(--elevation-high);
   position: absolute;
   width: 197px;
-  min-height: 125px;
-  height: -webkit-max-content;
-  height: max-content;
-  left: 260px;
+  left: 280px;
   top: 10px;
+  z-index: 1;
 }
 
 .closeButton-1tv5uR {
@@ -1856,6 +1940,10 @@ div[aria-label=USER_SETTINGS] .info-1VyQPT:last-child > div:last-child::after {
   --neb-secondary-alt:#2d325a;
   --neb-tertiary:#1b1f38;
   --neb-white:#e2e4f0;
+  --neb-primary-light:#efeffa;
+  --neb-secondary-light:#ddddf1;
+  --neb-secondary-alt-light:#e4e9f7;
+  --neb-tertiary-light:#d8ddec;
   --neb-hover-background:var(--neb-secondary-alt);
   --neb-modal-background:var(--neb-primary);
   --neb-modal-background-secondary:var(--neb-secondary);
@@ -1887,7 +1975,6 @@ div[aria-label=USER_SETTINGS] .info-1VyQPT:last-child > div:last-child::after {
   --neb-thumb:var(--neb-tertiary);
   --border-inactive: solid 2px var(--background-tertiary);
   --border-active: solid 2px var(--neb-white);
-  --border-tertiary: solid 10px var(--background-tertiary);
   --unread-badge: transparent;
   --unread-bg: transparent;
   --selected-badge: rgba(112, 134, 215, 0);
@@ -1910,4 +1997,19 @@ div[aria-label=USER_SETTINGS] .info-1VyQPT:last-child > div:last-child::after {
   --background-mentioned:#1b1f38;
   --background-mentioned-hover:var(--background-secondary);
   --indicator:var(--neb-secondary-alt);
+  --text-normal:var(--neb-white);
+  --manager-buttons:var(--neb-secondary-alt);
+}
+
+.theme-light {
+  --background-primary: var(--neb-primary-light);
+  --background-secondary:var(--neb-secondary-light);
+  --background-secondary-alt:var(--neb-secondary-alt-light);
+  --background-tertiary:var(--neb-tertiary-light);
+  --interactive-normal:#0c0c0c71;
+  --background-mentioned:var(--neb-tertiary-light);
+  --indicator:var(--neb-secondary-light);
+  --manager-buttons:#0a0a0a34;
+  --hovered-bg:var(--neb-secondary-light);
+  --selected-bg-hover:var(--hovered-bg);
 }
