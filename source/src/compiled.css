@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://nyri4.github.io/Discolored/main.css");
 @import url("https://raw.githack.com/Snapperito/Settings-Icons/main/source.css");
 :root {
@@ -305,8 +304,7 @@
   background-color: var(--background-primary);
 }
 
-.container-1r6BKw .toolbar-1t6TWx [aria-label="Start Video Call"],
-.container-1r6BKw .toolbar-1t6TWx [aria-label="Add Friends to DM"] {
+.container-1r6BKw .toolbar-1t6TWx [href="https://support.discord.com"] {
   display: none;
 }
 
@@ -675,13 +673,13 @@
 #app-mount .content-1x5b-n,
 #app-mount .channel-2QD9_O .layout-2DM8Md {
   background: none;
-  border-radius: var(--neb-border-radius1);
+  border-radius: calc(var(--neb-border-radius1) - 7px);
 }
 
 #app-mount .modeSelected-346R90,
 #app-mount .channel-2QD9_O.selected-aXhQR6 {
   background: var(--selected-bg);
-  border-radius: var(--neb-border-radius2);
+  border-radius: calc(var(--neb-border-radius1) - 8px);
   max-width: calc(var(--neb-sidebar-width) - 20px);
 }
 
@@ -696,7 +694,7 @@
 }
 
 #app-mount .unread-2lAfLh {
-  border-radius: var(--neb-border-radius1);
+  border-radius: calc(var(--neb-border-radius1) - 8px);
   background-color: var(--indicator);
   position: absolute;
   height: 6px;
@@ -719,7 +717,7 @@
 #app-mount .wrapper-2jXpOf:not(.modeSelected-346R90):hover,
 #app-mount .channel-2QD9_O.container-2Pjhx-:not(.selected-aXhQR6):hover {
   background: var(--hovered-bg);
-  border-radius: var(--neb-border-radius2);
+  border-radius: calc(var(--neb-border-radius1) - 8px);
 }
 
 #app-mount .channel-2QD9_O.container-2Pjhx- {
@@ -742,7 +740,7 @@
 .wrapper-2jXpOf {
   transition: var(--long-transition);
   max-width: calc(var(--neb-sidebar-width) - 20px);
-  border-radius: var(--neb-border-radius1);
+  border-radius: calc(var(--neb-border-radius1) - 8px);
 }
 
 [aria-label="Create Invite"],
@@ -957,10 +955,6 @@
   height: 24px;
 }
 
-.withFrame-haYltI .wordmarkWindows-1v0lYD svg {
-  width: 0;
-}
-
 .withFrame-haYltI .winButton-iRh8-Z > svg {
   display: none;
 }
@@ -980,7 +974,7 @@
   padding: 7px;
   border-radius: 50px;
   pointer-events: fill;
-  transition-duration: 200ms;
+  transition-duration: 100ms;
 }
 
 .withFrame-haYltI .winButtonClose-1HsbF- {
@@ -1012,6 +1006,30 @@
 .withFrame-haYltI .winButtonMinMax-PBQ2gm:nth-child(4):hover::after {
   background-color: #2dc567;
   transform: scale(1.2);
+}
+
+.wordmark-2iDDfm {
+  z-index: -1;
+}
+
+.wordmark-2iDDfm svg {
+  width: 0;
+}
+
+.wordmark-2iDDfm::after {
+  content: "v3.5.6 Beta Release";
+  position: absolute;
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-size: 200% 200%;
+  font-size: 17px;
+  font-weight: 600;
+  top: 3px;
+  left: 10px;
+  width: -webkit-max-content;
+  width: max-content;
 }
 
 .theme-light .root-1gCeng {
@@ -1514,29 +1532,28 @@
 
 .userPopout-3XzG_A .header-2BwW8b .directionColumn-35P_nr .headerText-2sdzFM {
   position: relative;
-  left: 8px;
+  left: 40px;
   top: 14px;
-  width: 100%;
+  width: 60%;
+  text-align: left;
 }
 
 .userPopout-3XzG_A .header-2BwW8b .directionColumn-35P_nr .headerText-2sdzFM .headerNameWrapper-3res2c {
-  text-transform: capitalize;
   position: relative;
   top: 0;
-  left: 73px;
+  left: 0px;
   width: 100%;
   text-align: left;
   z-index: 1;
 }
 
 .userPopout-3XzG_A .header-2BwW8b .directionColumn-35P_nr .headerText-2sdzFM .headerNameWrapper-3res2c .headerName-fajvi9 {
+  text-transform: capitalize;
   font-size: 22px;
   font-weight: 500;
 }
 
 .userPopout-3XzG_A .header-2BwW8b .directionColumn-35P_nr .headerText-2sdzFM .directionRow-3v3tfG {
-  position: relative;
-  left: 74px;
   width: 100%;
 }
 
@@ -1558,6 +1575,13 @@
 .userPopout-3XzG_A .body-3iLsc4 .size12-3R0845:nth-child(3),
 .userPopout-3XzG_A .body-3iLsc4 .note-3HfJZ5 {
   display: none;
+}
+
+.userPopout-3XzG_A .body-3iLsc4:before {
+  content: "ROLES";
+  color: #b9b9b9;
+  font-weight: 900;
+  font-size: 12px;
 }
 
 .userPopout-3XzG_A .activity-11LB_k {
@@ -1597,7 +1621,8 @@
   padding-top: 15px;
 }
 
-.userPopout-3XzG_A::-webkit-scrollbar {
+.userPopout-3XzG_A::-webkit-scrollbar,
+.userPopout-3XzG_A .bodyTitle-Y0qMQz {
   display: none;
 }
 
@@ -1628,308 +1653,6 @@
   z-index: 1;
 }
 
-.closeButton-1tv5uR {
-  transition: var(--long-transition);
-  position: fixed;
-  right: 0px;
-  top: 0;
-  border-radius: 6px;
-  border-color: transparent !important;
-  height: 100%;
-  width: 100%;
-}
-
-.closeButton-1tv5uR:hover {
-  background-color: rgba(255, 255, 255, 0.021) !important;
-}
-
-.keybind-KpFkfr {
-  display: none;
-}
-
-.toolsContainer-1edPuj {
-  z-index: -1002;
-}
-
-.contentRegion-3nDuYy .lookFilled-1Gx00P.colorBrand-3pXr91,
-.contentRegion-3nDuYy .lookFilled-1Gx00P.colorGrey-2DXtkV {
-  background-color: var(--button-background-dark);
-  border-radius: var(--neb-border-radius1);
-}
-
-.contentRegion-3nDuYy .lookFilled-1Gx00P.colorBrand-3pXr91:hover,
-.contentRegion-3nDuYy .lookFilled-1Gx00P.colorGrey-2DXtkV:hover {
-  background-color: var(--button-hover-light);
-}
-
-.contentRegion-3nDuYy .lookFilled-1Gx00P.colorRed-1TFJan,
-.contentRegion-3nDuYy .lookOutlined-3sRXeN.colorRed-1TFJan,
-.contentRegion-3nDuYy .lookFilled-1Gx00P.colorGreen-29iAKY {
-  border-radius: var(--neb-border-radius1);
-}
-
-.contentRegion-3nDuYy .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
-  background-color: var(--background-secondary-alt);
-  border-radius: var(--neb-border-radius1);
-}
-
-.contentRegion-3nDuYy .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {
-  background-color: var(--background-tertiary);
-}
-
-.radioBar-bMNUI-,
-.item-26Dhrx {
-  border-radius: var(--neb-border-radius2);
-}
-
-.radioBar-bMNUI- .radioIconForeground-XwlXQN,
-.item-26Dhrx .radioIconForeground-XwlXQN {
-  color: var(--header-primary);
-}
-
-.customScroller-26gWhv {
-  background-color: var(--background-primary);
-  border-radius: var(--neb-border-radius1);
-}
-
-.barFill-23-gu- {
-  background: var(--background-secondary-alt);
-}
-
-.bar-2Qqk5Z {
-  background: var(--background-tertiary) !important;
-}
-
-.defaultValue-3gC7yw .markValue-2DwdXI {
-  color: var(--header-primary);
-}
-
-svg.slider-TkfMQL svg {
-  display: none;
-}
-
-.container-3auIfb:not([style*="125"]) {
-  background-color: var(--background-secondary-alt) !important;
-}
-
-.layers-3iHuyZ > .layer-3QrUeG:first-child {
-  opacity: 1 !important;
-  z-index: 0;
-}
-
-.layers-3iHuyZ > .layer-3QrUeG:nth-child(2), .perksModal-fSYqOq {
-  background-color: rgba(0, 0, 0, 0.85) !important;
-  -webkit-backdrop-filter: var(--modal-backdrop-blur);
-          backdrop-filter: var(--modal-backdrop-blur);
-}
-
-.standardSidebarView-3F1I7i {
-  background-color: transparent;
-  position: absolute;
-  top: unset !important;
-  left: 253px;
-  bottom: 80px;
-  height: 80vh;
-  width: 71%;
-}
-
-.contentRegion-3nDuYy {
-  background-color: transparent;
-  z-index: 10;
-}
-
-.contentRegion-3nDuYy .contentRegionScroller-26nc1e {
-  border-radius: var(--neb-border-radius1);
-}
-
-.card-3Qj_Yx {
-  background-color: var(--background-tertiary);
-  border-radius: var(--neb-border-radius1);
-}
-
-.lookFilled-1Gx00P.colorYellow-2JqYwt,
-.lookFilled-1Gx00P.colorRed-1TFJan,
-.lookOutlined-3sRXeN.colorPrimary-3b3xI6 {
-  border-radius: var(--neb-border-radius1);
-}
-
-.sidebarRegion-VFTUkN {
-  margin-right: var(--margin);
-  z-index: 1003;
-}
-
-.sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP {
-  border-radius: var(--neb-border-radius1);
-  background-color: var(--background-primary);
-}
-
-.sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ {
-  background-color: var(--background-secondary-alt);
-}
-
-.sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .side-8zPYf6 .item-PXvHYJ {
-  border-radius: var(--neb-border-radius1);
-}
-
-.sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .header-2RyJ0Y {
-  color: var(--neb-white);
-}
-
-.sidebarRegion-VFTUkN .sidebar-CFHs9e {
-  padding-left: 0;
-  padding-right: 22px;
-  padding-top: 20px;
-}
-
-.sidebarRegion-VFTUkN ::-webkit-scrollbar {
-  display: none;
-}
-
-div[aria-label=USER_SETTINGS] .info-1VyQPT:last-child > div:last-child::after {
-  content: var(--neb-version);
-  display: block;
-}
-
-[href="https://support.discord.com"],
-[aria-label="Gør kanal stum themes"],
-[aria-label="Opret invitation"],
-[aria-label="Send a gift"],
-[aria-label="Open GIF picker"],
-[aria-label="Open sticker picker"],
-[aria-label="Åbn sticker-vælgeren"],
-[aria-label="Abrir selector de GIFs"],
-[aria-label="Stickerauswahl öffnen"],
-[aria-label="Enviar un regalo"],
-[aria-label="Send en gave"],
-[aria-label="Åbn GIF-vælger"],
-[aria-label="Ein Geschenk senden"],
-[aria-label="GIF-Auswahl öffnen"],
-[aria-label="Einladung erstellen"],
-[aria-label="Ouvrir l'onglet des GIF"],
-[aria-label="Kanal themes stummschalten"],
-[aria-label="Abrir selector de pegatinas"],
-[aria-label="Ouvrir le sélecteur d'autocollant"],
-[aria-label="Pošalji poklon"],
-[aria-label="Otvori GIF picker"],
-[aria-label="Envoyer un cadeau"],
-[aria-label="Start videoopkald"],
-[aria-label="Tilføj venner til DM"],
-[aria-label="Videoanruf starten"],
-[aria-label="Freunde zu Direktnachricht hinzufügen"],
-[aria-label="Åpne GIF-velger"],
-[aria-label="Apri selettore di GIF"],
-[aria-label="Siųsti dovaną"],
-[aria-label="Matricaválogató megnyitása"],
-[aria-label="Atidaryti lipdukų paieškos priemonę"],
-[aria-label="Åpne klistremerkevelger"],
-[aria-label="Stickerkiezer openen"],
-[aria-label="GIF-kiezer openen"],
-[aria-label="Verstuur een cadeau"],
-[aria-label="Ajándék küldése"],
-[aria-label="GIF válogató megnyitása"],
-[aria-label="Atidaryti GIF paieškos priemonę"],
-[aria-label="Invia un regalo"],
-[aria-label="Apri selettore di adesivi"],
-[aria-label="Otvori picker za naljepnice"],
-[aria-label="Iniciar videollamada"],
-[aria-label="Añadir amigos a MD"],
-[aria-label="Démarrer un appel vidéo"],
-[aria-label="Ajouter des amis au groupe privé"],
-[aria-label="Avvia la videochiamata"],
-[aria-label="Aggiungi amici al messaggio diretto"],
-[aria-label="Pradėti vaizdo skambutį"],
-[aria-label="Pridėti Draugus į AŽ"],
-[aria-label="Videohívás indítása"],
-[aria-label="Barátok hozzáadása a csoporthoz"],
-[aria-label="Videogesprek starten"],
-[aria-label="Voeg vrienden toe op DM"],
-[aria-label="Start en videosamtale"],
-[aria-label="Legg til venner til DM"],
-[aria-label="Rozpocznij rozmowę wideo"],
-[aria-label="Dodaj znajomych do rozmowy prywatnej"],
-[aria-label="Iniciar chamada de vídeo"],
-[aria-label="Adicionar amigos à MD"],
-[aria-label="Începe un apel video"],
-[aria-label="Adaugă prieteni în conversația prin mesaje directe"],
-[aria-label="Thêm bạn bè vào DM"],
-[aria-label="Görüntülü Arama Başlat"],
-[aria-label="DM'ye Arkadaş Ekle"],
-[aria-label="Zahájit videohovor"],
-[aria-label="Lisää kavereita keskusteluun"],
-[aria-label="Přidejte přátele do PZ"],
-[aria-label="Έναρξη βιντεοκλήσης"],
-[aria-label="Προσθέστε φίλους στα άμεσα μηνύματα"],
-[aria-label="Започни видео обаждане"],
-[aria-label="Добавяне на приятели в DM"],
-[aria-label="Lägg till vänner för DM"],
-[aria-label="Начать видеозвонок"],
-[aria-label="Bắt Đầu Cuộc Gọi Video"],
-[aria-label="Påbörja videosamtal"],
-[aria-label="Aloita videopuhelu"],
-[aria-label="Добавить друзей в беседу"],
-[aria-label="Розпочати відеовиклик"],
-[aria-label="Додати друзів до ПП"],
-[aria-label=เริ่มวิดีโอคอล],
-[aria-label=เพิ่มเพื่อนไปยังข้อความโดยตรง],
-[aria-label="Trimite un cadou"],
-[aria-label=开始视频通话],
-[aria-label=添加朋友到私信],
-[aria-label=ビデオ通話を開始],
-[aria-label="Lähetä lahja"],
-[aria-label=DMにフレンドを追加],
-[aria-label=開始視訊通話],
-[aria-label=加入好友到私訊],
-[aria-label="영상 통화 시작하기"],
-[aria-label="개인 메시지에 친구 추가하기"],
-[aria-label="Deschide selectorul de GIF"],
-[aria-label="Deschide selectorul de stickere"],
-[aria-label="Avaa GIF-valitsin"],
-[aria-label="Wyślij prezent"],
-[aria-label="Otwórz wybieranie GIF-ów"],
-[aria-label="Abrir o selecionador de GIFs"],
-[aria-label="Abrir selecionador de figurinhas"],
-[aria-label="Otwórz wybór naklejek"],
-[aria-label="Enviar um presente"],
-[aria-label="Avaa tarravalitsin"],
-[aria-label="Skicka en gåva"],
-[aria-label="Öppna GIF-väljare"],
-[aria-label="Öppna dekalväljare"],
-[aria-label="Tặng một món quà"],
-[aria-label="Mở trình chọn ảnh GIF"],
-[aria-label="Mở trình chọn sticker"],
-[aria-label="Bir hediye gönder"],
-[aria-label="GIF seçiciyi aç"],
-[aria-label="Çıkartma seçiciyi aç"],
-[aria-label="Otevřít okno s GIFy"],
-[aria-label="Otevřít výběr samolepek"],
-[aria-label="Στείλτε ένα δώρο"],
-[aria-label="Odeslat dárek"],
-[aria-label="Άνοιγμα επιλογέα GIF"],
-[aria-label="Άνοιγμα επιλογέα αυτοκόλλητων"],
-[aria-label="Изпрати подарък"],
-[aria-label="Отвори избиране на GIF"],
-[aria-label="Отвори избиране на стикери"],
-[aria-label="Отправить подарок"],
-[aria-label="Открыть меню GIF"],
-[aria-label="Открыть меню выбора стикеров"],
-[aria-label="Надіслати подарунок"],
-[aria-label="Відкрити програму вибору GIF"],
-[aria-label="Відкрити програму вибору стікерів"],
-[aria-label=ส่งของขวัญ],
-[aria-label="เปิดตัวเลือก GIF"],
-[aria-label=เปิดตัวเลือกสติกเกอร์],
-[aria-label="打开 GIF 选取器"],
-[aria-label=打开贴纸选取器],
-[aria-label=ギフトを贈る],
-[aria-label=发送礼物],
-[aria-label=GIFピッカーを開く],
-[aria-label=スタンプピッカーを開く],
-[aria-label=發送禮物],
-[aria-label="開啟 GIF 選取器"],
-[aria-label=開啟貼圖選取器],
-[aria-label="선물 보내기"],
-[aria-label="GIF 선택기 열기"],
-[aria-label="스티커 선택기 열기"],
 .actionIcon-PgcMM2 {
   display: none !important;
 }
