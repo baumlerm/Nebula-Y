@@ -17,6 +17,13 @@
 --neb-tertiary:#1b1f38;
 --neb-white:#e2e4f0;
 
+// Main Light Variables
+
+--neb-primary-light:#efeffa;
+--neb-secondary-light:#ddddf1;
+--neb-secondary-alt-light:#e4e9f7;
+--neb-tertiary-light:#d8ddec;
+
 // Misc Color Variables
 
 --neb-hover-background:var(--neb-secondary-alt);
@@ -61,7 +68,6 @@
 --neb-thumb:var(--neb-tertiary);
 --border-inactive: solid 2px var(--background-tertiary);
 --border-active: solid 2px var(--neb-white);
---border-tertiary: solid 10px var(--background-tertiary);
 
 
 // Addon Variables
@@ -94,4 +100,19 @@
 --background-mentioned:#1b1f38;
 --background-mentioned-hover:var(--background-secondary);
 --indicator:var(--neb-secondary-alt);
+--text-normal:var(--neb-white);
+--manager-buttons:var(--neb-secondary-alt);
+}
+
+.theme-light{
+    --background-primary: var(--neb-primary-light);
+    --background-secondary:var(--neb-secondary-light);
+    --background-secondary-alt:var(--neb-secondary-alt-light);
+    --background-tertiary:var(--neb-tertiary-light);
+    --interactive-normal:#0c0c0c71;
+    --background-mentioned:var(--neb-tertiary-light);
+    --indicator:var(--neb-secondary-light);
+    --manager-buttons:#0a0a0a34;
+    --hovered-bg:var(--neb-secondary-light);
+    --selected-bg-hover:var(--hovered-bg);
 }

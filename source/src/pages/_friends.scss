@@ -21,14 +21,27 @@
             margin-top: var(--margin);
             .wrapper-3D2qGf{
                 border-radius: var(--neb-border-radius1);
+                transition: 250ms ease all;
                 margin-right: var(--margin);
-                max-width: 300px;
+                max-width: none;
                 &:hover{
-                    background-color: var(--background-secondary-alt);
+                    background-color: var(--background-secondary);
                 }
                 .body-1ld4H7{
-                    background-color: var(--background-secondary);
+                    background-color: transparent;
                     border-radius: var(--neb-border-radius1);
+                }
+            }
+            .separator-XqIyoz{
+                display: none;
+            }
+            .section-2gLsgF{
+                background-color: var(--background-secondary-alt);
+                border-radius: var(--neb-border-radius1);
+                margin-bottom: 5px;
+                transition: 100ms ease;
+                &:hover{
+                    background-color: var(--background-primary);
                 }
             }
             ::-webkit-scrollbar{
