@@ -879,12 +879,16 @@
 .tutorialContainer-2sGCg9 {
   border-radius: var(--neb-border-radius1);
   background: var(--background-primary);
-  padding-top: 6px;
+  padding-top: 7px;
   position: fixed;
   top: 25px;
 }
 .tutorialContainer-2sGCg9 .pill-3N7f9r {
   display: none;
+}
+
+.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9 {
+  background-color: var(--background-secondary-alt);
 }
 
 .scroller-1Bvpku {
@@ -1536,6 +1540,7 @@
   height: -moz-fit-content;
   height: fit-content;
   min-height: 90px;
+  max-height: 90px;
   padding-bottom: 10px;
   margin: var(--margin);
   box-shadow: var(--elevation-high);
@@ -1554,7 +1559,7 @@
 .userPopout-3XzG_A .header-2BwW8b .directionColumn-35P_nr .headerText-2sdzFM {
   position: relative;
   left: 45px;
-  top: 14px;
+  bottom: 10px;
   width: 64%;
   height: -webkit-max-content;
   height: max-content;
