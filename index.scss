@@ -46,7 +46,7 @@
 
 // Status
 --neb-status-online: rgb(53, 177, 125);
---neb-status-idle: rgb(219, 171, 9);
+--neb-status-idle: rgb(238, 185, 11);
 --neb-status-dnd: rgb(215, 58, 73);
 --neb-status-streaming: rgb(89, 54, 149);
 --neb-status-offline: rgb(117, 128, 142);
@@ -61,6 +61,7 @@
 --neb-sidebar-width: 320px; // Do not change
 --margin:10px; // Default 10px
 --neb-version: "Nebula 3 Beta Release"; // Dont Change
+--neb-version-titlebar:"v3.7.6 Beta Release";
 --medium-font-size:18px; // Default 18px
 --transition:100ms ease all;
 --long-transition:250ms ease all;

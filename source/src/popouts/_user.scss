@@ -24,9 +24,10 @@
             .headerText-2sdzFM{
                 position: relative;
                 left:45px;
-                bottom:-5px;
+                bottom:5px;
                 width:70%;
                 height:max-content;
+                align-items: center;
                 .headerNameWrapper-3res2c{
                     position: relative;
                     top: 0;
@@ -36,7 +37,7 @@
                     z-index: 1;
                     .headerName-fajvi9{
                         text-transform: capitalize;
-                        font-size: 22px;
+                        font-size: 19px;
                         font-weight: 500;
                     }
                 }
@@ -44,7 +45,7 @@
                     width: 100%;
                     .headerTag-2pZJzA{
                         text-transform: capitalize;
-                        justify-conte0nt: left;
+                        justify-content: left;
                         width: 100%;
                     }
                 }
@@ -107,23 +108,6 @@
         display: none;
     }
 }
-.wrapper-3t9DeA .svg-2V3M55 {
-    [mask*="status-online"] {
-        fill: var(--neb-status-online);
-    }
-
-    [mask="url(#svg-mask-status-idle)"] {
-        fill: var(--neb-status-idle);
-    }
-
-    [mask*="status-dnd"] {
-        fill: var(--neb-status-dnd);
-    }
-
-    [mask*="status-streaming"] {
-        fill: var(--neb-status-streaming);
-    }
-}
 .animatorRight-3i_YPs{
     .activity-11LB_k{
         background-color: var(--background-secondary-alt);
@@ -134,5 +118,59 @@
         left:280px;
         top:0;
         z-index: 1;
+    }
+}
+
+.userPopout-3XzG_A{
+    [mask="url(#svg-mask-status-dnd)"]{
+        fill: var(--neb-status-dnd);
+        pointer-events: none;
+        width:65%;
+        height:6px;
+        mask:none;
+        ry:5;
+        x:10;
+        y:70;
+    }
+    [mask="url(#svg-mask-status-idle)"]{
+        fill:var(--neb-status-idle);
+        pointer-events: none;
+        width:65%;
+        height:6px;
+        mask:none;
+        ry:5;
+        x:10;
+        y:70;
+    }
+    [mask="url(#svg-mask-status-online-mobile)"],
+    [mask="url(#svg-mask-status-online)"]{
+        fill: var(--neb-status-online);
+        pointer-events: none;
+        width:65%;
+        height:6px;
+        mask: none;
+        ry:5;
+        x:10;
+        y:70;
+    }
+    [mask*="status-streaming"]{
+        fill:var(--neb-status-streaming);
+        pointer-events: none;
+        width:65%;
+        height:6px;
+        mask:none;
+        ry:5;
+        x:10;
+        y:70;
+    }
+    [mask="url(#svg-mask-status-offline)"]{
+        fill:var(--neb-status-offline);
+        pointer-events: none;
+        width: 65%;
+        height:6px;
+        mask:none;
+        ry:5;
+        x:10;
+        y:70;
     }
 }

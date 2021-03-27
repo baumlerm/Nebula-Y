@@ -23,11 +23,8 @@
 
 // CSS Snippets //
 :root { 
-    --avatar-radius: 20% /* if you want your avatar more or less round it's here */
+    --avatar-radius: 14% /* if you want your avatar more or less round it's here */
 }
-
-/* Hide the activity icon in both user popouts */
-.avatarWrapperNormal-3wFMbf > .wrapper-3t9DeA > .mask-1l8v16 > .pointerEvents-2zdfdO, .header-QKLPzZ > .wrapper-3t9DeA > .mask-1l8v16 > .pointerEvents-2zdfdO { display: none; }
 
 /* Hide the activity icon background in both user popouts */
 .avatarWrapperNormal-3wFMbf > .wrapper-3t9DeA > .mask-1l8v16 foreignObject, .header-QKLPzZ > .wrapper-3t9DeA > .mask-1l8v16 foreignObject { mask: none !important; border-radius: var(--avatar-radius); }

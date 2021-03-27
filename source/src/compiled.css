@@ -11,12 +11,7 @@
 }
 
 :root {
-  --avatar-radius: 20% /* if you want your avatar more or less round it's here */ ;
-}
-
-/* Hide the activity icon in both user popouts */
-.avatarWrapperNormal-3wFMbf > .wrapper-3t9DeA > .mask-1l8v16 > .pointerEvents-2zdfdO, .header-QKLPzZ > .wrapper-3t9DeA > .mask-1l8v16 > .pointerEvents-2zdfdO {
-  display: none;
+  --avatar-radius: 14% /* if you want your avatar more or less round it's here */ ;
 }
 
 /* Hide the activity icon background in both user popouts */
@@ -669,13 +664,13 @@
 #app-mount .content-1x5b-n,
 #app-mount .channel-2QD9_O .layout-2DM8Md {
   background: none;
-  border-radius: calc(var(--neb-border-radius1) - 7px);
+  border-radius: var(--neb-border-radius1);
 }
 
 #app-mount .modeSelected-346R90,
 #app-mount .channel-2QD9_O.selected-aXhQR6 {
   background: var(--selected-bg);
-  border-radius: calc(var(--neb-border-radius1) - 8px);
+  border-radius: var(--neb-border-radius1);
   max-width: calc(var(--neb-sidebar-width) - 20px);
 }
 
@@ -690,7 +685,7 @@
 }
 
 #app-mount .unread-2lAfLh {
-  border-radius: calc(var(--neb-border-radius1) - 8px);
+  border-radius: var(--neb-border-radius1);
   background-color: var(--indicator);
   position: absolute;
   height: 6px;
@@ -713,7 +708,7 @@
 #app-mount .wrapper-2jXpOf:not(.modeSelected-346R90):hover,
 #app-mount .channel-2QD9_O.container-2Pjhx-:not(.selected-aXhQR6):hover {
   background: var(--hovered-bg);
-  border-radius: calc(var(--neb-border-radius1) - 8px);
+  border-radius: var(--neb-border-radius1);
 }
 
 #app-mount .channel-2QD9_O.container-2Pjhx- {
@@ -736,7 +731,7 @@
 .wrapper-2jXpOf {
   transition: var(--long-transition);
   max-width: calc(var(--neb-sidebar-width) - 20px);
-  border-radius: calc(var(--neb-border-radius1) - 8px);
+  border-radius: var(--neb-border-radius1);
 }
 
 .actionIcon-PgcMM2 {
@@ -896,6 +891,7 @@
   background: transparent;
   position: relative;
   margin-bottom: calc(var(--margin) + 150px);
+  padding-top: 10px !important;
   top: 70px;
 }
 
@@ -1042,7 +1038,7 @@
 }
 
 .wordmark-2iDDfm::after {
-  content: "v3.5.6 Beta Release";
+  content: var(--neb-version-titlebar);
   position: absolute;
   background: var(--header-primary);
   -webkit-background-clip: text;
@@ -1273,6 +1269,86 @@
 .root-SR8cQa .topSectionSpotify-1lI0-P .header-QKLPzZ .buttonInvertedPurple-WtBglX:hover,
 .root-SR8cQa .topSectionSpotify-1lI0-P .header-QKLPzZ .lookInverted-2D7oAl.colorGreen-29iAKY:hover {
   background-color: var(--button-hover-dark);
+}
+
+.root-SR8cQa .topSectionPlaying-1J5E4n .header-QKLPzZ [mask="url(#svg-mask-status-dnd)"],
+.root-SR8cQa .topSectionNormal-2-vo2m .header-QKLPzZ [mask="url(#svg-mask-status-dnd)"],
+.root-SR8cQa .topSectionStreaming-1Tpf5X .header-QKLPzZ [mask="url(#svg-mask-status-dnd)"],
+.root-SR8cQa .topSectionXbox-3fWLjS .header-QKLPzZ [mask="url(#svg-mask-status-dnd)"],
+.root-SR8cQa .topSectionSpotify-1lI0-P .header-QKLPzZ [mask="url(#svg-mask-status-dnd)"] {
+  fill: var(--neb-status-dnd);
+  width: 65%;
+  height: 6px;
+  -webkit-mask: none;
+          mask: none;
+  ry: 5;
+  x: 10;
+  y: 70;
+}
+
+.root-SR8cQa .topSectionPlaying-1J5E4n .header-QKLPzZ [mask="url(#svg-mask-status-idle)"],
+.root-SR8cQa .topSectionNormal-2-vo2m .header-QKLPzZ [mask="url(#svg-mask-status-idle)"],
+.root-SR8cQa .topSectionStreaming-1Tpf5X .header-QKLPzZ [mask="url(#svg-mask-status-idle)"],
+.root-SR8cQa .topSectionXbox-3fWLjS .header-QKLPzZ [mask="url(#svg-mask-status-idle)"],
+.root-SR8cQa .topSectionSpotify-1lI0-P .header-QKLPzZ [mask="url(#svg-mask-status-idle)"] {
+  fill: var(--neb-status-idle);
+  width: 65%;
+  height: 6px;
+  -webkit-mask: none;
+          mask: none;
+  ry: 5;
+  x: 10;
+  y: 70;
+}
+
+.root-SR8cQa .topSectionPlaying-1J5E4n .header-QKLPzZ [mask="url(#svg-mask-status-online-mobile)"],
+.root-SR8cQa .topSectionPlaying-1J5E4n .header-QKLPzZ [mask="url(#svg-mask-status-online)"],
+.root-SR8cQa .topSectionNormal-2-vo2m .header-QKLPzZ [mask="url(#svg-mask-status-online-mobile)"],
+.root-SR8cQa .topSectionNormal-2-vo2m .header-QKLPzZ [mask="url(#svg-mask-status-online)"],
+.root-SR8cQa .topSectionStreaming-1Tpf5X .header-QKLPzZ [mask="url(#svg-mask-status-online-mobile)"],
+.root-SR8cQa .topSectionStreaming-1Tpf5X .header-QKLPzZ [mask="url(#svg-mask-status-online)"],
+.root-SR8cQa .topSectionXbox-3fWLjS .header-QKLPzZ [mask="url(#svg-mask-status-online-mobile)"],
+.root-SR8cQa .topSectionXbox-3fWLjS .header-QKLPzZ [mask="url(#svg-mask-status-online)"],
+.root-SR8cQa .topSectionSpotify-1lI0-P .header-QKLPzZ [mask="url(#svg-mask-status-online-mobile)"],
+.root-SR8cQa .topSectionSpotify-1lI0-P .header-QKLPzZ [mask="url(#svg-mask-status-online)"] {
+  fill: var(--neb-status-online);
+  width: 65%;
+  height: 6px;
+  -webkit-mask: none;
+          mask: none;
+  ry: 5;
+  x: 10;
+  y: 70;
+}
+
+.root-SR8cQa .topSectionPlaying-1J5E4n .header-QKLPzZ [mask*=status-streaming],
+.root-SR8cQa .topSectionNormal-2-vo2m .header-QKLPzZ [mask*=status-streaming],
+.root-SR8cQa .topSectionStreaming-1Tpf5X .header-QKLPzZ [mask*=status-streaming],
+.root-SR8cQa .topSectionXbox-3fWLjS .header-QKLPzZ [mask*=status-streaming],
+.root-SR8cQa .topSectionSpotify-1lI0-P .header-QKLPzZ [mask*=status-streaming] {
+  fill: var(--neb-status-streaming);
+  width: 65%;
+  height: 6px;
+  -webkit-mask: none;
+          mask: none;
+  ry: 5;
+  x: 10;
+  y: 70;
+}
+
+.root-SR8cQa .topSectionPlaying-1J5E4n .header-QKLPzZ [mask="url(#svg-mask-status-offline)"],
+.root-SR8cQa .topSectionNormal-2-vo2m .header-QKLPzZ [mask="url(#svg-mask-status-offline)"],
+.root-SR8cQa .topSectionStreaming-1Tpf5X .header-QKLPzZ [mask="url(#svg-mask-status-offline)"],
+.root-SR8cQa .topSectionXbox-3fWLjS .header-QKLPzZ [mask="url(#svg-mask-status-offline)"],
+.root-SR8cQa .topSectionSpotify-1lI0-P .header-QKLPzZ [mask="url(#svg-mask-status-offline)"] {
+  fill: var(--neb-status-offline);
+  width: 65%;
+  height: 6px;
+  -webkit-mask: none;
+          mask: none;
+  ry: 5;
+  x: 10;
+  y: 70;
 }
 
 .root-SR8cQa .topSectionPlaying-1J5E4n .headerFill-adLl4x,
@@ -1559,25 +1635,25 @@
 .userPopout-3XzG_A .header-2BwW8b .directionColumn-35P_nr .headerText-2sdzFM {
   position: relative;
   left: 45px;
-  bottom: 10px;
-  width: 64%;
+  bottom: 5px;
+  width: 70%;
   height: -webkit-max-content;
   height: max-content;
-  text-align: center;
+  align-items: center;
 }
 
 .userPopout-3XzG_A .header-2BwW8b .directionColumn-35P_nr .headerText-2sdzFM .headerNameWrapper-3res2c {
   position: relative;
   top: 0;
-  left: 0px;
+  left: 0;
   width: 100%;
-  text-align: center;
+  text-align: left;
   z-index: 1;
 }
 
 .userPopout-3XzG_A .header-2BwW8b .directionColumn-35P_nr .headerText-2sdzFM .headerNameWrapper-3res2c .headerName-fajvi9 {
   text-transform: capitalize;
-  font-size: 22px;
+  font-size: 19px;
   font-weight: 500;
 }
 
@@ -1586,7 +1662,8 @@
 }
 
 .userPopout-3XzG_A .header-2BwW8b .directionColumn-35P_nr .headerText-2sdzFM .directionRow-3v3tfG .headerTag-2pZJzA {
-  justify-content: center;
+  text-transform: capitalize;
+  justify-content: left;
   width: 100%;
 }
 
@@ -1656,22 +1733,6 @@
   display: none;
 }
 
-.wrapper-3t9DeA .svg-2V3M55 [mask*=status-online] {
-  fill: var(--neb-status-online);
-}
-
-.wrapper-3t9DeA .svg-2V3M55 [mask="url(#svg-mask-status-idle)"] {
-  fill: var(--neb-status-idle);
-}
-
-.wrapper-3t9DeA .svg-2V3M55 [mask*=status-dnd] {
-  fill: var(--neb-status-dnd);
-}
-
-.wrapper-3t9DeA .svg-2V3M55 [mask*=status-streaming] {
-  fill: var(--neb-status-streaming);
-}
-
 .animatorRight-3i_YPs .activity-11LB_k {
   background-color: var(--background-secondary-alt);
   border-radius: var(--neb-border-radius1);
@@ -1681,6 +1742,67 @@
   left: 280px;
   top: 0;
   z-index: 1;
+}
+
+.userPopout-3XzG_A [mask="url(#svg-mask-status-dnd)"] {
+  fill: var(--neb-status-dnd);
+  pointer-events: none;
+  width: 65%;
+  height: 6px;
+  -webkit-mask: none;
+          mask: none;
+  ry: 5;
+  x: 10;
+  y: 70;
+}
+
+.userPopout-3XzG_A [mask="url(#svg-mask-status-idle)"] {
+  fill: var(--neb-status-idle);
+  pointer-events: none;
+  width: 65%;
+  height: 6px;
+  -webkit-mask: none;
+          mask: none;
+  ry: 5;
+  x: 10;
+  y: 70;
+}
+
+.userPopout-3XzG_A [mask="url(#svg-mask-status-online-mobile)"],
+.userPopout-3XzG_A [mask="url(#svg-mask-status-online)"] {
+  fill: var(--neb-status-online);
+  pointer-events: none;
+  width: 65%;
+  height: 6px;
+  -webkit-mask: none;
+          mask: none;
+  ry: 5;
+  x: 10;
+  y: 70;
+}
+
+.userPopout-3XzG_A [mask*=status-streaming] {
+  fill: var(--neb-status-streaming);
+  pointer-events: none;
+  width: 65%;
+  height: 6px;
+  -webkit-mask: none;
+          mask: none;
+  ry: 5;
+  x: 10;
+  y: 70;
+}
+
+.userPopout-3XzG_A [mask="url(#svg-mask-status-offline)"] {
+  fill: var(--neb-status-offline);
+  pointer-events: none;
+  width: 65%;
+  height: 6px;
+  -webkit-mask: none;
+          mask: none;
+  ry: 5;
+  x: 10;
+  y: 70;
 }
 
 :root {
@@ -1706,7 +1828,7 @@
   --mention:rgb(240, 71, 71);
   --modal-backdrop-blur: blur(5px);
   --neb-status-online: rgb(53, 177, 125);
-  --neb-status-idle: rgb(219, 171, 9);
+  --neb-status-idle: rgb(238, 185, 11);
   --neb-status-dnd: rgb(215, 58, 73);
   --neb-status-streaming: rgb(89, 54, 149);
   --neb-status-offline: rgb(117, 128, 142);
@@ -1717,6 +1839,7 @@
   --neb-sidebar-width: 320px;
   --margin:10px;
   --neb-version: "Nebula 3 Beta Release";
+  --neb-version-titlebar:"v3.7.6 Beta Release";
   --medium-font-size:18px;
   --transition:100ms ease all;
   --long-transition:250ms ease all;

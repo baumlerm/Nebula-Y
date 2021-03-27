@@ -52,7 +52,7 @@
       width: 0;
    }
    &::after {
-      content: "v3.5.6 Beta Release";
+      content: var(--neb-version-titlebar);
       position: absolute;
       background: var(--header-primary);
       -webkit-background-clip: text;
