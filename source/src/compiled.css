@@ -308,10 +308,6 @@
   display: none;
 }
 
-.container-1r6BKw .toolbar-1t6TWx [aria-label="Update Ready!"] {
-  order: 1;
-}
-
 .container-1r6BKw .toolbar-1t6TWx .search-36MZv- {
   position: relative;
   right: 7px;
@@ -389,7 +385,7 @@
 }
 
 .container-1D34oG .container-1r6BKw .toolbar-1t6TWx {
-  margin-right: 263px;
+  margin-right: 250px;
 }
 
 .container-1D34oG .tabBody-3YRQ8W:before {
@@ -743,9 +739,19 @@
   border-radius: calc(var(--neb-border-radius1) - 8px);
 }
 
-[aria-label="Create Invite"],
-[aria-label="Invite to Server"] {
-  display: none !important;
+.actionIcon-PgcMM2 {
+  display: none;
+}
+
+.modeMuted-onO3r-::before {
+  content: "";
+  position: absolute;
+  background-color: var(--background-tertiary);
+  border-radius: var(--neb-border-radius1);
+  height: 6px;
+  width: 30px;
+  top: 14px;
+  right: 9px;
 }
 
 .mentionsBadge-3tC7Mi .numberBadge-2s8kKX {
@@ -1019,7 +1025,7 @@
 .wordmark-2iDDfm::after {
   content: "v3.5.6 Beta Release";
   position: absolute;
-  background: white;
+  background: var(--header-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1532,10 +1538,12 @@
 
 .userPopout-3XzG_A .header-2BwW8b .directionColumn-35P_nr .headerText-2sdzFM {
   position: relative;
-  left: 40px;
+  left: 45px;
   top: 14px;
-  width: 60%;
-  text-align: left;
+  width: 64%;
+  height: -webkit-max-content;
+  height: max-content;
+  text-align: center;
 }
 
 .userPopout-3XzG_A .header-2BwW8b .directionColumn-35P_nr .headerText-2sdzFM .headerNameWrapper-3res2c {
@@ -1543,7 +1551,7 @@
   top: 0;
   left: 0px;
   width: 100%;
-  text-align: left;
+  text-align: center;
   z-index: 1;
 }
 
@@ -1558,7 +1566,7 @@
 }
 
 .userPopout-3XzG_A .header-2BwW8b .directionColumn-35P_nr .headerText-2sdzFM .directionRow-3v3tfG .headerTag-2pZJzA {
-  justify-content: right;
+  justify-content: center;
   width: 100%;
 }
 
@@ -1577,11 +1585,13 @@
   display: none;
 }
 
-.userPopout-3XzG_A .body-3iLsc4:before {
+.userPopout-3XzG_A .body-3iLsc4 .rolesList-22qj2L::before {
   content: "ROLES";
-  color: #b9b9b9;
+  position: absolute;
   font-weight: 900;
-  font-size: 12px;
+  font-size: 13px;
+  color: #cacaca;
+  top: -23px;
 }
 
 .userPopout-3XzG_A .activity-11LB_k {
@@ -1594,7 +1604,7 @@
   height: -moz-fit-content;
   height: fit-content;
   left: -240px;
-  top: 10px;
+  top: 0;
 }
 
 .userPopout-3XzG_A .footer-1fjuF6 {
@@ -1649,12 +1659,8 @@
   position: absolute;
   width: 197px;
   left: 280px;
-  top: 10px;
+  top: 0;
   z-index: 1;
-}
-
-.actionIcon-PgcMM2 {
-  display: none !important;
 }
 
 :root {

@@ -63,12 +63,24 @@
 }
 
 
-// Mention ping indicator
-
-[aria-label="Create Invite"],
-[aria-label="Invite to Server"]{
-    display: none !important;
+// Unread/Mute indicator
+.actionIcon-PgcMM2{
+    display: none;
 }
+
+.modeMuted-onO3r-{
+    &::before{
+        content: '';
+        position: absolute;
+        background-color: var(--background-tertiary);
+        border-radius: var(--neb-border-radius1);
+        height:6px;
+        width: 30px;
+        top: 14px;
+        right:9px;
+    }
+}
+
 .mentionsBadge-3tC7Mi{
     .numberBadge-2s8kKX{
         justify-content: right;
