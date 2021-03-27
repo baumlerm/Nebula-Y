@@ -1,69 +1,111 @@
-.base-3dtUhz{
-    left: calc(var(--margin) + 70px);
-    margin-bottom: 10px;
-}
-.scroller-2TZvBN{contain:unset;}
-.wrapper-3NnKdC{
-    background-color: transparent;
-    margin: 0 var(--margin) var(--margin) var(--margin);
-    border-radius: var(--neb-border-radius1);
-    .scroller-1Bvpku{
-        background-color: transparent;
-        contain: none !important;
-        padding: 0 !important;
-        .guildSeparator-33mFX6{
-            border-radius: var(--neb-border-radius1);
-            width: 50px;
-        }
-        .tutorialContainer-30WoTp{
-            background-color: var(--background-primary);
-            border-radius: var(--neb-border-radius1) var(--neb-border-radius1) 0 0;
-            padding: 10px 0;
-            &:before{
-                content: '';
-                border-radius: 0 0 var(--neb-border-radius1) var(--neb-border-radius1);
-                background-color: var(--background-primary);
-                position: absolute;
-                bottom: -60px;
-                height:65px;
-                width:72px;
-            }
-        }
-        .circleIconButton-1QV--U{
-            background-color: var(--background-secondary-alt);
-            color:var(--header-primary);
-        }
+#app-mount .wrapper-3NnKdC {
+    background: transparent;
+    margin-left: var(--margin);
     }
-}
-.tutorialContainer-2sGCg9,
-[style="opacity: 1; height: 56px; transform: scale(1);"]{
-    padding: 7px 0 .04px 0;
-    margin-bottom: var(--margin);
-    border-radius: var(--neb-border-radius1);
-    background-color: var(--background-primary);
-    .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9{
-        background-color: var(--background-secondary-alt);
-        color:var(--header-primary);
+    
+    .base-3dtUhz {
+        margin-bottom: var(--margin);
+        margin-left: var(--margin);
     }
-    .pill-3N7f9r,
-    .pill-1Z5PKm{
+    
+    .scroller-1Bvpku{contain: none;}
+
+    
+    // ╔════════════════════╦═══════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+    // ║ Vertical           ║ Home Button                                                                       ║
+    // ╚════════════════════╩═══════════════════════════════════════════════════════════════════════════════════╝
+    
+    // Background
+    .tutorialContainer-2sGCg9 {
+    border-radius: var(--neb-border-radius1);
+    background: var(--background-primary);
+    padding-top: 6px;
+    position: fixed;
+    top:25px;
+    .pill-3N7f9r{
         display: none;
+        }
     }
-}
-[aria-label="Servers"]{
+
+    // ╔════════════════════╦═══════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+    // ║ Vertical           ║ Guilds                                                                            ║
+    // ╚════════════════════╩═══════════════════════════════════════════════════════════════════════════════════╝
+    
+    // Background
+    .scroller-1Bvpku {
     border-radius: var(--neb-border-radius1);
-    background-color: var(--background-primary);
-    padding: 10px 0;
-    margin-bottom: var(--margin);
-}
-
-
-.unreadMentionsIndicatorBottom-BXS58x{
-    bottom: 7px;
-    .bar-30k2ka{
-        opacity: 1;
+    background: transparent;
+    position: relative;
+    margin-bottom: calc(var(--margin) + 150px);
+    top: 70px;
     }
-    .bar-30k2ka{
-        opacity: 1;
+    
+    // Blur
+    .wrapper-3NnKdC::before {
+    background: var(--background-primary);
+    position: fixed;
+    content: "";
+    border-radius: var(--neb-border-radius1);
+    width: 72px;
+    bottom: 0px;
+    margin-top: 95px;
+    margin-bottom: calc(var(--margin) + 80px);
+    top: 0;
+    left: 20;
     }
-}
+    
+    
+    // Remove guild Separator
+    .guildSeparator-33mFX6 {display: none;}
+    
+    // ╔════════════════════╦═══════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+    // ║ Vertical           ║ Add Server Button                                                                 ║
+    // ╚════════════════════╩═══════════════════════════════════════════════════════════════════════════════════╝
+    
+    // Background
+    .tutorialContainer-30WoTp {
+    background: transparent;
+    position: fixed;
+    border-radius: var(--neb-border-radius1);
+    padding-top: 12px;
+    padding-bottom: 4px;
+    bottom: var(--margin);
+    }
+    
+    // Blur
+    .tutorialContainer-30WoTp::before {
+    background: var(--background-primary);
+    position: fixed;
+    content: "";
+    border-radius: var(--neb-border-radius1);
+    height: 70px;
+    width: 72px;
+    bottom: var(--margin);
+    z-index: -1;
+    }
+    
+    // Add Server & Explore Button
+    .circleIconButton-1QV--U {
+    color: var(--interactive-normal);
+    background: var(--background-secondary-alt);
+    }
+    
+    .circleIconButton-1QV--U.selected-ugP_am svg path{
+    fill: var(--interactive-active);
+    }
+    
+    // ╔════════════════════╦═══════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+    // ║ Vertical           ║ Unread                                                                            ║
+    // ╚════════════════════╩═══════════════════════════════════════════════════════════════════════════════════╝
+    .unreadMentionsIndicatorTop-2-tcdU{
+        top:70px;
+        .mention-1f5kbO{
+            opacity: 1;
+        }
+    }
+    .unreadMentionsIndicatorBottom-2mDYbI{
+        bottom:90px;
+        .mention-1f5kbO{
+            opacity: 1;
+        }
+    }
