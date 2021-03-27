@@ -1,16 +1,19 @@
-.container-3iAQ-0{
-    .channelHeader-3Gd2xq{
+.container-enaOkj{
+    background-color: var(--background-secondary-alt);
+    border-radius: var(--neb-border-radius1);
+    .header-2-Imhb{
         border-radius: var(--neb-border-radius1);
-        margin:var(--margin) 0;
+        margin: var(--margin);
     }
-    .messageContainer-gbhlwo{
+    .scroller-tlc3kG{
         border-radius: var(--neb-border-radius1);
-    }
-}
-.hasMore-sul95G{
-    .hasMoreButton-1MELpI{
-        background-color: var(--background-secondary-alt);
-        border-radius: var(--neb-border-radius1);
-        color: var(--neb-white);
+        .channelHeader-3Gd2xq{
+            background-color: var(--background-tertiary);
+            margin-bottom: var(--margin);
+        }
+        .messages-3G3erD,
+        .messageContainer-1ei2zM{
+            border-radius: var(--neb-border-radius1);
+        }
     }
 }
