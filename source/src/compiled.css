@@ -1,5 +1,7 @@
 @import url("https://nyri4.github.io/Discolored/main.css");
 @import url("https://raw.githack.com/Snapperito/Settings-Icons/main/source.css");
+@import url("https://discord-custom-covers.github.io/usrbg/dist/usrbg.css");
+@import url("https://corellanstoma.github.io/CreArts/addons/database/usrbg.css");
 :root {
   --settings-icon-color: var(--interactive-normal);
   --settings-subscriptions: var(--interactive-normal);
@@ -198,6 +200,12 @@
 
 .mentioned-xhSam7 .mention {
   color: var(--neb-white);
+}
+
+.embed-IeVjo6 {
+  max-width: -webkit-fit-content !important;
+  max-width: -moz-fit-content !important;
+  max-width: fit-content !important;
 }
 
 .notice-3uyY6c {
@@ -564,13 +572,13 @@
 .sidebar-2K8pFh .container-3w7J-x .container-1taM1r .animatedContainer-1NSq4T {
   z-index: 2;
   background-color: transparent !important;
-  border-radius: var(--neb-border-radius1);
+  border-radius: var(--neb-border-radius1) var(--neb-border-radius1) 0 0;
   box-shadow: none;
 }
 
 .sidebar-2K8pFh .container-3w7J-x .container-1taM1r .animatedContainer-1NSq4T .bannerImage-3KhIJ6 {
   width: var(--neb-sidebar-width);
-  border-radius: var(--neb-border-radius1);
+  border-radius: var(--neb-border-radius1) var(--neb-border-radius1) 0 0;
 }
 
 .sidebar-2K8pFh .container-3w7J-x .container-1taM1r .animatedContainer-1NSq4T .bannerImage-3KhIJ6:before {
@@ -1286,7 +1294,7 @@
 .root-SR8cQa .topSectionSpotify-1lI0-P .header-QKLPzZ [mask="url(#svg-mask-status-dnd)"] {
   fill: var(--neb-status-dnd);
   width: 65%;
-  height: 6px;
+  height: 8px;
   -webkit-mask: none;
           mask: none;
   ry: 5;
@@ -1301,7 +1309,7 @@
 .root-SR8cQa .topSectionSpotify-1lI0-P .header-QKLPzZ [mask="url(#svg-mask-status-idle)"] {
   fill: var(--neb-status-idle);
   width: 65%;
-  height: 6px;
+  height: 8px;
   -webkit-mask: none;
           mask: none;
   ry: 5;
@@ -1321,7 +1329,7 @@
 .root-SR8cQa .topSectionSpotify-1lI0-P .header-QKLPzZ [mask="url(#svg-mask-status-online)"] {
   fill: var(--neb-status-online);
   width: 65%;
-  height: 6px;
+  height: 8px;
   -webkit-mask: none;
           mask: none;
   ry: 5;
@@ -1336,7 +1344,7 @@
 .root-SR8cQa .topSectionSpotify-1lI0-P .header-QKLPzZ [mask*=status-streaming] {
   fill: var(--neb-status-streaming);
   width: 65%;
-  height: 6px;
+  height: 8px;
   -webkit-mask: none;
           mask: none;
   ry: 5;
@@ -1351,7 +1359,7 @@
 .root-SR8cQa .topSectionSpotify-1lI0-P .header-QKLPzZ [mask="url(#svg-mask-status-offline)"] {
   fill: var(--neb-status-offline);
   width: 65%;
-  height: 6px;
+  height: 5px;
   -webkit-mask: none;
           mask: none;
   ry: 5;
@@ -1386,6 +1394,17 @@
   justify-content: center;
 }
 
+.root-SR8cQa .topSectionPlaying-1J5E4n .wrapper-3t9DeA,
+.root-SR8cQa .topSectionNormal-2-vo2m .wrapper-3t9DeA,
+.root-SR8cQa .topSectionStreaming-1Tpf5X .wrapper-3t9DeA,
+.root-SR8cQa .topSectionXbox-3fWLjS .wrapper-3t9DeA,
+.root-SR8cQa .topSectionSpotify-1lI0-P .wrapper-3t9DeA {
+  position: relative;
+  height: 90px !important;
+  width: 90px !important;
+  right: 6px;
+}
+
 .root-SR8cQa .body-3ND3kc {
   background-color: var(--background-primary);
   border-radius: var(--neb-border-radius1);
@@ -1399,6 +1418,32 @@
 .root-SR8cQa .body-3ND3kc .listRow-hutiT_ .listAvatar-1NlAhb {
   position: relative;
   right: 1px;
+}
+
+.root-SR8cQa {
+  transform: translateZ(0);
+}
+
+.header-QKLPzZ .wrapper-3t9DeA::before {
+  content: "";
+  position: fixed;
+  top: var(--margin);
+  left: var(--margin);
+  width: 97%;
+  height: 120px;
+  opacity: 1;
+  pointer-events: none;
+  filter: brightness(0.6);
+  background: var(--user-background) center/cover no-repeat;
+  border-radius: var(--neb-border-radius2);
+  -webkit-mask: linear-gradient(black, black);
+}
+
+.headerInfo-30uryT,
+.tabBarItem-1b8RUP,
+.activity-1ythUs {
+  z-index: 1;
+  position: relative;
 }
 
 .autocomplete-3l_oCd {
@@ -1682,6 +1727,7 @@
   text-transform: capitalize;
   justify-content: left;
   width: 100%;
+  color: var(--header-primary);
 }
 
 .userPopout-3XzG_A .header-2BwW8b::-webkit-scrollbar,
@@ -1765,7 +1811,7 @@
   fill: var(--neb-status-dnd);
   pointer-events: none;
   width: 65%;
-  height: 6px;
+  height: 8px;
   -webkit-mask: none;
           mask: none;
   ry: 5;
@@ -1777,7 +1823,7 @@
   fill: var(--neb-status-idle);
   pointer-events: none;
   width: 65%;
-  height: 6px;
+  height: 8px;
   -webkit-mask: none;
           mask: none;
   ry: 5;
@@ -1790,7 +1836,7 @@
   fill: var(--neb-status-online);
   pointer-events: none;
   width: 65%;
-  height: 6px;
+  height: 8px;
   -webkit-mask: none;
           mask: none;
   ry: 5;
@@ -1802,7 +1848,7 @@
   fill: var(--neb-status-streaming);
   pointer-events: none;
   width: 65%;
-  height: 6px;
+  height: 8px;
   -webkit-mask: none;
           mask: none;
   ry: 5;
@@ -1814,12 +1860,41 @@
   fill: var(--neb-status-offline);
   pointer-events: none;
   width: 65%;
-  height: 6px;
+  height: 8px;
   -webkit-mask: none;
           mask: none;
   ry: 5;
   x: 10;
   y: 70;
+}
+
+.userPopout-3XzG_A {
+  transform: translateZ(0);
+}
+
+.userPopout-3XzG_A .wrapper-3t9DeA::after {
+  content: "";
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 92.4%;
+  height: 99px;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 1;
+  background-size: cover;
+  filter: brightness(0.6);
+  background-repeat: no-repeat;
+  background-position: var(--user-popout-position) center;
+  border-radius: var(--neb-border-radius1);
+  background-image: var(--user-background);
+  -webkit-mask-image: linear-gradient(#000, #000);
+}
+
+.userPopout-3XzG_A .header-2BwW8b,
+.userPopout-3XzG_A .scroller-2FKFPG,
+.userPopout-3XzG_A .footer-1fjuF6 {
+  z-index: 1;
 }
 
 .standardSidebarView-3F1I7i {
