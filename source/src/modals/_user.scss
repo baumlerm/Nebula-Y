@@ -30,18 +30,14 @@
                 width:65%;
                 height:6px;
                 mask:none;
-                ry:5;
-                x:10;
-                y:70;
+                ry:5; x:10; y:70;
             }
             [mask="url(#svg-mask-status-idle)"]{
                 fill:var(--neb-status-idle);
                 width:65%;
                 height:6px;
                 mask:none;
-                ry:5;
-                x:10;
-                y:70;
+                ry:5; x:10; y:70;
             }
             [mask="url(#svg-mask-status-online-mobile)"],
             [mask="url(#svg-mask-status-online)"]{
@@ -49,27 +45,21 @@
                 width:65%;
                 height:6px;
                 mask: none;
-                ry:5;
-                x:10;
-                y:70;
+                ry:5; x:10; y:70;
             }
             [mask*="status-streaming"]{
                 fill:var(--neb-status-streaming);
                 width:65%;
                 height:6px;
                 mask:none;
-                ry:5;
-                x:10;
-                y:70;
+                ry:5; x:10; y:70;
             }
             [mask="url(#svg-mask-status-offline)"]{
                 fill:var(--neb-status-offline);
                 width: 65%;
                 height:6px;
                 mask:none;
-                ry:5;
-                x:10;
-                y:70;
+                ry:5; x:10; y:70;
             }
         }
         .headerFill-adLl4x{

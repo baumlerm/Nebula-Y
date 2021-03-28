@@ -1,0 +1,32 @@
+.standardSidebarView-3F1I7i{
+    background-color: var(--background-tertiary);
+    .sidebarRegion-VFTUkN{
+        margin: var(--margin);
+        flex: 0 0 auto;
+        .sidebarRegionScroller-3MXcoP{
+            background: var(--background-primary);
+            border-radius: var(--neb-border-radius1);
+            width:var(--neb-sidebar-width);
+            .sidebar-CFHs9e{
+                padding: 15px 10px 0 10px;
+                width:var(--neb-sidebar-width);
+                .header-2RyJ0Y{
+                    color:var(--header-primary);
+                    font-size: 17px;
+                }
+                .side-8zPYf6 .item-PXvHYJ{
+                    transition: var(--transition);
+                    border-radius: var(--neb-border-radius1);
+                }
+           }
+        }
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+}
+div[aria-label="USER_SETTINGS"] .info-1VyQPT:last-child > div:last-child::after {
+    content: var(--neb-version);
+    display: block;
+    user-select: text;
+}

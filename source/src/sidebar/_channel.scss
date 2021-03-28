@@ -24,7 +24,10 @@
                     width:var(--neb-sidebar-width);
                     border-radius: var(--neb-border-radius1);
                     &:before{
-                        display: none;
+                        background: linear-gradient(0deg, var(--background-primary), transparent);
+                        height:50px;
+                        top:85px;
+                        z-index: 10;
                     }
                 }
             }

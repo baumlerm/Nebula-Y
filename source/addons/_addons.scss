@@ -31,3 +31,10 @@
 
 /* Fix the "View Profile" thing when u over your avatar */
 .avatarHint-1qgaV3 foreignObject { mask: none !important; border-radius: var(--avatar-radius); }
+
+
+// No Gaps settings
+.contentColumn-2hrIYH, .customColumn-Rb6toI{
+    margin-right: -20px;
+    max-width: unset;
+}
