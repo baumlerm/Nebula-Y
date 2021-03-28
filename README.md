@@ -40,6 +40,12 @@ git clone https://github.com/pavui/nebula
 
 ### Also, Nebula is only supported for Windows at this moment. Once im able to find people who will help develop Nebula for platforms such as Linux and OSX, I will do my best to push the update ASAP, Thank you. 
 
+## Things To Know
+### I name my updates like minecraft mods, heres the 4 Update names and what they are.
+- YASU (Yet Another Small Update. This means a few lines added or edited)
+- YAU (Yet Another Update. A file added with lines added.)
+- YALU (Yet Another Large Update. A folder, or file(s) added that significantly changes Nebula)
+- YAMU (Yet Another Major Update. Many Files, folders added that changes almost every aspect of Nebula.)
 
 ## Credits
 ### Id like to give credits to these people who helped the development of Nebula 3
