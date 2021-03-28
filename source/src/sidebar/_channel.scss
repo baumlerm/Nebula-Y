@@ -18,11 +18,11 @@
             .animatedContainer-1NSq4T{
                 z-index: 2;
                 background-color: transparent !important;
-                border-radius: var(--neb-border-radius1);
+                border-radius: var(--neb-border-radius1) var(--neb-border-radius1) 0 0;
                 box-shadow: none;
                 .bannerImage-3KhIJ6{
                     width:var(--neb-sidebar-width);
-                    border-radius: var(--neb-border-radius1);
+                    border-radius: var(--neb-border-radius1) var(--neb-border-radius1) 0 0;
                     &:before{
                         background: linear-gradient(0deg, var(--background-primary), transparent);
                         height:50px;

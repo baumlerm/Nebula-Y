@@ -18,6 +18,7 @@
             text-align: right;
             .avatarWrapper-3H_478{
                 position: absolute;
+                width: 89%;
                 left:20px;
                 top:20px;
             }
@@ -126,7 +127,7 @@
         fill: var(--neb-status-dnd);
         pointer-events: none;
         width:65%;
-        height:6px;
+        height:8px;
         mask:none;
         ry:5; x:10; y:70;
     }
@@ -134,7 +135,7 @@
         fill:var(--neb-status-idle);
         pointer-events: none;
         width:65%;
-        height:6px;
+        height:8px;
         mask:none;
         ry:5; x:10; y:70;
     }
@@ -143,7 +144,7 @@
         fill: var(--neb-status-online);
         pointer-events: none;
         width:65%;
-        height:6px;
+        height:8px;
         mask: none;
         ry:5; x:10; y:70;
     }
@@ -151,7 +152,7 @@
         fill:var(--neb-status-streaming);
         pointer-events: none;
         width:65%;
-        height:6px;
+        height:8px;
         mask:none;
         ry:5; x:10; y:70;
     }
@@ -159,8 +160,8 @@
         fill:var(--neb-status-offline);
         pointer-events: none;
         width: 65%;
-        height:6px;
+        height:8px;
         mask:none;
-        ry:5; x:10; y:70;
+        ry:5; x:10;y:70;
     }
 }
