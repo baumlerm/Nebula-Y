@@ -1,0 +1,24 @@
+.root-SR8cQa {
+    transform: translateZ(0);
+  }
+  .header-QKLPzZ .wrapper-3t9DeA::before {
+    content: '';
+    position: fixed;
+    top: var(--margin);
+    left: var(--margin);
+    width: 97%;
+    height: 119px;
+    opacity: 1;
+    pointer-events: none;
+    filter:brightness(.6);
+    background: var(--user-background) center/cover no-repeat;
+    border-radius: var(--neb-border-radius2);
+    -webkit-mask: linear-gradient(black, black);
+  }
+  
+  .headerInfo-30uryT,
+  .tabBarItem-1b8RUP,
+  .activity-1ythUs {
+    z-index: 1;
+    position: relative;
+  }

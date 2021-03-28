@@ -18,7 +18,6 @@
             text-align: right;
             .avatarWrapper-3H_478{
                 position: absolute;
-                width: 89%;
                 left:20px;
                 top:20px;
             }
@@ -48,6 +47,7 @@
                         text-transform: capitalize;
                         justify-content: left;
                         width: 100%;
+                        color:var(--header-primary);
                     }
                 }
             }
