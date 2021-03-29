@@ -2073,4 +2073,5 @@ div[aria-label=USER_SETTINGS] .info-1VyQPT:last-child > div:last-child::after {
   --manager-buttons:#0a0a0a34;
   --hovered-bg:var(--neb-secondary-light);
   --selected-bg-hover:var(--hovered-bg);
+  --version4:'01011001 01101111 01110101 00100000 01100110 01101111 01110101 01101110 01100100 00100000 01101101 01100101 ';
 }
