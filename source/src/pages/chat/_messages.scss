@@ -39,15 +39,10 @@
 
 // Mentions
 .mentioned-xhSam7{
-    &:before{
-        background-color: var(--neb-white);
+    background-color: var(--background-secondary);
+    &::before{
+        background-color: var(--background-secondary-alt);
+        border-radius: 0 var(--neb-border-radius1) var(--neb-border-radius1) 0;
+        width:10px;
     }
-}
-.mentioned-xhSam7 .mention{
-    color:var(--neb-white);
-}
-
-// Embeded
-.embed-IeVjo6{
-    max-width: fit-content !important;
 }

@@ -1,6 +1,16 @@
 @import url("https://nyri4.github.io/Discolored/main.css");
+@import url("https://raw.githack.com/Snapperito/Settings-Icons/main/source.css");
 @import url("https://discord-custom-covers.github.io/usrbg/dist/usrbg.css");
 @import url("https://corellanstoma.github.io/CreArts/addons/database/usrbg.css");
+:root {
+  --settings-icon-color: var(--interactive-normal);
+  --settings-subscriptions: var(--interactive-normal);
+  --settings-hypesquad: var(--interactive-normal);
+  --settings-logout: #f04747;
+  --settings-alt-focused: var(--interactive-normal);
+  --settings-guild-premium: var(--interactive-normal);
+  --settings-guild-delete: #f04747;
+}
 
 :root {
   --avatar-radius: 14% /* if you want your avatar more or less round it's here */ ;
@@ -184,18 +194,14 @@
   border-color: var(--neb-white);
 }
 
-.mentioned-xhSam7:before {
-  background-color: var(--neb-white);
+.mentioned-xhSam7 {
+  background-color: var(--background-secondary);
 }
 
-.mentioned-xhSam7 .mention {
-  color: var(--neb-white);
-}
-
-.embed-IeVjo6 {
-  max-width: -webkit-fit-content !important;
-  max-width: -moz-fit-content !important;
-  max-width: fit-content !important;
+.mentioned-xhSam7::before {
+  background-color: var(--background-secondary-alt);
+  border-radius: 0 var(--neb-border-radius1) var(--neb-border-radius1) 0;
+  width: 10px;
 }
 
 .notice-3uyY6c {
@@ -221,7 +227,7 @@
 
 .colorStreamerMode-2SJAUN {
   position: fixed;
-  left: 148px;
+  left: 151px;
   top: 68px;
   height: 0px;
   width: -webkit-fit-content;
@@ -1616,6 +1622,29 @@
   display: none;
 }
 
+.container-3XJ8ns {
+  border-radius: var(--neb-border-radius1);
+  background-color: var(--background-secondary-alt);
+  box-shadow: var(--elevation-high);
+  position: absolute;
+  border: none;
+  right: 45px;
+}
+
+.container-3XJ8ns .container-cMG81i {
+  border-radius: var(--neb-border-radius1);
+  background-color: var(--background-secondary);
+}
+
+.container-3XJ8ns .item-2J2GlB {
+  border-radius: var(--neb-border-radius1);
+  transition: var(--transition);
+}
+
+.container-3XJ8ns .item-2J2GlB:hover {
+  background-color: var(--background-secondary);
+}
+
 .container-3ayLPN {
   background-color: var(--background-secondary-alt) !important;
   border-radius: var(--neb-border-radius1);
@@ -1858,24 +1887,20 @@
   y: 70;
 }
 
-.userPopout-3XzG_A {
-  transform: translateZ(0);
-}
-
 .userPopout-3XzG_A .wrapper-3t9DeA::after {
   content: "";
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  width: 92.4%;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 312%;
   height: 99px;
   z-index: -1;
   pointer-events: none;
   opacity: 1;
   background-size: cover;
-  filter: brightness(0.6);
   background-repeat: no-repeat;
   background-position: var(--user-popout-position) center;
+  filter: brightness(0.6);
   border-radius: var(--neb-border-radius1);
   background-image: var(--user-background);
   -webkit-mask-image: linear-gradient(#000, #000);
@@ -2073,5 +2098,4 @@ div[aria-label=USER_SETTINGS] .info-1VyQPT:last-child > div:last-child::after {
   --manager-buttons:#0a0a0a34;
   --hovered-bg:var(--neb-secondary-light);
   --selected-bg-hover:var(--hovered-bg);
-  --version4:'01011001 01101111 01110101 00100000 01100110 01101111 01110101 01101110 01100100 00100000 01101101 01100101 ';
 }

@@ -1,0 +1,19 @@
+.container-3XJ8ns{
+    border-radius: var(--neb-border-radius1);
+    background-color: var(--background-secondary-alt);
+    box-shadow: var(--elevation-high);
+    position: absolute;
+    border: none;
+    right:45px;
+    .container-cMG81i{
+        border-radius: var(--neb-border-radius1);
+        background-color: var(--background-secondary);
+    }
+    .item-2J2GlB{
+        border-radius: var(--neb-border-radius1);
+        transition: var(--transition);
+        &:hover{
+            background-color: var(--background-secondary);
+        }
+    }
+}
