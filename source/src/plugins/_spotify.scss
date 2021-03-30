@@ -2,7 +2,7 @@
     position: relative;
     bottom: 0px;
     height:var(--neb-topbar-height);
-    margin-top: calc(var(--margin) + 20px);
+    margin-top: calc(var(--margin) + 50px);
     .container-3baos1{
         margin: 0 !important;
         width: calc(var(--neb-sidebar-width) - 20px) !important;
@@ -16,12 +16,19 @@
         z-index: 1;
         margin: 0 2px;
         .spotify-seek-elements{
+            background-color: var(--background-primary);
+            border-radius: var(--neb-border-radius1);
+            padding: 6px 10px 20px 10px;
+            position: relative;
+            bottom: 20px;
             height:12px;
             opacity: 1;
         }
     }
     .spotify-seek-bar{
-        height:6px;
+        position: absolute;
+        height:6px !important;
+        top:-40px;
         .spotify-seek-bar-progress{
             border-radius: var(--neb-border-radius1);
         }
