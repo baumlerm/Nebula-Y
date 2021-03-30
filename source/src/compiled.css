@@ -823,6 +823,7 @@
 .panels-j1Uci_ {
   background-color: transparent;
   border-radius: var(--neb-border-radius1);
+  z-index: 300;
 }
 
 .panels-j1Uci_ .container-3baos1 {

@@ -1,6 +1,7 @@
 .panels-j1Uci_{
     background-color: transparent;
     border-radius: var(--neb-border-radius1);
+    z-index: 300;
     .container-3baos1{
         background-color: var(--background-primary);
         width:calc(var(--neb-sidebar-width) - 95px);
