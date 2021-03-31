@@ -1,5 +1,5 @@
 .powercord-spotify{
-    margin-top: calc(var(--margin) + 10px);
+    margin-top: calc(var(--margin) + 12px) !important;
     position: relative;
     bottom: -37px;
     .container-3baos1{
@@ -26,4 +26,19 @@
             }
         }
     }
+}
+.powercord-spotify.hover .spotify-extra-controls + .spotify-seek {
+    margin-top: 3px;
+}
+.powercord-spotify .spotify-extra-controls {
+    display: none;
+    transition: none;
+}
+.powercord-spotify.hover .spotify-extra-controls {
+    pointer-events: none;
+    height: none;
+    opacity: none;
+}
+.powercord-spotify.hover .spotify-seek:not(.no-premium) .spotify-seek-bar {
+    height: 6px;
 }
