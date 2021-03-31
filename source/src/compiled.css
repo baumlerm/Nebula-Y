@@ -33,6 +33,7 @@
 .contentColumn-2hrIYH, .customColumn-Rb6toI {
   margin-right: -20px;
   max-width: unset;
+  padding-right: 0;
 }
 
 .newMessagesBar-265mhP {
@@ -485,38 +486,57 @@
 }
 
 .powercord-spotify {
+  margin-top: calc(var(--margin) + 12px) !important;
   position: relative;
-  bottom: 0px;
-  height: var(--neb-topbar-height);
-  margin-top: calc(var(--margin) + 20px);
+  bottom: -37px;
 }
 
 .powercord-spotify .container-3baos1 {
+  width: calc(100% - 16px) !important;
   margin: 0 !important;
-  width: calc(var(--neb-sidebar-width) - 20px) !important;
-  z-index: 0;
 }
 
 .powercord-spotify .spotify-seek {
+  background-color: var(--background-secondary-alt);
+  border-radius: var(--neb-border-radius1);
+  padding: 6px 10px 50px 10px;
   position: relative;
-  bottom: 15px;
-  left: 2px;
-  bottom: 25px;
-  z-index: 1;
-  margin: 0 2px;
+  bottom: 40px;
 }
 
 .powercord-spotify .spotify-seek .spotify-seek-elements {
-  height: 12px;
   opacity: 1;
+  height: 12px;
 }
 
-.powercord-spotify .spotify-seek-bar {
+.powercord-spotify .spotify-seek .spotify-seek-bar {
+  background-color: var(--background-primary);
+  border-radius: var(--neb-border-radius1);
   height: 6px;
 }
 
-.powercord-spotify .spotify-seek-bar .spotify-seek-bar-progress {
+.powercord-spotify .spotify-seek .spotify-seek-bar .spotify-seek-bar-progress {
+  background-color: var(--neb-white);
   border-radius: var(--neb-border-radius1);
+}
+
+.powercord-spotify.hover .spotify-extra-controls + .spotify-seek {
+  margin-top: 3px;
+}
+
+.powercord-spotify .spotify-extra-controls {
+  display: none;
+  transition: none;
+}
+
+.powercord-spotify.hover .spotify-extra-controls {
+  pointer-events: none;
+  height: none;
+  opacity: none;
+}
+
+.powercord-spotify.hover .spotify-seek:not(.no-premium) .spotify-seek-bar {
+  height: 6px;
 }
 
 .modal-yWgWj- {
@@ -525,20 +545,14 @@
   box-shadow: none !important;
 }
 
-.modal-yWgWj- .footer-2gL1pp {
+.modal-yWgWj- .footer-2gL1pp, .modal-yWgWj- .header-1TKi98 {
   background-color: var(--background-secondary-alt);
   border-radius: var(--neb-border-radius1);
   margin: var(--margin);
-  box-shadow: none;
 }
 
-.modal-yWgWj- .footer-2gL1pp .lookFilled-1Gx00P.colorBrand-3pXr91 {
-  background-color: var(--button-background-dark);
+.modal-yWgWj- .footer-2gL1pp button, .modal-yWgWj- .header-1TKi98 button {
   border-radius: var(--neb-border-radius1);
-}
-
-.modal-yWgWj- .footer-2gL1pp .lookFilled-1Gx00P.colorBrand-3pXr91:hover {
-  background-color: var(--button-hover-dark);
 }
 
 .sidebar-2K8pFh {
@@ -853,6 +867,7 @@
 
 .panels-j1Uci_ .wrapper-24pKcD .container-1giJp5 {
   margin-top: var(--margin);
+  border: none;
 }
 
 .panels-j1Uci_ .wrapper-24pKcD .lookFilled-1Gx00P.colorBrand-3pXr91 {
@@ -868,6 +883,7 @@
   background-color: var(--background-primary);
   border-radius: var(--neb-border-radius1);
   margin-top: var(--margin);
+  border: none !important;
 }
 
 #app-mount .wrapper-3NnKdC {
@@ -1155,6 +1171,24 @@
 .root-1gCeng .message-2qRu38 {
   background-color: var(--background-secondary-alt);
   border-radius: var(--neb-border-radius1);
+}
+
+.root-1gCeng .input-cIJ7To:not(.multiInput-2AiDV2) {
+  background-color: var(--background-secondary-alt);
+  border: var(--border-inactive);
+  transition: var(--transition);
+}
+
+.root-1gCeng .input-cIJ7To:not(.multiInput-2AiDV2):hover {
+  transform: scale(1.02);
+  box-shadow: var(--elevation-high);
+  border-color: var(--background-secondary);
+}
+
+.root-1gCeng .input-cIJ7To:not(.multiInput-2AiDV2):focus-within {
+  transform: scale(1.03);
+  box-shadow: var(--elevation-high);
+  border-color: var(--border-active);
 }
 
 .contentWrapper-3WC1ID {
@@ -1943,6 +1977,10 @@
   border-radius: var(--neb-border-radius1);
 }
 
+.standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e [style="color: rgb(255, 255, 255); background-color: rgb(114, 137, 218);"] {
+  background-color: var(--background-secondary-alt) !important;
+}
+
 .standardSidebarView-3F1I7i ::-webkit-scrollbar {
   display: none;
 }
@@ -1952,6 +1990,42 @@ div[aria-label=USER_SETTINGS] .info-1VyQPT:last-child > div:last-child::after {
   display: block;
   -webkit-user-select: text;
           user-select: text;
+}
+
+.contentRegionScroller-26nc1e .container-1sFeqf .keybind-KpFkfr {
+  display: none;
+}
+
+.contentRegionScroller-26nc1e .container-1sFeqf .closeButton-1tv5uR {
+  position: absolute;
+  border-color: var(--background-tertiary);
+  border-radius: var(--neb-border-radius1);
+  background-color: var(--background-primary);
+  transition: var(--long-transition);
+  width: 100px;
+  left: -50px;
+  top: -53px;
+}
+
+.contentRegionScroller-26nc1e .container-1sFeqf .closeButton-1tv5uR svg {
+  position: relative;
+  right: 30px;
+  width: 20px;
+  height: 20px;
+}
+
+.contentRegionScroller-26nc1e .container-1sFeqf .closeButton-1tv5uR::before {
+  content: "Exit";
+  color: var(--header-primary);
+  position: absolute;
+  font-weight: 500;
+  font-size: 18px;
+  right: 33px;
+  top: 6.5px;
+}
+
+.contentRegionScroller-26nc1e .container-1sFeqf .closeButton-1tv5uR:hover {
+  background-color: rgba(255, 255, 255, 0.137);
 }
 
 .item-26Dhrx {
@@ -2052,8 +2126,8 @@ div[aria-label=USER_SETTINGS] .info-1VyQPT:last-child > div:last-child::after {
   --neb-topbar-height: 40px;
   --neb-sidebar-width: 320px;
   --margin:10px;
-  --neb-version: "Nebula 3 Beta Release";
-  --neb-version-titlebar:"v3.7.6 Beta Release";
+  --neb-version: "Nebula 3 Release";
+  --neb-version-titlebar:"v3.7.8 Release";
   --medium-font-size:18px;
   --transition:100ms ease all;
   --long-transition:250ms ease all;

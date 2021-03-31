@@ -1,0 +1,35 @@
+.contentRegionScroller-26nc1e{
+    .container-1sFeqf{
+        .keybind-KpFkfr{
+            display: none;
+        }
+        .closeButton-1tv5uR{
+            position: absolute;
+            border-color: var(--background-tertiary);
+            border-radius: var(--neb-border-radius1);
+            background-color: var(--background-primary);
+            transition: var(--long-transition);
+            width: 100px;
+            left:-50px;
+            top:-53px;
+            svg{
+                position: relative;
+                right:30px;
+                width: 20px;
+                height:20px;
+            }
+            &::before{
+                content: 'Exit';
+                color:var(--header-primary);
+                position: absolute;
+                font-weight: 500;
+                font-size: 18px;
+                right:33px;
+                top:6.5px;
+            }
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.137);
+            }
+        }
+    }
+}
