@@ -1,0 +1,17 @@
+.root-1gCeng{
+    .input-cIJ7To:not(.multiInput-2AiDV2){
+        background-color: var(--background-secondary-alt);
+        border:var(--border-inactive);
+        transition: var(--transition);
+        &:hover{
+            transform: scale(1.02);
+            box-shadow: var(--elevation-high);
+            border-color: var(--background-secondary);
+        }
+        &:focus-within{
+            transform:scale(1.03);
+            box-shadow: var(--elevation-high);
+            border-color: var(--border-active);
+        }
+    }
+}
