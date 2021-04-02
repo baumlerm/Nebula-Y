@@ -123,45 +123,17 @@
 }
 
 .userPopout-3XzG_A{
-    [mask="url(#svg-mask-status-dnd)"]{
-        fill: var(--neb-status-dnd);
+    rect{
         pointer-events: none;
         width:65%;
         height:8px;
         mask:none;
         ry:5; x:10; y:70;
     }
-    [mask="url(#svg-mask-status-idle)"]{
-        fill:var(--neb-status-idle);
-        pointer-events: none;
-        width:65%;
-        height:8px;
-        mask:none;
-        ry:5; x:10; y:70;
-    }
-    [mask="url(#svg-mask-status-online-mobile)"],
     [mask="url(#svg-mask-status-online)"]{
         fill: var(--neb-status-online);
-        pointer-events: none;
-        width:65%;
-        height:8px;
-        mask: none;
-        ry:5; x:10; y:70;
     }
-    [mask*="status-streaming"]{
-        fill:var(--neb-status-streaming);
-        pointer-events: none;
-        width:65%;
-        height:8px;
-        mask:none;
-        ry:5; x:10; y:70;
-    }
-    [mask="url(#svg-mask-status-offline)"]{
-        fill:var(--neb-status-offline);
-        pointer-events: none;
-        width: 65%;
-        height:8px;
-        mask:none;
-        ry:5; x:10;y:70;
+    [mask="url(#svg-mask-status-dnd)"]{
+        fill:var(--neb-status-dnd);
     }
 }
