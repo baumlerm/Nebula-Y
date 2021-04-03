@@ -710,7 +710,7 @@
 
 #app-mount .unread-2lAfLh {
   border-radius: var(--neb-border-radius1);
-  background-color: var(--indicator);
+  background-color: var(--unread-bg);
   position: absolute;
   height: 6px;
   width: 10%;
@@ -719,7 +719,6 @@
 }
 
 #app-mount .modeUnread-1qO3K1 {
-  background: var(--unread-bg);
   border-radius: var(--neb-border-radius1);
   max-width: calc(var(--neb-sidebar-width) - 20px);
 }
@@ -919,7 +918,7 @@
   background: transparent;
   position: relative;
   margin-bottom: calc(var(--margin) + 150px);
-  padding-top: 10px !important;
+  padding-top: 7px !important;
   top: 70px;
 }
 
@@ -1985,8 +1984,7 @@
   z-index: 1;
 }
 
-.userPopout-3XzG_A [mask="url(#svg-mask-status-dnd)"] {
-  fill: var(--neb-status-dnd);
+.userPopout-3XzG_A rect {
   pointer-events: none;
   width: 65%;
   height: 8px;
@@ -1997,53 +1995,12 @@
   y: 70;
 }
 
-.userPopout-3XzG_A [mask="url(#svg-mask-status-idle)"] {
-  fill: var(--neb-status-idle);
-  pointer-events: none;
-  width: 65%;
-  height: 8px;
-  -webkit-mask: none;
-          mask: none;
-  ry: 5;
-  x: 10;
-  y: 70;
-}
-
-.userPopout-3XzG_A [mask="url(#svg-mask-status-online-mobile)"],
 .userPopout-3XzG_A [mask="url(#svg-mask-status-online)"] {
   fill: var(--neb-status-online);
-  pointer-events: none;
-  width: 65%;
-  height: 8px;
-  -webkit-mask: none;
-          mask: none;
-  ry: 5;
-  x: 10;
-  y: 70;
 }
 
-.userPopout-3XzG_A [mask*=status-streaming] {
-  fill: var(--neb-status-streaming);
-  pointer-events: none;
-  width: 65%;
-  height: 8px;
-  -webkit-mask: none;
-          mask: none;
-  ry: 5;
-  x: 10;
-  y: 70;
-}
-
-.userPopout-3XzG_A [mask="url(#svg-mask-status-offline)"] {
-  fill: var(--neb-status-offline);
-  pointer-events: none;
-  width: 65%;
-  height: 8px;
-  -webkit-mask: none;
-          mask: none;
-  ry: 5;
-  x: 10;
-  y: 70;
+.userPopout-3XzG_A [mask="url(#svg-mask-status-dnd)"] {
+  fill: var(--neb-status-dnd);
 }
 
 .userPopout-3XzG_A .wrapper-3t9DeA::after {
@@ -2259,14 +2216,11 @@ div[aria-label=USER_SETTINGS] .info-1VyQPT:last-child > div:last-child::after {
   --neb-thumb:var(--neb-tertiary);
   --border-inactive: solid 2px var(--background-tertiary);
   --border-active: solid 2px var(--neb-white);
-  --unread-badge: transparent;
-  --unread-bg: transparent;
+  --unread-bg: var(--background-secondary-alt);
   --selected-badge: rgba(112, 134, 215, 0);
   --selected-bg: var(--background-tertiary);
   --selected-bg-hover: var(--background-secondary-alt);
   --hovered-bg: var(--neb-secondary-alt);
-  --bg-rounding: 0 50px 50px 0;
-  --border-info: 2px solid;
 }
 
 .theme-dark {

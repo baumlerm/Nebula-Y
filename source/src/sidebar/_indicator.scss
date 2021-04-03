@@ -21,7 +21,7 @@
 }
 #app-mount .unread-2lAfLh {
     border-radius: var(--neb-border-radius1);
-    background-color:var(--indicator);
+    background-color:var(--unread-bg);
     position: absolute;
     height:6px;
     width:10%;
@@ -29,7 +29,6 @@
     top:19px;
 }
 #app-mount .modeUnread-1qO3K1 {
-    background: var(--unread-bg);
     border-radius: var(--neb-border-radius1);
     max-width: calc(var(--neb-sidebar-width) - 20px);
 }

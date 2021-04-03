@@ -74,15 +74,11 @@
 
 
 // -Indicators
---unread-badge: transparent;
---unread-bg: transparent;
+--unread-bg: var(--background-secondary-alt);
 --selected-badge: rgba(112, 134, 215, 0);
 --selected-bg: var(--background-tertiary);
 --selected-bg-hover: var(--background-secondary-alt);
 --hovered-bg: var(--neb-secondary-alt);
---bg-rounding: 0 50px 50px 0;
---border-info: 2px solid;
-
 
 }
 //╔═══════════════════╦═══════════════════════════╦╗

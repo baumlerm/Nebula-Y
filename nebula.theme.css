@@ -1,7 +1,7 @@
 /**
  * @name Nebula
  * @author Pavui#0001
- * @version 3.9.8
+ * @version 3.10.9
  * @description Nebula is a deep blue, round, consistent UI theme, and sequel to Nebula 2
  * @source https://github.com/pavui/Nebula
 */
@@ -43,6 +43,28 @@
 --neb-secondary:#202442;
 --neb-secondary-alt:#2d325a;
 --neb-tertiary:#1b1f38;
+
+--unread-bg: var(--neb-secondary-alt);
+--selected-badge: rgba(112, 134, 215, 0);
+--selected-bg: var(--neb-tertiary);
+--selected-bg-hover: var(--neb-secondary-alt);
+--hovered-bg: var(--neb-secondary-alt);
+
+--neb-border-radius0:0px; /*Default 0px*/
+--neb-border-radius1: 18px; /*Default 15px*/
+--neb-border-radius2: 25px; /*Default 25px*/
+--neb-topbar-height: 40px; /*Default 40px, Min 29px*/
+--neb-sidebar-width: 320px; /*Do not change*/
+--margin:10px; /*Default 10px*/
+--neb-version: "Nebula 3 Release"; /*Dont Change*/
+--neb-version-titlebar:"v3.9.8 Release";
+--medium-font-size:18px; /*Default 18px*/
+--transition:100ms ease all;
+--long-transition:250ms ease all;
+--neb-track:transparent;
+--neb-thumb:var(--neb-tertiary);
+--border-inactive: solid 2px var(--background-tertiary);
+--border-active: solid 2px var(--neb-white);
 }
 
 /*
