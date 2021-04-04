@@ -936,7 +936,7 @@
 }
 
 .wrapper-25eVIn foreignObject {
-  border-radius: calc(var(--neb-border-radius1) - 8px);
+  border-radius: calc(var(--neb-border-radius1) - 9px);
   -webkit-mask: none;
           mask: none;
 }
@@ -949,14 +949,8 @@
   min-width: 48px !important;
 }
 
-.wrapper-25eVIn [style="background-color: rgb(240, 71, 71); width: 16px; padding-right: 1px;"] {
-  -webkit-mask: linear-gradient(transparent, black);
-  border-radius: 0 0 10px 10px;
-}
-
-.wrapper-25eVIn .numberBadge-2s8kKX {
-  height: 40px;
-  color: transparent;
+.wrapper-25eVIn .lowerBadge-29hYVK [style="background-color: rgb(240, 71, 71); width: 16px; padding-right: 1px;"] {
+  background-color: #f04747 !important;
 }
 
 .guildSeparator-33mFX6 {

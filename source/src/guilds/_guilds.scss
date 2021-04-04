@@ -59,7 +59,7 @@
     }
     .wrapper-25eVIn{
         foreignObject{
-            border-radius: calc(var(--neb-border-radius1) - 8px);
+            border-radius: calc(var(--neb-border-radius1) - 9px);
             mask:none;
         }
         .lowerBadge-29hYVK{
@@ -67,14 +67,9 @@
             .base-PmTxvP{
                 min-width:48px !important;
             }
-        }
-        [style="background-color: rgb(240, 71, 71); width: 16px; padding-right: 1px;"]{
-            -webkit-mask: linear-gradient(transparent, black);
-            border-radius: 0 0 10px 10px;
-        }
-        .numberBadge-2s8kKX{
-            height:40px;
-            color:transparent;
+            [style="background-color: rgb(240, 71, 71); width: 16px; padding-right: 1px;"]{
+                background-color: rgba(240, 71, 71) !important;
+            }
         }
     }
     
