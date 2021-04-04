@@ -60,12 +60,14 @@
     .body-3iLsc4{
         background-color: transparent;
         padding-bottom: 0;
+        max-height: 200px;
         .size12-3R0845:nth-child(3),
         .note-3HfJZ5{
             display: none;
         }
         .rolesList-22qj2L{
-            &::before{
+            padding-bottom: 10px;
+            &::after{
                 content: 'ROLES';
                 position: absolute;
                 font-weight: 900;
@@ -84,6 +86,14 @@
         height:fit-content;
         left:-240px;
         top:0;
+        button{
+            border-radius: var(--neb-border-radius1);
+            background-color: var(--button-background-light);
+            border: hidden !important;
+            &:hover{
+                background-color: var(--button-hover-light);
+            }
+        }
     }
     .footer-1fjuF6{
         border-radius: var(--neb-border-radius1);

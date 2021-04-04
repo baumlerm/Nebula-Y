@@ -953,6 +953,10 @@
   background-color: #f04747 !important;
 }
 
+.folderIconWrapper-1_bOZe {
+  border-radius: 5px;
+}
+
 .guildSeparator-33mFX6 {
   display: none;
 }
@@ -1933,6 +1937,7 @@
 .userPopout-3XzG_A .body-3iLsc4 {
   background-color: transparent;
   padding-bottom: 0;
+  max-height: 200px;
 }
 
 .userPopout-3XzG_A .body-3iLsc4 .size12-3R0845:nth-child(3),
@@ -1940,7 +1945,11 @@
   display: none;
 }
 
-.userPopout-3XzG_A .body-3iLsc4 .rolesList-22qj2L::before {
+.userPopout-3XzG_A .body-3iLsc4 .rolesList-22qj2L {
+  padding-bottom: 10px;
+}
+
+.userPopout-3XzG_A .body-3iLsc4 .rolesList-22qj2L::after {
   content: "ROLES";
   position: absolute;
   font-weight: 900;
@@ -1960,6 +1969,16 @@
   height: fit-content;
   left: -240px;
   top: 0;
+}
+
+.userPopout-3XzG_A .activity-11LB_k button {
+  border-radius: var(--neb-border-radius1);
+  background-color: var(--button-background-light);
+  border: hidden !important;
+}
+
+.userPopout-3XzG_A .activity-11LB_k button:hover {
+  background-color: var(--button-hover-light);
 }
 
 .userPopout-3XzG_A .footer-1fjuF6 {
