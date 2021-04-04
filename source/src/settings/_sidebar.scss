@@ -21,6 +21,12 @@
                 [style="color: rgb(255, 255, 255); background-color: rgb(114, 137, 218);"]{
                     background-color: var(--background-secondary-alt) !important;
                 }
+                .side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ{
+                    background-color: var(--selected-bg);
+                    &:hover{
+                        background-color: var(--selected-bg-hover);
+                    }
+                }
             }
         }
     }

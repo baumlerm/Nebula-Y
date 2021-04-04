@@ -936,9 +936,14 @@
 }
 
 .wrapper-25eVIn foreignObject {
-  border-radius: calc(var(--neb-border-radius1) - 9px);
+  transition: var(--transition);
+  border-radius: var(--server-radius-active);
   -webkit-mask: none;
           mask: none;
+}
+
+.wrapper-25eVIn foreignObject:hover {
+  border-radius: var(--server-radius-hover);
 }
 
 .wrapper-25eVIn .lowerBadge-29hYVK {
@@ -2099,6 +2104,14 @@
   background-color: var(--background-secondary-alt) !important;
 }
 
+.standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e .side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ {
+  background-color: var(--selected-bg);
+}
+
+.standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e .side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ:hover {
+  background-color: var(--selected-bg-hover);
+}
+
 .standardSidebarView-3F1I7i ::-webkit-scrollbar {
   display: none;
 }
@@ -2241,6 +2254,8 @@ div[aria-label=USER_SETTINGS] .info-1VyQPT:last-child > div:last-child::after {
   --neb-border-radius0:0px;
   --neb-border-radius1: 18px;
   --neb-border-radius2: 25px;
+  --server-radius-active:9px;
+  --server-radius-hover:5px;
   --neb-topbar-height: 40px;
   --neb-sidebar-width: 320px;
   --margin:10px;
