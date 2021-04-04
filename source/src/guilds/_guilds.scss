@@ -40,7 +40,7 @@
     background: transparent;
     position: relative;
     margin-bottom: calc(var(--margin) + 150px);
-    padding-top: 7px !important;
+    padding-top: 12px !important;
     top: 70px;
     }
     
@@ -56,6 +56,26 @@
     margin-bottom: calc(var(--margin) + 80px);
     top: 0;
     left: 20;
+    }
+    .wrapper-25eVIn{
+        foreignObject{
+            border-radius: calc(var(--neb-border-radius1) - 8px);
+            mask:none;
+        }
+        .lowerBadge-29hYVK{
+            bottom:0px;
+            .base-PmTxvP{
+                min-width:48px !important;
+            }
+        }
+        [style="background-color: rgb(240, 71, 71); width: 16px; padding-right: 1px;"]{
+            -webkit-mask: linear-gradient(transparent, black);
+            border-radius: 0 0 10px 10px;
+        }
+        .numberBadge-2s8kKX{
+            height:40px;
+            color:transparent;
+        }
     }
     
     

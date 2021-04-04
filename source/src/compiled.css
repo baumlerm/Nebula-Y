@@ -918,7 +918,7 @@
   background: transparent;
   position: relative;
   margin-bottom: calc(var(--margin) + 150px);
-  padding-top: 7px !important;
+  padding-top: 12px !important;
   top: 70px;
 }
 
@@ -933,6 +933,30 @@
   margin-bottom: calc(var(--margin) + 80px);
   top: 0;
   left: 20;
+}
+
+.wrapper-25eVIn foreignObject {
+  border-radius: calc(var(--neb-border-radius1) - 8px);
+  -webkit-mask: none;
+          mask: none;
+}
+
+.wrapper-25eVIn .lowerBadge-29hYVK {
+  bottom: 0px;
+}
+
+.wrapper-25eVIn .lowerBadge-29hYVK .base-PmTxvP {
+  min-width: 48px !important;
+}
+
+.wrapper-25eVIn [style="background-color: rgb(240, 71, 71); width: 16px; padding-right: 1px;"] {
+  -webkit-mask: linear-gradient(transparent, black);
+  border-radius: 0 0 10px 10px;
+}
+
+.wrapper-25eVIn .numberBadge-2s8kKX {
+  height: 40px;
+  color: transparent;
 }
 
 .guildSeparator-33mFX6 {
