@@ -1,0 +1,16 @@
+.popout-VcNcHB{
+    border-radius: var(--neb-border-radius1);
+    margin-top: var(--margin);
+    .option-3KoAJB{
+        margin: var(--margin);
+        border-radius: var(--neb-border-radius1);
+        transition: var(--transition);
+        padding: 8px;
+        .selectedIcon-3uS11H{
+            color:var(--neb-white)
+        }
+    }
+    [aria-selected="true"]{
+        background-color: var(--background-secondary-alt);
+    }
+}
