@@ -59,8 +59,12 @@
     }
     .wrapper-25eVIn{
         foreignObject{
-            border-radius: calc(var(--neb-border-radius1) - 9px);
+            transition: var(--transition);
+            border-radius: var(--server-radius-active);
             mask:none;
+            &:hover{
+                border-radius: var(--server-radius-hover);
+            }
         }
         .lowerBadge-29hYVK{
             bottom:0px;
