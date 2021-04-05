@@ -1,0 +1,29 @@
+.css-6fzn47-control{
+    background-color: var(--background-secondary-alt);
+    border-radius: var(--neb-border-radius1);
+    border: none;
+}
+.css-3vaxre-menu,
+.css-gvi9bl-control{
+    background-color: var(--background-secondary-alt);
+    border-radius: var(--neb-border-radius1);
+    margin-top: var(--margin);
+    border: none;
+    .css-rzbxvl-option,
+    .css-1yz4bi9-option{
+        border-radius: var(--neb-border-radius1);
+        background-color: var(--background-tertiary);
+        transition: var(--transition);
+        margin: var(--margin);
+        width:525px;
+        &:hover{
+            background-color: var(--background-secondary);
+        }
+    }
+    .css-1ba14n5-option{
+        background-color: var(--background-primary);
+        border-radius: var(--neb-border-radius1);
+        margin: var(--margin);
+        width: 525px;
+    }
+}

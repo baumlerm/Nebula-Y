@@ -57,29 +57,7 @@
     top: 0;
     left: 20;
     }
-    .wrapper-25eVIn{
-        foreignObject{
-            transition: var(--transition);
-            border-radius: var(--server-radius-active);
-            mask:none;
-            &:hover{
-                border-radius: var(--server-radius-hover);
-            }
-        }
-        .lowerBadge-29hYVK{
-            bottom:0px;
-            .base-PmTxvP{
-                min-width:48px !important;
-            }
-            [style="background-color: rgb(240, 71, 71); width: 16px; padding-right: 1px;"]{
-                background-color: rgba(240, 71, 71) !important;
-            }
-        }
-    }
-    .folderIconWrapper-1_bOZe{
-        border-radius: 5px;
-    }
-    
+
     
     // Remove guild Separator
     .guildSeparator-33mFX6 {display: none;}
@@ -114,6 +92,9 @@
     .circleIconButton-1QV--U {
     color: var(--interactive-normal);
     background: var(--background-secondary-alt);
+    &:hover{
+        background-color: var(--background-tertiary);
+    }
     }
     
     .circleIconButton-1QV--U.selected-ugP_am svg path{

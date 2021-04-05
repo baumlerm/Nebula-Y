@@ -1,0 +1,14 @@
+.container-3auIfb:not([style*="125"]) {
+    background-color: var(--enabled-toggle-background) !important;
+}
+  
+.container-3auIfb[style*="125"] {
+    background-color:var(--disabled-toggle-background) !important;
+}
+  
+ svg.slider-TkfMQL svg {
+    display: none;
+}
+.slider-TkfMQL rect{
+    fill:var(--neb-white);
+}

@@ -1,0 +1,45 @@
+.item-26Dhrx{
+    border-radius: 100px;
+    .radioIconForeground-XwlXQN{
+        color: var(--header-primary);
+    }
+}
+.radioBar-bMNUI-{
+    border: none;
+}
+[style="--radio-bar-accent-color:#f04747; padding: 10px;"]{
+    &::before{
+        border-radius: 10px;
+        background-color: var(--radio-bar-accent-color-red);
+        position: absolute;
+        content: '';
+        height:6px;
+        width:240px;
+        left:160px;
+        top:306px;
+    }
+}
+[style="--radio-bar-accent-color:#faa61a; padding: 10px;"]{
+    &::before{
+    border-radius: 10px;
+    background-color: var(--radio-bar-accent-color-yellow);
+    position: absolute;
+    content: '';
+    height:6px;
+    width:220px;
+    left:210px;
+    top:236px;
+    }
+}
+[style="--radio-bar-accent-color:#43b581; padding: 10px;"]{
+    &::before{
+        border-radius: 10px;
+        background-color: var(--radio-bar-accent-color-green);
+        position: absolute;
+        content: '';
+        height:6px;
+        width:122px;
+        left:171px;
+        top:166px;
+    }
+}

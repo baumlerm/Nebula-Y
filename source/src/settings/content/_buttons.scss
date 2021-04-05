@@ -1,0 +1,22 @@
+.contentColumnDefault-1VQkGM{
+    button{
+        border-radius: var(--neb-border-radius1);
+        border: none;
+    }
+    .lookOutlined-3sRXeN.colorRed-1TFJan{
+        background-color: rgb(240, 71, 71);
+        color: var(--header-primary);
+    }
+    .lookFilled-1Gx00P.colorBrand-3pXr91{
+        background-color: var(--button-background-dark);
+        &:hover{
+            background-color: var(--background-secondary-alt);
+        }
+    }
+    .lookFilled-1Gx00P.colorGrey-2DXtkV{
+        background-color: var(--background-secondary-alt);
+        &:hover{
+            background-color: var(--background-secondary);
+        }
+    }
+}

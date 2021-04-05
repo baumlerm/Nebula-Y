@@ -1,7 +1,7 @@
 /**
  * @name Nebula
- * @author Pavui#0001
- * @version 3.10.11
+ * @author Pavui#3481
+ * @version 3.11.11
  * @description Hi BD users, eat a pickle.
  * @source https://www.youtube.com/watch?v=dQw4w9WgXcQ
 */
@@ -49,6 +49,21 @@
 --selected-bg: var(--neb-tertiary);
 --selected-bg-hover: var(--neb-secondary-alt);
 --hovered-bg: var(--neb-secondary-alt);
+
+--modal-backdrop-blur: blur(5px);
+
+--neb-status-online: rgb(53, 177, 125);
+--neb-status-idle: rgb(238, 185, 11);
+--neb-status-dnd: rgb(215, 58, 73);
+--neb-status-streaming: rgb(89, 54, 149);
+--neb-status-offline: rgb(117, 128, 142);
+
+--radio-bar-accent-color-red: #f04747;
+--radio-bar-accent-color-yellow:#faa61a;
+--radio-bar-accent-color-green:#43b581;
+
+--disabled-toggle-background:rgb(88, 96, 122);
+--enabled-toggle-background:rgb(66, 78, 143);
 
 --neb-border-radius0:0px; /*Default 0px*/
 --neb-border-radius1: 18px; /*Default 15px*/

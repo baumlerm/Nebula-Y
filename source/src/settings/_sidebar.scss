@@ -1,41 +1,26 @@
-.standardSidebarView-3F1I7i{
-    background-color: var(--background-tertiary);
-    .sidebarRegion-VFTUkN{
-        margin: var(--margin);
-        flex: 0 0 auto;
-        .sidebarRegionScroller-3MXcoP{
-            background: var(--background-primary);
-            border-radius: var(--neb-border-radius1);
-            width:var(--neb-sidebar-width);
-            .sidebar-CFHs9e{
-                padding: 15px 10px 0 10px;
-                width:var(--neb-sidebar-width);
-                .header-2RyJ0Y{
-                    color:var(--header-primary);
-                    font-size: 17px;
-                }
-                .side-8zPYf6 .item-PXvHYJ{
-                    transition: var(--transition);
-                    border-radius: var(--neb-border-radius1);
-                }
-                [style="color: rgb(255, 255, 255); background-color: rgb(114, 137, 218);"]{
-                    background-color: var(--background-secondary-alt) !important;
-                }
-                .side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ{
-                    background-color: var(--selected-bg);
-                    &:hover{
-                        background-color: var(--selected-bg-hover);
-                    }
-                }
+.sidebarRegion-VFTUkN{
+    max-width: var(--neb-sidebar-width);
+    margin: calc(var(--margin) * 4.6) 0 var(--margin) var(--margin);
+    .sidebarRegionScroller-3MXcoP{
+        border-radius: var(--neb-border-radius1);
+        max-width: var(--neb-sidebar-width);
+        background: var(--background-primary);
+        flex: 1 0 0px;
+        .sidebar-CFHs9e{
+            width: var(--neb-sidebar-width);
+            padding-left: 8px;
+            padding-top: 10px;
+            .header-2RyJ0Y{
+                color: var(--header-primary);
+                font-size: 16px;
+            }
+            .side-8zPYf6 .item-PXvHYJ{
+                border-radius: var(--neb-border-radius1);
+                transition: var(--transition);
             }
         }
     }
     ::-webkit-scrollbar{
         display: none;
     }
-}
-div[aria-label="USER_SETTINGS"] .info-1VyQPT:last-child > div:last-child::after {
-    content: var(--neb-version);
-    display: block;
-    user-select: text;
 }
