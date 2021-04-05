@@ -12,9 +12,16 @@
         }
     }
     .wrapper-39oAo3{
-        background-color: var(--background-primary);
+        background-color: var(--background-secondary);
         border-radius: var(--neb-border-radius2);
         margin-top: var(--margin);
         box-shadow: none;
+        button{
+            border-radius: var(--neb-border-radius1);
+            background-color: var(--background-secondary-alt);
+            &:hover{
+                background-color: var(--button-hover-light);
+            }
+        }
     }
 }

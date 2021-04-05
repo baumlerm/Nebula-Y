@@ -1,38 +1,24 @@
 .notice-3uyY6c{
-    position: relative;
-    top:75px;
-    height:0;
+    position: absolute;
+    border-radius: var(--neb-border-radius1);
+    background-color: var(--background-primary);
+    top:0px;
+    left:340px;
+    width:57.6%;
     .header-2QVqxD{
-        background-color: var(--neb-white);
-        border-radius: var(--neb-border-radius1);
-        padding:8px;
-        color:#000;
+        position: absolute;
+        left: 13px;
+        font-size: 16px;
     }
     .lookOutlined-3sRXeN.colorWhite-rEQuAQ{
-        background-color: var(--neb-white);
+        background-color: var(--background-secondary-alt);
+        padding: 7px;
         border-radius: var(--neb-border-radius1);
-        color:#000;
-        padding: 8px;
+        position: absolute;
+        right: 6px;
         border: none;
-    }
-}
-.colorStreamerMode-2SJAUN{
-    position: fixed;
-    left:151px;
-    top:68px;
-    height: 0px;
-    width:fit-content;
-    color:transparent;
-    .closeButton-3cJIM4{
-        display: none;
-    }
-    .button-2DhvE9{
-        background-color: var(--neb-status-streaming);
-        border-radius: var(--neb-border-radius1) 0 var(--neb-border-radius1) 0;
-        border: none;
-        width:calc(var(--neb-sidebar-width) - 21px);
-        &::after{
-            content: ' Streamer Mode';
+        &:hover{
+            background-color: var(--button-hover-light);
         }
     }
 }
