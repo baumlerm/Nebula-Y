@@ -1,9 +1,23 @@
 ![](https://i.imgur.com/sYPNqok.png)
 
-<h1 align=center> Nebula 3 </h1>
-<h3 align=center> Nebula is a round, consistent, optimized, full dark blue theme. </h3>
+<h1 align=center> Nebula Y </h1>
+<h3 align=center> Nebula Y is a round, consistent, optimized, Mint-Y inspired theme. </h3>
 
-![Main](https://i.imgur.com/1BHIE4Z.png)
+![image](https://user-images.githubusercontent.com/62057355/113621355-d4202980-965b-11eb-972a-592d4e4dd4c9.png)
+
+
+<h3 align=center> So whats different?</h4>
+
+
+- Colors have been changed to fit with the Mint-Y theme.  
+
+- Fixed guild list and settings back Button.  
+
+- Gray Channel Lines indicate unread messages.  
+
+- Dark Gray Channel Lines indicate unread messages from muted channels.
+
+Changes have not been Tested with BetterDiscord.
 
 <h3 align=center> So whats new?</h4>
 
@@ -50,6 +64,7 @@ git clone https://github.com/pavui/nebula
 ## Credits
 ### Id like to give credits to these people who helped the development of Nebula 3
 
+- Pavui
 - LuckFire
 - DoggyBootsy
 - Tropical 
