@@ -11,10 +11,10 @@
 
 // Main Dark Variables
 
---neb-primary:#25294a;
---neb-secondary:#202442;
---neb-secondary-alt:#2d325a;
---neb-tertiary:#1b1f38;
+--neb-primary:#404040;
+--neb-secondary:#383838;
+--neb-secondary-alt:#353535;
+--neb-tertiary:#2f2f2f;
 --neb-white:#e2e4f0;
 
 // Main Light Variables
@@ -84,7 +84,7 @@
 
 
 // -Indicators
---unread-bg: var(--background-secondary-alt);
+--unread-bg:#8e9297;
 --selected-badge: rgba(112, 134, 215, 0);
 --selected-bg: var(--background-tertiary);
 --selected-bg-hover: var(--background-secondary-alt);
@@ -103,7 +103,7 @@
 --interactive-normal:var(--neb-white);
 --interactive-active:var(--neb-white);
 --background-modifier-hover:var(--neb-secondary-alt);
---background-mentioned:#1b1f38;
+--background-mentioned:var(--neb-secondary-alt);
 --background-mentioned-hover:var(--background-secondary);
 --background-modifier-selected:var(--background-secondary-alt);
 --indicator:var(--neb-secondary-alt);
