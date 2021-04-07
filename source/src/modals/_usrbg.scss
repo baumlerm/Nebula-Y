@@ -3,16 +3,17 @@
   }
   .header-QKLPzZ .wrapper-3t9DeA::before {
     content: '';
-    position: fixed;
-    top: var(--margin);
-    left: var(--margin);
-    width: 97%;
-    height: 120px;
+    position:fixed;
+    margin: var(--margin);
+    left: 0;
+    top:0;
+    width: 57.9%;
+    height: 105px;
     opacity: 1;
     pointer-events: none;
     filter:brightness(.6);
     background: var(--user-background) center/cover no-repeat;
-    border-radius: var(--neb-border-radius2);
+    border-radius: var(--neb-border-radius1);
     -webkit-mask: linear-gradient(black, black);
   }
   
