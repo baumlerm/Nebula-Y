@@ -100,6 +100,7 @@
         background-color: var(--background-secondary);
         box-shadow: var(--elevation-high);
         margin: var(--margin);
+        height:90px;
         .inputWrapper-31_8H8{
             padding-top: 15px;
             .input-cIJ7To{
@@ -111,7 +112,10 @@
             }
         }
         .protip-YaFfgO{
+            position: absolute;
             padding-top: 15px;
+            bottom: 20px;
+            left:42px;
         }
     }
     &::-webkit-scrollbar,
@@ -145,5 +149,54 @@
     }
     [mask="url(#svg-mask-status-dnd)"]{
         fill:var(--neb-status-dnd);
+    }
+}
+
+[aria-label="CorellanStoma"]{
+    .protip-YaFfgO{
+        &::after{
+            background-color: var(--background-secondary-alt);
+            border-radius: 10px;
+            padding: 3px 10px 3px 10px;
+            content: 'Designer';
+            position: absolute;
+            font-weight: 500;
+            font-size: 16px;
+            color: #fff;
+            width:196px;
+            left:-25px;
+        }
+    }
+}
+[aria-label="Pavy"]{
+    .protip-YaFfgO{
+        &::after{
+            background-color: var(--background-secondary-alt);
+            border-radius: 10px;
+            padding: 3px 10px 3px 10px;
+            content: 'Developer';
+            position: absolute;
+            font-weight: 500;
+            font-size: 16px;
+            color: #fff;
+            width:196px;
+            left:-25px;
+        }
+    }
+}
+[aria-label="LuckFire"]{
+    .protip-YaFfgO{
+        &::after{
+            background-color: var(--background-secondary-alt);
+            border-radius: 10px;
+            padding: 3px 10px 3px 10px;
+            content: 'Developer';
+            position: absolute;
+            font-weight: 500;
+            font-size: 16px;
+            color: #fff;
+            width:196px;
+            left:-25px;
+        }
     }
 }

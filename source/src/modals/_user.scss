@@ -69,32 +69,28 @@
                     display: none;
                 }
                 .customStatusText-39gdCI{
-                    background-color: var(--background-primary);
                     border-radius: var(--neb-border-radius1);
                     text-transform: capitalize;
-                    padding: 10px;
                     position: fixed;
-                    height:20px;
                     width:592px;
                     bottom:0;
                     left:0;
                     .customStatus-154i-H .customStatusEmoji-3BvdMX{
+                        position: relative;
+                        padding-left: 6px;
                         width:30px;
                         height:30px;
+                        top:5px;
                     }
                     span{
+                        position: relative;
                         font-size: 15px;
+                        padding-left: 10px;
                         color: #fff;
-                        bottom: 0;
                     }
                     .customStatus-154i-H{
                         position: relative;
-                        bottom:5px;
-                        span{
-                            position: relative;
-                            line-break:loose;
-                            bottom: 2px;
-                        }
+                        bottom:9px;
                     }
                     &::-webkit-scrollbar{
                         display: none;
