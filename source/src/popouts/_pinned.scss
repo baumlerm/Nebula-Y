@@ -1,29 +1,29 @@
 .messagesPopoutWrap-1MQ1bW{
-    background-color: transparent;
+    background-color: var(--background-secondary-alt);;
     border-radius: var(--neb-border-radius1);
     box-shadow: none;
     .header-ykumBX{
         background-color: var(--background-secondary);
         border-radius: var(--neb-border-radius1);
-        margin-bottom: var(--margin);
+        margin: var(--margin);
         box-shadow: none;
     }
     .messagesPopout-24nkyi{
         background-color: var(--background-secondary);
         border-radius: var(--neb-border-radius1);
+        margin: 0 var(--margin) var(--margin) var(--margin);
         &::-webkit-scrollbar{
             display: none;
         }
         .messageGroupWrapper-o-Zw7G{
             border-radius: var(--neb-border-radius1);
-            margin-right: calc(var(--margin) - 1px);
             border: none;
         }
     }
     .footer-1kmXd4{
         background-color: var(--background-secondary);
         border-radius: var(--neb-border-radius1);
-        margin-top: var(--margin);
+        margin: 0 var(--margin) var(--margin) var(--margin);
     }
     .cozy-3raOZG.wrapper-2a6GCs{
         background-color: var(--background-tertiary);

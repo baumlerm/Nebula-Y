@@ -87,10 +87,14 @@
         margin-top: var(--margin);
         .listRow-hutiT_{
             border-radius: var(--neb-border-radius2);
+            margin-right: 8px;
             .listAvatar-1NlAhb{
                 position: relative;
                 right:1px;
             }
+        }
+        ::-webkit-scrollbar{
+            display: none;
         }
     }
 }
