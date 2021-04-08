@@ -10,7 +10,13 @@
         &:focus-within{
             border: var(--border-active);
         }
-        .buttonWrapper-1ZmCpA{
+        .buttonContainer-28fw2U{
+            &:nth-last-child(2),
+            &:nth-last-child(3){
+                display: none;
+            }
+        }
+        .buttons-3JBrkn > button{
             display: none;
         }
     }
