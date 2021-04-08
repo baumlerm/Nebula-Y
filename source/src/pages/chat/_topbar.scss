@@ -16,10 +16,14 @@
             text-transform: capitalize;
         }
     }
+    &::before{
+        display: none;
+    }
     .toolbar-1t6TWx{
         border-radius: 0 var(--neb-border-radius1) var(--neb-border-radius1) 0;
         margin-right: 250px;
         padding: 8px;
+        height:var(--neb-topbar-height);
         background-color: var(--background-primary);
         [href="https://support.discord.com"],
         [role="switch"]{
