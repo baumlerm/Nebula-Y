@@ -21,9 +21,10 @@
         .footerTitle-2CYZch{
             color: var(--neb-white);
         }
-        .lookFilled-1Gx00P.colorGrey-2DXtkV{
+        button{
             border-radius: var(--neb-border-radius1);
             background-color: var(--button-background-dark);
+            width:fit-content;
             &:hover{
                 background-color: var(--button-hover-light);
             }
@@ -35,7 +36,7 @@
         background-color: var(--neb-tertiary);
         color:var(--neb-white);
         padding:12px;
-        width:67px;
+        width:fit-content;
     }
     .input--jS-j2{
         background-color: transparent;

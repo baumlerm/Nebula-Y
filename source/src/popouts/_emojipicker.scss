@@ -8,13 +8,18 @@
         border-radius: var(--neb-border-radius1) var(--neb-border-radius1) 0 0;
         height:3vh;
         padding-top: 10px;
+        .navList-2UtuhC{
+            position: relative;
+            bottom: 5px;
+            height:20px;
+        }
     }
     .header-8ilj5e,
     .header-1TOWci,
     .header-2k4I2o{
         background-color: var(--background-secondary-alt);
-        border-radius: 0px 0px var(--neb-border-radius1) var(--neb-border-radius1);
         margin-bottom: 10px;
+        border-radius: 0 0 var(--neb-border-radius1) var(--neb-border-radius1) !important;
         padding-top: 15px;
         box-shadow: none;
     }
@@ -49,5 +54,22 @@
         border-radius: var(--neb-border-radius1);
         margin-top: var(--margin);
         opacity: 1;
+    }
+    .header-19cWci{
+        padding-left: 5px;
+    }
+    [aria-selected=true]{
+        .navButtonActive-1MkytQ{
+            background-color: var(--background-primary);
+            border-radius: var(--neb-border-radius1);
+        }; 
+    }
+    .imageLoading-bpSr0M {
+        background: var(--background-primary) !important; 
+        border-radius: 90px;
+        background-image: none !important;
+    }
+    .emojiItemDisabled-1FvFuF{
+        filter: none;
     }
 }
