@@ -68,34 +68,6 @@
                 .headerTextNormal-2mGWX3{
                     display: none;
                 }
-                .customStatusText-39gdCI{
-                    border-radius: var(--neb-border-radius1);
-                    text-transform: capitalize;
-                    position: fixed;
-                    width:592px;
-                    bottom:0;
-                    left:0;
-                    .customStatus-154i-H .customStatusEmoji-3BvdMX{
-                        position: relative;
-                        padding-left: 6px;
-                        width:30px;
-                        height:30px;
-                        top:5px;
-                    }
-                    span{
-                        position: relative;
-                        font-size: 15px;
-                        padding-left: 10px;
-                        color: #fff;
-                    }
-                    .customStatus-154i-H{
-                        position: relative;
-                        bottom:9px;
-                    }
-                    &::-webkit-scrollbar{
-                        display: none;
-                    }
-                }
                 .body-ZAhrcj{
                     width: 590px;
                     button{
@@ -105,6 +77,25 @@
                         &:hover{
                             background-color: var(--background-);
                         }
+                    }
+                }
+            }
+            .customStatusText-39gdCI{
+                position: fixed;
+                color:#fff;
+                bottom: 0px;
+                .customStatus-154i-H{
+                    max-width: 600px;
+                    overflow: scroll;
+                    height:40px;
+                    width: max-content;
+                    span{
+                        white-space: pre-line;
+                        width: fit-content;
+                        font-size: 15px;
+                    }
+                    &::-webkit-scrollbar{
+                        display: none;
                     }
                 }
             }
@@ -123,7 +114,6 @@
                 bottom: 0;
                 position: fixed;
                 content: '';
-                color:red;
                 height:39px;
                 width:610px;
             }
