@@ -2,7 +2,7 @@
 @use "./main";
 @use "./invite";
 @use "./upload";
-@use "./user";
-@use "./usrbg";
 @use "./inputs";
 @use "./servernotice";
+
+@import "./user/import";

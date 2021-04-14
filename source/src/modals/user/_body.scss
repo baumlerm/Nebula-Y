@@ -1,0 +1,27 @@
+.body-3ND3kc{
+    background-color: var(--background-primary);
+    border-radius: var(--neb-border-radius1);
+    height:336px;
+    width:260px;
+    .userInfoSection-2acyCx{
+        border: none;
+        &:nth-child(1){
+            display: none;
+        }
+    }
+    .listRow-hutiT_{
+        border-radius: var(--neb-border-radius2);
+        transition: var(--transition);
+        .listAvatar-1NlAhb{
+            position: relative;
+            margin-right: 2px;
+            right:4px;
+        }
+    }
+    .connectedAccount-36nQx7{
+        background-color: var(--background-secondary-alt);
+        border-radius: var(--neb-border-radius2);
+        max-width: 200px ;
+        border: none;
+    }
+}

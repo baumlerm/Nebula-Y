@@ -1,0 +1,64 @@
+.topSectionPlaying-1J5E4n,
+.topSectionSpotify-1lI0-P{
+    margin: calc(var(--margin) + 56px) var(--margin) 0 0;
+    background-color: var(--background-primary);
+    border-radius: var(--neb-border-radius1);
+    overflow: scroll;
+    height:270px;
+    .header-QKLPzZ{
+        background-color: var(--background-secondary-alt);
+        border-radius: var(--neb-border-radius1);
+        box-shadow: var(--elevation-high);
+        margin: var(--margin);
+        width:459px;
+        button{
+            background-color: var(--button-background-dark);
+            border-radius: var(--neb-border-radius1);
+            color:var(--header-primary);
+            &:hover{
+                background-color: var(--button-hover-dark);
+            }
+        }
+    }
+    .headerFill-adLl4x{
+        background-color: transparent;
+        .activity-1ythUs{
+            padding-top: 33px;
+            button{
+                border: none;
+                border-radius: var(--neb-border-radius2);
+                background-color: var(--background-secondary);
+                &:hover{
+                    background-color: var(--background-secondary-alt);
+                }
+            }
+        }
+    }
+    .tabBarContainer-1s1u-z{
+        background-color: var(--background-primary);
+        border-radius: var(--neb-border-radius1);
+        position: absolute;
+        border: none;
+        width:498px;
+        top:0;
+        .tabBar-2MuP6-{
+            justify-content: center;
+            .tabBarItem-1b8RUP{
+                border-radius: var(--neb-border-radius2);
+                transition: var(--transition);
+                margin: 5px 40px 5px 0;
+                padding: 0 13px;
+                border:none;
+                &:hover{
+                    background-color: var(--background-secondary);
+                }
+            }
+            [aria-selected="true"]{
+                background-color: var(--background-secondary);
+            }
+        }
+    }
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
