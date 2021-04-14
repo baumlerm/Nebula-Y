@@ -1,0 +1,48 @@
+.topSectionNormal-2-vo2m{
+    background-color: var(--background-primary);
+    border-radius: var(--neb-border-radius1);
+    margin: calc(var(--margin) + 56px) var(--margin) 0 0;
+    height:270px;
+    .header-QKLPzZ{
+        background-color: var(--background-secondary-alt);
+        border-radius: var(--neb-border-radius1);
+        box-shadow: var(--elevation-high);
+        margin: var(--margin);
+        width:459px;
+        button{
+            background-color: var(--button-background-dark);
+            border-radius: var(--neb-border-radius1);
+            &:hover{
+                background-color: var(--button-hover-dark);
+            }
+        }
+    }
+    .activity-1ythUs{
+        padding-top: 7px;
+        padding-bottom: 30px;
+    }
+    .tabBarContainer-1s1u-z{
+        background-color: var(--background-primary);
+        border-radius: var(--neb-border-radius1);
+        position: absolute;
+        border: none;
+        width:498px;
+        top: 0;
+        .tabBar-2MuP6-{
+            justify-content: center;
+            .themed-OHr7kt.item-PXvHYJ{    
+                border-radius: var(--neb-border-radius1);
+                transition: var(--transition);      
+                margin: 6px 40px 6px 0;
+                padding: 0 13px;
+                border: none;
+                &:hover{
+                    background-color: var(--background-secondary);
+                }
+            }
+            [aria-selected="true"]{
+                background-color: var(--background-secondary);
+            }
+        }
+    }
+}
