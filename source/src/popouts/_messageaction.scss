@@ -1,7 +1,15 @@
 .wrapper-2aW0bm{
     border-radius: var(--neb-border-radius1);
     background-color: var(--background-tertiary);
+    justify-content: center;
     .button-1ZiXG9{
+        border-radius: var(--neb-border-radius1);
+        transition: var(--transition);
+        margin: 0 5px;
+        min-width: 20px;
+        height:20px;
+    }
+    .ThemeDownloaderApply div{
         border-radius: var(--neb-border-radius1);
     }
 }

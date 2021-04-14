@@ -150,6 +150,9 @@
     [mask="url(#svg-mask-status-dnd)"]{
         fill:var(--neb-status-dnd);
     }
+    [mask="url(#svg-mask-status-idle)"]{
+        fill:var(--neb-status-idle);
+    }
 }
 
 [aria-label="CorellanStoma"]{

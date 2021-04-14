@@ -8,14 +8,30 @@
     .directionColumn-35P_nr{
         flex-direction: row;
     }
+    .topSectionNormal-2-vo2m.topSectionNormal-2-vo2m::after{
+        background-color: var(--background-primary);
+        border-radius: var(--neb-border-radius1);
+        position: absolute;
+        content: '';
+        z-index: -10;
+        width:518px;
+        height:50px;
+        top:0;
+    }
+    .activity-1ythUs{
+        max-width: 400px;
+    }
+    .avatar-3EQepX rect{
+        x:10; y:70; ry:5;
+        height:8px;
+        width: 65%;
+        mask:none;
+    }
+    [mask="url(#svg-mask-status-dnd)"]{
+        fill: var(--neb-status-dnd);
+    }
+    [mask="url(#svg-mask-status-idle)"]{
+        fill:var(--neb-status-idle);
+    }
 }
-.topSectionNormal-2-vo2m.topSectionNormal-2-vo2m::after{
-    background-color: var(--background-primary);
-    border-radius: var(--neb-border-radius1);
-    position: absolute;
-    content: '';
-    z-index: -10;
-    width:518px;
-    height:50px;
-    top:0;
-}
+
