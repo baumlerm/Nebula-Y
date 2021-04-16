@@ -25,8 +25,8 @@
                     border-radius: var(--neb-border-radius1) var(--neb-border-radius1) 0 0;
                     &:before{
                         background: linear-gradient(0deg, var(--background-primary), transparent);
-                        height:50px;
-                        top:85px;
+                        height:40px;
+                        top:95px;
                         z-index: 10;
                     }
                 }
