@@ -648,8 +648,8 @@
 
 .sidebar-2K8pFh .container-3w7J-x .container-1taM1r .animatedContainer-1NSq4T .bannerImage-3KhIJ6:before {
   background: linear-gradient(0deg, var(--background-primary), transparent);
-  height: 50px;
-  top: 85px;
+  height: 40px;
+  top: 95px;
   z-index: 10;
 }
 
@@ -1402,7 +1402,7 @@ ul.tree-2wKJdG:focus {
   flex-direction: row;
 }
 
-.topSectionNormal-2-vo2m.topSectionNormal-2-vo2m::after {
+.modal-3c3bKg .topSectionNormal-2-vo2m.topSectionNormal-2-vo2m::after {
   background-color: var(--background-primary);
   border-radius: var(--neb-border-radius1);
   position: absolute;
@@ -1411,6 +1411,28 @@ ul.tree-2wKJdG:focus {
   width: 518px;
   height: 50px;
   top: 0;
+}
+
+.modal-3c3bKg .activity-1ythUs {
+  max-width: 400px;
+}
+
+.modal-3c3bKg .avatar-3EQepX rect {
+  x: 10;
+  y: 70;
+  ry: 5;
+  height: 8px;
+  width: 65%;
+  -webkit-mask: none;
+          mask: none;
+}
+
+.modal-3c3bKg [mask="url(#svg-mask-status-dnd)"] {
+  fill: var(--neb-status-dnd);
+}
+
+.modal-3c3bKg [mask="url(#svg-mask-status-idle)"] {
+  fill: var(--neb-status-idle);
 }
 
 .topSectionPlaying-1J5E4n,
@@ -1451,7 +1473,6 @@ ul.tree-2wKJdG:focus {
 .topSectionPlaying-1J5E4n .headerFill-adLl4x .activity-1ythUs,
 .topSectionSpotify-1lI0-P .headerFill-adLl4x .activity-1ythUs {
   padding-top: 33px;
-  width: 478px;
 }
 
 .topSectionPlaying-1J5E4n .headerFill-adLl4x .activity-1ythUs button,
@@ -1728,9 +1749,18 @@ ul.tree-2wKJdG:focus {
 .wrapper-2aW0bm {
   border-radius: var(--neb-border-radius1);
   background-color: var(--background-tertiary);
+  justify-content: center;
 }
 
 .wrapper-2aW0bm .button-1ZiXG9 {
+  border-radius: var(--neb-border-radius1);
+  transition: var(--transition);
+  margin: 0 5px;
+  min-width: 20px;
+  height: 20px;
+}
+
+.wrapper-2aW0bm .ThemeDownloaderApply div {
   border-radius: var(--neb-border-radius1);
 }
 
@@ -2151,6 +2181,10 @@ ul.tree-2wKJdG:focus {
 
 .userPopout-3XzG_A [mask="url(#svg-mask-status-dnd)"] {
   fill: var(--neb-status-dnd);
+}
+
+.userPopout-3XzG_A [mask="url(#svg-mask-status-idle)"] {
+  fill: var(--neb-status-idle);
 }
 
 [aria-label=CorellanStoma] .protip-YaFfgO::after {
