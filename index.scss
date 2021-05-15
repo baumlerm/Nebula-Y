@@ -37,6 +37,8 @@
 --button-background-dark:var(--neb-tertiary);
 --button-hover-dark:var(--neb-primary);
 --mention:rgb(240, 71, 71);
+--accent-color: #6aa0bd;
+--accent-color-alt: #324b59;
 
 // Misc Variables
 
@@ -57,7 +59,7 @@
 
 // Toggle
 --disabled-toggle-background:#5b5b5b;
---enabled-toggle-background:#6aa0bd;
+--enabled-toggle-background:var(--accent-color);
 
 // Element Dependant Variables
 
