@@ -77,7 +77,7 @@
             }
         }
     }
-    .activity-11LB_k{
+    .activityUserPopout-2yItg2{
         background-color: var(--background-secondary-alt);
         border-radius: var(--neb-border-radius1);
         box-shadow: var(--elevation-high);
@@ -124,7 +124,7 @@
     }
 }
 .animatorRight-3i_YPs{
-    .activity-11LB_k{
+    .activityUserPopout-2yItg2{
         background-color: var(--background-secondary-alt);
         border-radius: var(--neb-border-radius1);
         box-shadow: var(--elevation-high);
@@ -136,23 +136,14 @@
     }
 }
 
-.userPopout-3XzG_A{
-    rect{
-        pointer-events: none;
-        width:65%;
-        height:8px;
-        mask:none;
-        ry:5; x:10; y:70;
-    }
-    [mask="url(#svg-mask-status-online)"]{
-        fill: var(--neb-status-online);
-    }
-    [mask="url(#svg-mask-status-dnd)"]{
-        fill:var(--neb-status-dnd);
-    }
-    [mask="url(#svg-mask-status-idle)"]{
-        fill:var(--neb-status-idle);
-    }
+.headerText-2WJ44e{
+        background-color: var(--background-secondary-alt);
+}
+.headerTop-2y3V6H{
+        background-color: var(--background-secondary-alt);
+}
+.avatarWrapperNormal-2tu8Ts .avatarWrapper-1-5NA0 .avatarPositionNormal-1CZUPk{
+        background: var(--background-secondary-alt);
 }
 
 [aria-label="CorellanStoma"]{
