@@ -18,7 +18,8 @@
     // ╚════════════════════╩═══════════════════════════════════════════════════════════════════════════════════╝
     
     // Background
-    .tutorialContainer-2sGCg9 {
+    //.tutorialContainer-2sGCg9 {
+    .tutorialContainer-11ICd5 {
     border-radius: var(--neb-border-radius1);
     background: var(--background-primary);
     padding-top: 7px;
@@ -41,9 +42,9 @@
     border-radius: var(--neb-border-radius1);
     background: transparent;
     position: relative;
-    margin-bottom: calc(var(--margin) + 150px);
+    margin-bottom: calc(var(--margin) + 80px);
     padding-top: 7px !important;
-    top: 70px;
+    top: 73px;
     }
     
     // Blur
@@ -55,14 +56,19 @@
     width: 72px;
     bottom: 0px;
     margin-top: 73px;
-    margin-bottom: calc(var(--margin) + 80px);
+    margin-bottom: var(--margin);
     top: 0;
     left: 20;
     }
 
     
     // Remove guild Separator
-    .guildSeparator-33mFX6 {display: none;}
+    //.guildSeparator-33mFX6 {display: none;}
+    .listItem-2Ig28I {
+        .guildSeparator-nWMCrR {
+            display: none;
+        }
+    }
     
     // ╔════════════════════╦═══════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
     // ║ Vertical           ║ Add Server Button                                                                 ║
