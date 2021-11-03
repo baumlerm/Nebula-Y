@@ -15,7 +15,7 @@
 
 - Gray Channel Lines indicate unread messages.  
 
-- Dark Gray Channel Lines indicate unread messages from muted channels.
+- Dark Gray Channel Lines indicates muted channels.
 
 Changes have not been Tested with BetterDiscord.
 

@@ -20,13 +20,16 @@
                 background-color: transparent !important;
                 border-radius: var(--neb-border-radius1) var(--neb-border-radius1) 0 0;
                 box-shadow: none;
-                .bannerImage-3KhIJ6{
+                .bannerImg-2NHyzX {
                     width:var(--neb-sidebar-width);
                     border-radius: var(--neb-border-radius1) var(--neb-border-radius1) 0 0;
+                }
+                .bannerImage-3KhIJ6{
                     &:before{
                         background: linear-gradient(0deg, var(--background-primary), transparent);
-                        height:20px;
-                        top:115px;
+                        width:var(--neb-sidebar-width);
+                        height:10px;
+                        top:125px;
                         z-index: 10;
                     }
                 }

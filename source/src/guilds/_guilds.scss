@@ -18,7 +18,6 @@
     // ╚════════════════════╩═══════════════════════════════════════════════════════════════════════════════════╝
     
     // Background
-    //.tutorialContainer-2sGCg9 {
     .tutorialContainer-11ICd5 {
     border-radius: var(--neb-border-radius1);
     background: var(--background-primary);
@@ -42,7 +41,7 @@
     border-radius: var(--neb-border-radius1);
     background: transparent;
     position: relative;
-    margin-bottom: calc(var(--margin) + 80px);
+    margin-bottom: calc(var(--margin) + 150px);
     padding-top: 7px !important;
     top: 73px;
     }
@@ -56,14 +55,13 @@
     width: 72px;
     bottom: 0px;
     margin-top: 73px;
-    margin-bottom: var(--margin);
+    margin-bottom: calc(var(--margin) + 80px);
     top: 0;
     left: 20;
     }
 
     
     // Remove guild Separator
-    //.guildSeparator-33mFX6 {display: none;}
     .listItem-2Ig28I {
         .guildSeparator-nWMCrR {
             display: none;
@@ -75,7 +73,7 @@
     // ╚════════════════════╩═══════════════════════════════════════════════════════════════════════════════════╝
     
     // Background
-    .tutorialContainer-30WoTp {
+    .tutorialContainer-3alCZm {
     background: transparent;
     position: fixed;
     border-radius: var(--neb-border-radius1);
@@ -85,7 +83,7 @@
     }
     
     // Blur
-    .tutorialContainer-30WoTp::before {
+    .tutorialContainer-3alCZm::before {
     background: var(--background-primary);
     position: fixed;
     content: "";
@@ -97,7 +95,7 @@
     }
     
     // Add Server & Explore Button
-    .circleIconButton-1QV--U {
+    .circleIconButton-hZmpE8 {
     color: var(--interactive-normal);
     background: var(--background-secondary-alt);
     &:hover{
