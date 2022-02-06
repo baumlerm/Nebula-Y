@@ -24,12 +24,12 @@
 }
 
 /* Hide the activity icon background in both user popouts */
-.avatarWrapperNormal-3wFMbf > .wrapper-3t9DeA > .mask-1l8v16 foreignObject, .header-QKLPzZ > .wrapper-3t9DeA > .mask-1l8v16 foreignObject { mask: none !important; border-radius: var(--avatar-radius); }
+.avatarWrapperNormal-3wFMbf > .wrapper-1VLyxH > .mask-1FEkla foreignObject, .header-QKLPzZ > .wrapper-1VLyxH > .mask-1FEkla foreignObject { mask: none !important; border-radius: var(--avatar-radius); }
 
 /* Fix the "View Profile" thing when u over your avatar */
 .avatarHint-1qgaV3 foreignObject { mask: none !important; border-radius: var(--avatar-radius); }
 
-.contentColumn-2hrIYH, .customColumn-Rb6toI{
+.contentColumn-1C7as6, .customColumn-2n-oKU{
     max-width: 1000px;
     min-width: 98%;
 }

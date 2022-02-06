@@ -1,15 +1,15 @@
-#app-mount .wrapper-3NnKdC {
+#app-mount .wrapper-1_HaEi {
     background: transparent;
     margin-left: var(--margin);
     }
     
-    .base-3dtUhz {
+    .base-2jDfDU {
         margin-bottom: var(--margin);
     }
     
-    .scroller-1Bvpku{contain: none;}
+    .scroller-3X7KbA{contain: none;}
 
-    ul.tree-2wKJdG:focus {
+    ul.tree-3agP2X:focus {
         outline:none;
     }
     
@@ -18,7 +18,7 @@
     // ╚════════════════════╩═══════════════════════════════════════════════════════════════════════════════════╝
     
     // Background
-    .tutorialContainer-11ICd5 {
+    .tutorialContainer-1pL9QS {
     border-radius: var(--neb-border-radius1);
     background: var(--background-primary);
     padding-top: 7px;
@@ -28,7 +28,7 @@
         display: none;
         }
     }
-    .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9{
+    .wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub{
         background-color: var(--background-secondary-alt);
     }
 
@@ -37,7 +37,7 @@
     // ╚════════════════════╩═══════════════════════════════════════════════════════════════════════════════════╝
     
     // Background
-    .scroller-1Bvpku {
+    .scroller-3X7KbA {
     border-radius: var(--neb-border-radius1);
     background: transparent;
     position: relative;
@@ -47,7 +47,7 @@
     }
     
     // Blur
-    .wrapper-3NnKdC::before {
+    .wrapper-1_HaEi::before {
     background: var(--background-primary);
     position: fixed;
     content: "";
@@ -62,8 +62,8 @@
 
     
     // Remove guild Separator
-    .listItem-2Ig28I {
-        .guildSeparator-nWMCrR {
+    .listItem-3SmSlK {
+        .guildSeparator-a4uisj {
             display: none;
         }
     }
@@ -73,7 +73,7 @@
     // ╚════════════════════╩═══════════════════════════════════════════════════════════════════════════════════╝
     
     // Background
-    .tutorialContainer-3alCZm {
+    .tutorialContainer-2jwoiB {
     background: transparent;
     position: fixed;
     border-radius: var(--neb-border-radius1);
@@ -83,7 +83,7 @@
     }
     
     // Blur
-    .tutorialContainer-3alCZm::before {
+    .tutorialContainer-2jwoiB::before {
     background: var(--background-primary);
     position: fixed;
     content: "";
@@ -95,7 +95,7 @@
     }
     
     // Add Server & Explore Button
-    .circleIconButton-hZmpE8 {
+    .circleIconButton-1VxDrg {
     color: var(--interactive-normal);
     background: var(--background-secondary-alt);
     &:hover{
@@ -110,15 +110,15 @@
     // ╔════════════════════╦═══════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
     // ║ Vertical           ║ Unread                                                                            ║
     // ╚════════════════════╩═══════════════════════════════════════════════════════════════════════════════════╝
-    .unreadMentionsIndicatorTop-2-tcdU{
+    .unreadMentionsIndicatorTop-2bTgUU{
         top:70px;
-        .mention-1f5kbO{
+        .mention-3XBnnZ{
             opacity: 1;
         }
     }
-    .unreadMentionsIndicatorBottom-2mDYbI{
+    .unreadMentionsIndicatorBottom-3RJMnQ{
         bottom:90px;
-        .mention-1f5kbO{
+        .mention-3XBnnZ{
             opacity: 1;
         }
     }
